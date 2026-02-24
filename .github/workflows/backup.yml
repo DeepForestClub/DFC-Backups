@@ -49,15 +49,13 @@ jobs:
         
         # 简单的 httrack 命令，避免复杂参数
         httrack "https://deep-forest-club.wikidot.com/system:list-all-pages" -O "$BACKUP_DIR" \
-          -v \
-          --depth=3 \
-          --mirror \
-          --robots=0 \
-          --stay-on-same-domain \
-          --keep-links \
-          --can-go-down \
-          --extended-parsing \
-          --structure-type=0
+            --mirror \
+            --depth=3 \
+            --stay-on-same-domain \
+            --robots=0 \
+            --verbose \
+            --output-directory "$BACKUP_DIR" \
+            --structure-type=0
         
         echo "备份完成，保存在: $BACKUP_DIR"
         
