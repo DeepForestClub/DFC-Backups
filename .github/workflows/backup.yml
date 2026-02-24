@@ -1,9 +1,9 @@
 name: 自动备份网站
 
 on:
-  # 定时触发：每天凌晨2点运行
+  # 定时触发：每3天的凌晨4点运行
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 4 */3 * *'  
   
   # 允许手动触发
   workflow_dispatch:
