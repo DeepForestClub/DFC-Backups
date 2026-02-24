@@ -27,9 +27,11 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
-        # 避免频繁拉取大文件历史
+        # 修复稀疏检出配置
         sparse-checkout: |
           !backup-*.tar.gz
+        sparse-checkout-cone-mode: false
+        sparse-checkout-skip-checks: true
         
     - name: Install dependencies
       run: |
@@ -107,13 +109,3 @@ jobs:
         name: website-backup-${{ github.run_id }}
         path: backup-*.tar.gz
         retention-days: 7
-        
-    - name: Send notification on failure
-      if: failure()
-      uses: 8398a7/action-slack@v3
-      with:
-        status: failure
-        text: '❌ 网站备份失败: ${{ github.workflow }}'
-        channel: '#backup-notifications'
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
