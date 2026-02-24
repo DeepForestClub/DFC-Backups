@@ -2,7 +2,7 @@ name: Website Backup and Upload
 
 on:
   schedule:
-    # 每周日凌晨2点运行备份（UTC时间），减少频率
+    # 每周日凌晨2点运行备份（UTC时间）
     - cron: '0 2 * * 0'
   workflow_dispatch:
     inputs:
@@ -13,7 +13,9 @@ on:
 
 env:
   BACKUP_DIR: 'backups'
-  MAX_BACKUPS: 10  # 保留最近10个备份
+  MAX_BACKUPS: 10
+  WEBSITE_URL: 'https://deep-forest-club.wikidot.com'
+  RETENTION_DAYS: 30  # 额外按时间保留30天内的备份
 
 jobs:
   backup:
@@ -25,51 +27,68 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
+        # 避免频繁拉取大文件历史
+        sparse-checkout: |
+          !backup-*.tar.gz
         
-    - name: Clean old backups
-      run: |
-        # 删除超过保留数量的旧备份
-        ls -t *.tar.gz | tail -n +$((MAX_BACKUPS + 1)) | xargs -r rm -f
-        
-    - name: Install HTTrack
+    - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y httrack
+        sudo apt-get install -y httrack pv  # 添加进度显示工具
         
     - name: Create backup directory
       run: mkdir -p ${{ env.BACKUP_DIR }}
       
-    - name: Run HTTrack backup
+    - name: Run HTTrack backup with enhanced settings
       run: |
-        httrack "https://deep-forest-club.wikidot.com" \
+        httrack "${{ env.WEBSITE_URL }}" \
           -O ./${{ env.BACKUP_DIR }} \
           -%v \
           -r2 \
           -N "%h%p/%n.%t" \
           -#L1000 \
           --robots=0 \
-          --timeout=30 \
-          --retries=3
-      timeout-minutes: 30
-      
-    - name: Compress backup
+          --timeout=60 \
+          --retries=5 \
+          --keep-alive \
+          --connection-per-second=1 \
+          --max-rate=500000 \
+          --user-agent="Mozilla/5.0 (compatible; HTTrack/3.0; +https://www.httrack.com)"
+      timeout-minutes: 120
+      env:
+        # 避免内存溢出
+        HTTRACK_MAX_MEMORY: 512M
+        
+    - name: Compress backup with progress
       run: |
         TIMESTAMP=$(date +%Y%m%d-%H%M%S)
-        tar -czf "backup-${TIMESTAMP}.tar.gz" ${{ env.BACKUP_DIR }}/
+        BACKUP_FILE="backup-${TIMESTAMP}.tar.gz"
+        # 使用pv显示压缩进度
+        tar -cf - ${{ env.BACKUP_DIR }}/ | pv -s $(du -sb ${{ env.BACKUP_DIR }}/ | cut -f1) | gzip > "${BACKUP_FILE}"
         rm -rf ${{ env.BACKUP_DIR }}
-        echo "BACKUP_FILE=backup-${TIMESTAMP}.tar.gz" >> $GITHUB_ENV
+        echo "BACKUP_FILE=${BACKUP_FILE}" >> $GITHUB_ENV
+        
+    - name: Clean old backups (count-based)
+      run: |
+        # 保留最新的N个备份
+        ls -t backup-*.tar.gz 2>/dev/null | tail -n +$(({{ env.MAX_BACKUPS }} + 1)) | xargs -r rm -f
+        
+    - name: Clean old backups (time-based)
+      run: |
+        # 额外保留30天内的备份
+        find . -name "backup-*.tar.gz" -mtime +{{ env.RETENTION_DAYS }} -delete 2>/dev/null || true
         
     - name: Configure Git
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
-    - name: Check for changes
+    - name: Check for backup changes
       id: changes
       run: |
-        git status --porcelain
-        if [ -n "$(git status --porcelain)" ]; then
+        if git status --porcelain | grep -q ".tar.gz"; then
           echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "changes_count=$(git status --porcelain | grep -c '.tar.gz')" >> $GITHUB_OUTPUT
         else
           echo "has_changes=false" >> $GITHUB_OUTPUT
         fi
@@ -79,4 +98,22 @@ jobs:
       run: |
         git add *.tar.gz
         git commit -m "🔧 Backup: ${{ github.event.inputs.description || 'Automated backup' }} [skip ci]"
-        git push origin master
+        # 使用force-with-lease安全推送
+        git push --force-with-lease origin ${{ github.ref_name }}
+        
+    - name: Upload backup to artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: website-backup-${{ github.run_id }}
+        path: backup-*.tar.gz
+        retention-days: 7
+        
+    - name: Send notification on failure
+      if: failure()
+      uses: 8398a7/action-slack@v3
+      with:
+        status: failure
+        text: '❌ 网站备份失败: ${{ github.workflow }}'
+        channel: '#backup-notifications'
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
