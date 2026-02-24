@@ -38,16 +38,16 @@ jobs:
       run: |
         mkdir -p /tmp/httrack-backup
         
-    - name: 使用简单参数执行 HTTrack 备份
+    - name: 执行 HTTrack 备份
       run: |
         # 创建备份目录
         BACKUP_DIR="/tmp/httrack-backup/deep-forest-club-${{ steps.date.outputs.date }}"
         mkdir -p "$BACKUP_DIR"
         
-        # 使用最基本的参数运行 httrack
+        # 使用最基本的参数运行 HTTrack
         cd /tmp/httrack-backup
         
-        # 简单的 httrack 命令，避免复杂参数
+        # HTTrack 命令
         httrack "https://deep-forest-club.wikidot.com/system:list-all-pages" -O "$BACKUP_DIR" \
             --mirror \
             --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
