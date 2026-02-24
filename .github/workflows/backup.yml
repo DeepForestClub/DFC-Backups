@@ -48,7 +48,7 @@ jobs:
         cd /tmp/httrack-backup
         
         # 简单的 httrack 命令，避免复杂参数
-        httrack "https://deep-forest-club.wikidot.com/" -O "$BACKUP_DIR" \
+        httrack "https://deep-forest-club.wikidot.com/system:list-all-pages" -O "$BACKUP_DIR" \
           -v \
           --depth=3 \
           --mirror \
