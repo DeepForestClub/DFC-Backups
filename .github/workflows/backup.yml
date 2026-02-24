@@ -127,7 +127,7 @@ jobs:
           echo "没有新的备份文件需要提交"
         else
           git commit -m "备份 Deep Forest Club Wiki - ${{ steps.date.outputs.date }}"
-          git push
+          git pull origin master
         fi
         
     - name: 清理旧备份（保留最近30天的备份）
