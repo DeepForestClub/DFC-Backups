@@ -1,0 +1,151 @@
+name: Automatic Backups
+
+on:
+  schedule:
+    - cron: '0 2 * * 0'  # 每周日凌晨2点
+  workflow_dispatch:
+    inputs:
+      description:
+        description: '手动备份描述'
+        required: false
+        default: 'Manual backup'
+
+env:
+  MAX_BACKUPS_PER_SITE: 5
+  DEFAULT_DEPTH: 2
+  DEFAULT_TIMEOUT: 30
+  
+  # 网站配置 - 支持灵活扩展
+  SITES_CONFIG: |
+    {
+      "sites": [
+        {
+          "name": "deep-forest",
+          "url": "https://deep-forest-club.wikidot.com",
+          "folder": "backups/deep-forest",
+          "description": "深林文学部主站"
+        },
+        {
+          "name": "example-site",
+          "url": "https://example.com", 
+          "folder": "backups/example",
+          "depth": 1,
+          "timeout": 15
+        }
+      ]
+    }
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60  # 整体超时保护
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+        
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y httrack jq pv  # 添加进度显示工具
+        
+    - name: Initialize backup environment
+      run: |
+        mkdir -p temp-backups
+        echo "BACKUP_START_TIME=$(date +%s)" >> $GITHUB_ENV
+        
+    - name: Process each website
+      id: backup-sites
+      run: |
+        success_count=0
+        total_count=$(echo '$SITES_CONFIG' | jq '.sites | length')
+        
+        echo "$SITES_CONFIG" | jq -c '.sites[]' | while read site; do
+          name=$(echo $site | jq -r '.name')
+          url=$(echo $site | jq -r '.url')
+          folder=$(echo $site | jq -r '.folder')
+          depth=$(echo $site | jq -r ".depth // $DEFAULT_DEPTH")
+          timeout=$(echo $site | jq -r ".timeout // $DEFAULT_TIMEOUT")
+          
+          echo "🔹 开始备份: $name ($url)"
+          echo "   深度: $depth | 超时: ${timeout}分钟"
+          
+          # 创建临时目录
+          mkdir -p "temp-backups/$name"
+          
+          # 执行备份（带错误处理）
+          if httrack "$url" \
+            -O "temp-backups/$name" \
+            -%v \
+            -r$depth \
+            -N "%h%p/%n.%t" \
+            -#L1000 \
+            --robots=0 \
+            --timeout=$timeout \
+            --retries=2 \
+            --disable-security-limits; then
+            
+            # 压缩备份
+            TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+            tar -czf "backup-${name}-${TIMESTAMP}.tar.gz" "temp-backups/$name/" | \
+              pv -p -t -e -b > /dev/null
+            
+            echo "✅ 备份完成: $name"
+            ((success_count++))
+          else
+            echo "❌ 备份失败: $name"
+          fi
+          
+          # 清理临时文件
+          rm -rf "temp-backups/$name"
+        done
+        
+        echo "success_count=$success_count" >> $GITHUB_OUTPUT
+        echo "total_count=$total_count" >> $GITHUB_OUTPUT
+        
+    - name: Clean old backups
+      run: |
+        # 为每个网站清理旧文件
+        echo "$SITES_CONFIG" | jq -c '.sites[]' | while read site; do
+          name=$(echo $site | jq -r '.name')
+          echo "清理旧备份: $name (保留最近$MAX_BACKUPS_PER_SITE个)"
+          ls -t backup-${name}-*.tar.gz 2>/dev/null | \
+            tail -n +$((MAX_BACKUPS_PER_SITE + 1)) | \
+            xargs -r rm -f
+        done
+        
+    - name: Generate backup report
+      if: always()
+      run: |
+        END_TIME=$(date +%s)
+        DURATION=$((END_TIME - BACKUP_START_TIME))
+        
+        echo "📊 备份报告:"
+        echo "   成功: ${{ steps.backup-sites.outputs.success_count }}/${{ steps.backup-sites.outputs.total_count }}"
+        echo "   耗时: ${DURATION}秒"
+        echo "   文件大小: $(du -sh *.tar.gz 2>/dev/null | tail -1 || echo '0')"
+        
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+    - name: Check for changes
+      id: changes
+      run: |
+        git status --porcelain
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+        else
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Commit and push backups
+      if: steps.changes.outputs.has_changes == 'true'
+      run: |
+        git add *.tar.gz
+        git commit -m "🔧 Multi-site backup: ${{ github.event.inputs.description || 'Automated backup' }} [skip ci]"
+        git push origin main
