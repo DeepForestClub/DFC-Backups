@@ -2,7 +2,7 @@ name: Website Backup and Upload
 
 on:
   schedule:
-    # 每周日凌晨2点运行备份（UTC时间），减少频率
+    # 每周日凌晨2点运行备份（UTC时间）
     - cron: '0 2 * * 0'
   workflow_dispatch:
     inputs:
@@ -26,10 +26,17 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
         
+    - name: Check current branch
+      run: |
+        echo "当前分支:"
+        git branch -a
+        echo "远程仓库:"
+        git remote -v
+        
     - name: Clean old backups
       run: |
         # 删除超过保留数量的旧备份
-        ls -t *.tar.gz | tail -n +$((MAX_BACKUPS + 1)) | xargs -r rm -f
+        ls -t *.tar.gz 2>/dev/null | tail -n +$((MAX_BACKUPS + 1)) | xargs -r rm -f || echo "无旧备份可删除"
         
     - name: Install HTTrack
       run: |
@@ -39,6 +46,11 @@ jobs:
     - name: Create backup directory
       run: mkdir -p ${{ env.BACKUP_DIR }}
       
+    - name: Test network connectivity
+      run: |
+        echo "测试网络连接:"
+        curl -I "https://deep-forest-club.wikidot.com" || echo "curl测试失败"
+        
     - name: Run HTTrack backup
       run: |
         httrack "https://deep-forest-club.wikidot.com" \
@@ -48,10 +60,18 @@ jobs:
           -N "%h%p/%n.%t" \
           -#L1000 \
           --robots=0 \
-          --timeout=30 \
-          --retries=3
-      timeout-minutes: 30
+          --timeout=60 \
+          --retries=5 \
+          --user-agent "Mozilla/5.0 (compatible; HTTrack)"
+      timeout-minutes: 45
       
+    - name: Verify backup content
+      run: |
+        echo "备份文件夹内容："
+        ls -la ${{ env.BACKUP_DIR }}/
+        echo "文件数量统计："
+        find ${{ env.BACKUP_DIR }} -type f 2>/dev/null | wc -l || echo "未找到文件"
+        
     - name: Compress backup
       run: |
         TIMESTAMP=$(date +%Y%m%d-%H%M%S)
@@ -79,4 +99,6 @@ jobs:
       run: |
         git add *.tar.gz
         git commit -m "🔧 Backup: ${{ github.event.inputs.description || 'Automated backup' }} [skip ci]"
-        git push origin master
+        # 自动检测并推送到当前分支
+        CURRENT_BRANCH=$(git branch --show-current)
+        git push origin $CURRENT_BRANCH
