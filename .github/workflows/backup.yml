@@ -79,4 +79,4 @@ jobs:
       run: |
         git add *.tar.gz
         git commit -m "🔧 Backup: ${{ github.event.inputs.description || 'Automated backup' }} [skip ci]"
-        git push origin main
+        git push origin master
