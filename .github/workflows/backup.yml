@@ -53,7 +53,6 @@ jobs:
             --robots=0 \
             --depth=10 \
             --stay-on-same-domain \
-            --stay-on-same-server \
             --keep-alive \
             --timeout=120 \
             --retries=5 \
