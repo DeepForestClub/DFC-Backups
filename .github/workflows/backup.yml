@@ -1,4 +1,4 @@
-name: 备份 Deep Forest Club Wiki
+name: 自动备份网站
 
 on:
   # 定时触发：每天凌晨2点运行
@@ -7,12 +7,6 @@ on:
   
   # 允许手动触发
   workflow_dispatch:
-  
-  # 当推送到主分支时也可触发（可选）
-  push:
-    branches: [ main ]
-    paths:
-      - '.github/workflows/backup-wiki.yml'
 
 jobs:
   backup:
@@ -54,7 +48,16 @@ jobs:
         cd /tmp/httrack-backup
         
         # 简单的 httrack 命令，避免复杂参数
-        httrack "https://deep-forest-club.wikidot.com/" -O "$BACKUP_DIR" -v
+        httrack "https://deep-forest-club.wikidot.com/" -O "$BACKUP_DIR" \
+          -v \
+          --depth=3 \
+          --mirror \
+          --robots=0 \
+          --stay-on-same-domain \
+          --keep-links \
+          --can-go-down \
+          --extended-parsing \
+          --structure-type=0
         
         echo "备份完成，保存在: $BACKUP_DIR"
         
@@ -76,16 +79,19 @@ jobs:
         BACKUP_NAME="deep-forest-club-${{ steps.date.outputs.date }}"
         
         # 压缩备份
-        tar -czf "$GITHUB_WORKSPACE/backups/archive/${BACKUP_NAME}.tar.gz" "$BACKUP_NAME"
+        tar -czf "$GITHUB_WORKSPACE/backups/${BACKUP_NAME}.tar.gz" "$BACKUP_NAME"
+        
+        # 同时复制到archive目录
+        cp "$GITHUB_WORKSPACE/backups/${BACKUP_NAME}.tar.gz" "$GITHUB_WORKSPACE/backups/archive/"
         
         echo "压缩完成: ${BACKUP_NAME}.tar.gz"
         
     - name: 生成备份信息
       run: |
-        cd $GITHUB_WORKSPACE/backups/archive
+        cd $GITHUB_WORKSPACE/backups
         BACKUP_FILE="deep-forest-club-${{ steps.date.outputs.date }}.tar.gz"
         
-        cat > backup_info_${{ steps.date.outputs.date }}.md << EOF
+        cat > archive/backup_info_${{ steps.date.outputs.date }}.md << EOF
         # 备份信息
         
         - **备份时间**: ${{ steps.date.outputs.date }}
@@ -108,6 +114,7 @@ jobs:
         git config --local user.name "GitHub Action"
         
         # 添加备份文件和信息文件
+        git add backups/deep-forest-club-${{ steps.date.outputs.date }}.tar.gz
         git add backups/archive/deep-forest-club-${{ steps.date.outputs.date }}.tar.gz
         git add backups/archive/backup_info_${{ steps.date.outputs.date }}.md
         
@@ -116,7 +123,7 @@ jobs:
         ln -sf "deep-forest-club-${{ steps.date.outputs.date }}.tar.gz" "latest-backup.tar.gz"
         ln -sf "backup_info_${{ steps.date.outputs.date }}.md" "latest-backup-info.md"
         cd ../..
-        git add backups/archive/latest-backup.tar.gz backups/archive/latest-backup-info.md
+        git add backups/latest-backup.tar.gz backups/latest-backup-info.md
         
         # 检查是否有文件需要提交
         if git diff --staged --quiet; then
@@ -128,17 +135,19 @@ jobs:
         
     - name: 清理旧备份（保留最近30天的备份）
       run: |
-        cd $GITHUB_WORKSPACE/backups/archive
+        cd $GITHUB_WORKSPACE/backups
         # 列出所有备份文件，按时间排序，删除30天前的文件
         find . -name "deep-forest-club-*.tar.gz" -type f -mtime +30 -delete
+        find archive -name "deep-forest-club-*.tar.gz" -type f -mtime +30 -delete
         # 同时删除对应的信息文件
         find . -name "backup_info_*.md" -type f -mtime +30 -delete
+        find archive -name "backup_info_*.md" -type f -mtime +30 -delete
         
     - name: 上传备份文件作为工作流附件
       uses: actions/upload-artifact@v4
       with:
         name: deep-forest-club-backup-${{ steps.date.outputs.date }}
-        path: backups/archive/deep-forest-club-${{ steps.date.outputs.date }}.tar.gz
+        path: backups/deep-forest-club-${{ steps.date.outputs.date }}.tar.gz
         retention-days: 30
         
     - name: 清理临时文件
