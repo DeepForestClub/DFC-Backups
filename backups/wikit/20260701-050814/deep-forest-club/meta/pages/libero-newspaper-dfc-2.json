@@ -1,0 +1,69 @@
+{
+    "name": "libero-newspaper-dfc-2",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 5,
+            "global_revision": 1523632883,
+            "author": 7504264,
+            "stamp": 1723461777,
+            "flags": "A",
+            "commentary": "移除标签：原创。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1511219065,
+            "author": 6444453,
+            "stamp": 1686453557,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1511218966,
+            "author": 6444453,
+            "stamp": 1686453205,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1511218922,
+            "author": 6444453,
+            "stamp": 1686453159,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 新闻。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1511218883,
+            "author": 6444453,
+            "stamp": 1686453118,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1511218869,
+            "author": 6444453,
+            "stamp": 1686453072,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1448440358,
+    "rating": 1,
+    "tags": [
+        "新闻"
+    ],
+    "title": "自由报 深林文学部分刊 第二期",
+    "sitemap_update": 1723461777000,
+    "votings": [
+        [
+            7850356,
+            true
+        ]
+    ],
+    "is_locked": false
+}

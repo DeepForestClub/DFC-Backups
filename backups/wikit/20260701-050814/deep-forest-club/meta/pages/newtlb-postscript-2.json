@@ -1,0 +1,60 @@
+{
+    "name": "newtlb-postscript-2",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 3,
+            "global_revision": 1521051542,
+            "author": 7504264,
+            "stamp": 1719094887,
+            "flags": "A",
+            "commentary": "已新增标签：争议性内容。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1521051510,
+            "author": 7504264,
+            "stamp": 1719094604,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 文章, 非主题文章。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1521039530,
+            "author": 7504264,
+            "stamp": 1719019924,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1520592916,
+            "author": 8516207,
+            "stamp": 1717339698,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1453840171,
+    "rating": 2,
+    "tags": [
+        "争议性内容",
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "TLB——后记（2）",
+    "sitemap_update": 1719094887000,
+    "votings": [
+        [
+            7504264,
+            true
+        ],
+        [
+            8103976,
+            true
+        ]
+    ],
+    "is_locked": false
+}
