@@ -1,4 +1,4 @@
-name: Backup Wikit - Deep Forest Club
+name: 自动备份网站
 
 on:
   schedule:
