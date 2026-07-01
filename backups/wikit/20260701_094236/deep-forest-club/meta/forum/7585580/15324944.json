@@ -1,0 +1,48 @@
+{
+    "title": "新人报道",
+    "id": 15324944,
+    "description": "初来乍到",
+    "last": 1666487975,
+    "lastUser": 8261419,
+    "started": 1666448211,
+    "startedUser": 8314830,
+    "postsNum": 4,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 5672307,
+            "title": "新人报道",
+            "poster": 8314830,
+            "stamp": 1666448211,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 5672437,
+                    "title": "Re: 新人报道",
+                    "poster": 7850356,
+                    "stamp": 1666449361,
+                    "revisions": [],
+                    "children": []
+                },
+                {
+                    "id": 5672749,
+                    "title": "Re: 新人报道",
+                    "poster": 8122538,
+                    "stamp": 1666452185,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 5674714,
+            "title": "Re: 新人报道",
+            "poster": 8261419,
+            "stamp": 1666487975,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}
