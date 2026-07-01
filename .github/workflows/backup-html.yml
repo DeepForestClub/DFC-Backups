@@ -24,7 +24,7 @@ jobs:
         
     - name: 创建备份目录
       run: |
-        mkdir -p backups
+        mkdir -p backups/html
         
     - name: 设置日期变量
       id: date
@@ -67,11 +67,11 @@ jobs:
       run: |
         cd /tmp/httrack-backup
         BACKUP_NAME="deep-forest-club-${{ steps.date.outputs.date }}"
-        tar -czf "$GITHUB_WORKSPACE/backups/${BACKUP_NAME}.tar.gz" "$BACKUP_NAME"
+        tar -czf "$GITHUB_WORKSPACE/backups/html/${BACKUP_NAME}.tar.gz" "$BACKUP_NAME"
         
     - name: 生成备份信息
       run: |
-        cd $GITHUB_WORKSPACE/backups
+        cd $GITHUB_WORKSPACE/backups/html
         BACKUP_FILE="deep-forest-club-${{ steps.date.outputs.date }}.tar.gz"
         
         cat > backup_info_${{ steps.date.outputs.date }}.md << EOF
@@ -84,14 +84,14 @@ jobs:
         
     - name: 更新软链接
       run: |
-        cd $GITHUB_WORKSPACE/backups
+        cd $GITHUB_WORKSPACE/backups/html
         rm -f latest-backup.tar.gz latest-backup-info.md
         ln -s "deep-forest-club-${{ steps.date.outputs.date }}.tar.gz" "latest-backup.tar.gz"
         ln -s "backup_info_${{ steps.date.outputs.date }}.md" "latest-backup-info.md"
 
     - name: 清理旧备份（仅保留最近10个）
       run: |
-        cd $GITHUB_WORKSPACE/backups
+        cd $GITHUB_WORKSPACE/backups/html
         
         # 删除超出的压缩包：按时间排序(ls -t)，保留前10个，从第11个开始删除
         ls -t deep-forest-club-*.tar.gz | tail -n +11 | xargs -r rm --
@@ -107,7 +107,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
-        git add backups/
+        git add backups/html
         
         if git diff --staged --quiet; then
           echo "没有新的备份文件需要提交"
@@ -121,7 +121,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: deep-forest-club-backup-${{ steps.date.outputs.date }}
-        path: backups/deep-forest-club-${{ steps.date.outputs.date }}.tar.gz
+        path: backups/html/deep-forest-club-${{ steps.date.outputs.date }}.tar.gz
         retention-days: 30
         
     - name: 清理临时文件
