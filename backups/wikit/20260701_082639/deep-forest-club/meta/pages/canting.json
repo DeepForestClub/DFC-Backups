@@ -1,0 +1,45 @@
+{
+    "name": "canting",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 1,
+            "global_revision": 1518364029,
+            "author": 8021906,
+            "stamp": 1708399136,
+            "flags": "A",
+            "commentary": "已新增标签：主题文章, 原创, 怪谈, 文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1518364009,
+            "author": 8021906,
+            "stamp": 1708399044,
+            "flags": "N",
+            "commentary": "一篇早期的破文而已la"
+        }
+    ],
+    "files": [],
+    "page_id": 1452666834,
+    "rating": 2,
+    "forum_thread": 16734420,
+    "tags": [
+        "主题文章",
+        "原创",
+        "怪谈",
+        "文章"
+    ],
+    "title": "DFC深林学院系列怪谈——餐厅守则",
+    "sitemap_update": 1708399136000,
+    "votings": [
+        [
+            7967988,
+            true
+        ],
+        [
+            7504264,
+            true
+        ]
+    ],
+    "is_locked": false
+}

@@ -1,0 +1,162 @@
+{
+    "name": "collab:slgt-02",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 13,
+            "global_revision": 1517925017,
+            "author": 7504264,
+            "stamp": 1706655417,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1510074826,
+            "author": 7850356,
+            "stamp": 1683383514,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1510074670,
+            "author": 7850356,
+            "stamp": 1683383022,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1510074642,
+            "author": 7850356,
+            "stamp": 1683382942,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1509660370,
+            "author": 7850356,
+            "stamp": 1681907130,
+            "flags": "A",
+            "commentary": "已新增标签：合作主题文章。"
+        },
+        {
+            "revision": 8,
+            "global_revision": 1508642635,
+            "author": 7850356,
+            "stamp": 1679193251,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"slgt-02\" 至 \"collab:slgt-02\"."
+        },
+        {
+            "revision": 7,
+            "global_revision": 1507584238,
+            "author": 8346642,
+            "stamp": 1676038055,
+            "flags": "A",
+            "commentary": "已新增标签：文章。"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1497118454,
+            "author": 7952851,
+            "stamp": 1667403532,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1497117051,
+            "author": 7952851,
+            "stamp": 1667398911,
+            "flags": "A",
+            "commentary": "已新增标签：合著。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1497117035,
+            "author": 7952851,
+            "stamp": 1667398854,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1497116608,
+            "author": 7952851,
+            "stamp": 1667397795,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1497116394,
+            "author": 7952851,
+            "stamp": 1667397146,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 怪谈。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1497116392,
+            "author": 7952851,
+            "stamp": 1667397132,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1497116374,
+            "author": 7952851,
+            "stamp": 1667397052,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1437015287,
+    "rating": 7,
+    "forum_thread": 15353254,
+    "tags": [
+        "原创",
+        "合作主题文章",
+        "合著",
+        "怪谈",
+        "文章"
+    ],
+    "title": "DFC怪谈——员工守则",
+    "sitemap_update": 1706655417000,
+    "votings": [
+        [
+            8017463,
+            true
+        ],
+        [
+            8261419,
+            true
+        ],
+        [
+            6682340,
+            true
+        ],
+        [
+            7850356,
+            true
+        ],
+        [
+            8049058,
+            true
+        ],
+        [
+            8196010,
+            true
+        ],
+        [
+            6600193,
+            true
+        ]
+    ],
+    "is_locked": false
+}

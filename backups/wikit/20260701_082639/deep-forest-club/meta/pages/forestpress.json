@@ -1,0 +1,69 @@
+{
+    "name": "forestpress",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 5,
+            "global_revision": 1523699553,
+            "author": 7504264,
+            "stamp": 1723612714,
+            "flags": "A",
+            "commentary": "已新增标签：中心, 森林报。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1523695416,
+            "author": 7504264,
+            "stamp": 1723609575,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1523694786,
+            "author": 7504264,
+            "stamp": 1723609116,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1523664830,
+            "author": 7504264,
+            "stamp": 1723604454,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1523662198,
+            "author": 7504264,
+            "stamp": 1723602533,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1523661819,
+            "author": 7504264,
+            "stamp": 1723602237,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1456188450,
+    "tags": [
+        "中心",
+        "森林报"
+    ],
+    "title": "森林报中心页",
+    "sitemap_update": 1723612714000,
+    "votings": [
+        [
+            9366578,
+            true
+        ]
+    ],
+    "is_locked": false
+}
