@@ -23,6 +23,8 @@ jobs:
       WIKI_NAME: "deep-forest-club"
       WIKI_URL: "https://deep-forest-club.wikidot.com"
       MAX_BACKUPS: "8"
+      # 备份耗时阈值（秒），超过则强制提交
+      BACKUP_TIME_THRESHOLD: "60"
 
     steps:
       - name: 检出仓库代码
@@ -58,11 +60,22 @@ jobs:
           fi
 
           echo "→ Running wikit backup into $THIS_DIR"
+
+          # 记录开始时间
+          START_SEC=$(date +%s)
+
           "$WIKIT_BIN" backup "$WIKI_NAME" \
             --base-dir "$THIS_DIR" \
             --no-update-check
 
+          # 计算耗时
+          END_SEC=$(date +%s)
+          ELAPSED=$((END_SEC - START_SEC))
+
+          echo "→ Backup elapsed time: ${ELAPSED}s"
+
           echo "BACKUP_TS=$TS" >> $GITHUB_ENV
+          echo "BACKUP_ELAPSED=$ELAPSED" >> $GITHUB_ENV
 
       - name: 对比 sitemap.json 判断是否需要提交
         id: check_sitemap
@@ -80,18 +93,34 @@ jobs:
           CURRENT_SITEMAP="$CURRENT/$WIKI_NAME/meta/sitemap.json"
           PREV_SITEMAP="$PREV/$WIKI_NAME/meta/sitemap.json"
 
+          ELAPSED="${{ env.BACKUP_ELAPSED }}"
+          THRESHOLD="${BACKUP_TIME_THRESHOLD}"
+
+          echo "→ Backup elapsed: ${ELAPSED}s (threshold: ${THRESHOLD}s)"
+
+          # 如果备份耗时超过阈值，强制提交
+          if [ "$ELAPSED" -ge "$THRESHOLD" ]; then
+            echo "→ Backup took >= ${THRESHOLD}s, force commit"
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "reason=timeout" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
           if [ -z "$PREV" ] || [ ! -f "$PREV_SITEMAP" ]; then
             echo "→ No previous sitemap found, must commit"
             echo "skip=false" >> $GITHUB_OUTPUT
+            echo "reason=new" >> $GITHUB_OUTPUT
             exit 0
           fi
 
           if diff -q "$CURRENT_SITEMAP" "$PREV_SITEMAP" > /dev/null; then
             echo "→ sitemap.json unchanged, skip commit"
             echo "skip=true" >> $GITHUB_OUTPUT
+            echo "reason=unchanged" >> $GITHUB_OUTPUT
           else
             echo "→ sitemap.json changed"
             echo "skip=false" >> $GITHUB_OUTPUT
+            echo "reason=changed" >> $GITHUB_OUTPUT
           fi
 
       - name: 清理旧备份
@@ -122,7 +151,7 @@ jobs:
         if: steps.check_sitemap.outputs.skip == 'false'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "自动备份网站 - ${{ env.BACKUP_TS }}"
+          commit_message: "自动备份网站 - ${{ env.BACKUP_TS }}（${{ steps.check_sitemap.outputs.reason }}）"
           file_pattern: "backups/wikit/"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
@@ -130,4 +159,4 @@ jobs:
 
       - name: 跳过提交提示
         if: steps.check_sitemap.outputs.skip == 'true'
-        run: echo "[!] 未发生变化，已跳过提交"
+        run: echo "[!] 未发生变化，已跳过提交。"
