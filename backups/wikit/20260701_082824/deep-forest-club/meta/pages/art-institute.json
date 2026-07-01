@@ -1,0 +1,97 @@
+{
+    "name": "art-institute",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 5,
+            "global_revision": 1516666085,
+            "author": 8021906,
+            "stamp": 1702434598,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1514447241,
+            "author": 7850356,
+            "stamp": 1696318289,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1509660455,
+            "author": 7850356,
+            "stamp": 1681907410,
+            "flags": "A",
+            "commentary": "已新增标签：主题文章。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1508306057,
+            "author": 8021906,
+            "stamp": 1678013107,
+            "flags": "T",
+            "commentary": "标题"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1508305985,
+            "author": 7850356,
+            "stamp": 1678012989,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 怪谈, 文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1508305958,
+            "author": 8021906,
+            "stamp": 1678012789,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1446569680,
+    "rating": 7,
+    "forum_thread": 15721303,
+    "tags": [
+        "主题文章",
+        "原创",
+        "怪谈",
+        "文章"
+    ],
+    "title": "DFC怪谈——深林美术院的游客守则",
+    "sitemap_update": 1702434598000,
+    "votings": [
+        [
+            8346642,
+            true
+        ],
+        [
+            8299296,
+            true
+        ],
+        [
+            8261419,
+            true
+        ],
+        [
+            7850356,
+            true
+        ],
+        [
+            8103976,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            8196010,
+            true
+        ]
+    ],
+    "is_locked": false
+}

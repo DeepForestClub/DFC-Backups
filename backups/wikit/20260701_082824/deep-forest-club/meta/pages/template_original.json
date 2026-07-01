@@ -1,0 +1,129 @@
+{
+    "name": "template:original",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 13,
+            "global_revision": 1523766187,
+            "author": 7504264,
+            "stamp": 1723697896,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1521331925,
+            "author": 7504264,
+            "stamp": 1719611317,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1521039564,
+            "author": 7504264,
+            "stamp": 1719020149,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1516947498,
+            "author": 8261419,
+            "stamp": 1703303047,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1515666903,
+            "author": 7850356,
+            "stamp": 1698934922,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1511228322,
+            "author": 7850356,
+            "stamp": 1686483125,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1509699303,
+            "author": 7850356,
+            "stamp": 1682127012,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1509699263,
+            "author": 7850356,
+            "stamp": 1682126805,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1509699252,
+            "author": 7850356,
+            "stamp": 1682126690,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"template:rate\" 至 \"template:original\"."
+        },
+        {
+            "revision": 4,
+            "global_revision": 1509689488,
+            "author": 7850356,
+            "stamp": 1682073558,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1508643275,
+            "author": 7850356,
+            "stamp": 1679196785,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1508643271,
+            "author": 7850356,
+            "stamp": 1679196755,
+            "flags": "A",
+            "commentary": "已新增标签：模板, 管理。 移除标签：模板管理。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1508643269,
+            "author": 7850356,
+            "stamp": 1679196747,
+            "flags": "A",
+            "commentary": "已新增标签：模板管理。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1508643267,
+            "author": 7850356,
+            "stamp": 1679196738,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1446759438,
+    "rating": 0,
+    "tags": [
+        "模板",
+        "管理"
+    ],
+    "title": "原创文章模板",
+    "sitemap_update": 1723697896000,
+    "votings": [],
+    "is_locked": true
+}
