@@ -33,8 +33,7 @@ jobs:
       - name: 下载 Wikit CLI
         run: |
           set -euo pipefail
-          URL="https://github.com/kakushi-w/wikit/releases/latest/download/wikit-linux-amd64
-"
+          URL="https://github.com/kakushi-w/wikit/releases/latest/download/wikit-linux-amd64"
           curl -fSL "$URL" -o wikit
           chmod +x wikit
           ./wikit version || true
