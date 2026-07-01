@@ -1,0 +1,81 @@
+{
+    "name": "aphasia-frag1",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1524448042,
+            "author": 7931329,
+            "stamp": 1725699287,
+            "flags": "A",
+            "commentary": "移除标签：黎明与黑暗的史诗。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1515666824,
+            "author": 7850356,
+            "stamp": 1698934794,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1515510163,
+            "author": 7931329,
+            "stamp": 1698417216,
+            "flags": "A",
+            "commentary": "已新增标签：黎明与黑暗的史诗。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1515509361,
+            "author": 7931329,
+            "stamp": 1698414770,
+            "flags": "A",
+            "commentary": "已新增标签：主题文章, 原创, 文章, 资料。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1515509350,
+            "author": 7931329,
+            "stamp": 1698414717,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451105094,
+    "rating": 5,
+    "forum_thread": 16587735,
+    "tags": [
+        "主题文章",
+        "原创",
+        "文章",
+        "资料"
+    ],
+    "title": "失语症：残片其一",
+    "sitemap_update": 1725699287000,
+    "votings": [
+        [
+            8229312,
+            true
+        ],
+        [
+            7850356,
+            true
+        ],
+        [
+            8103976,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            8648337,
+            true
+        ]
+    ],
+    "is_locked": false
+}

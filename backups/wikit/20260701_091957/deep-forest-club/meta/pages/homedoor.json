@@ -1,0 +1,68 @@
+{
+    "name": "homedoor",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1526767812,
+            "author": 7967988,
+            "stamp": 1734489838,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1526620510,
+            "author": 7967988,
+            "stamp": 1733650724,
+            "flags": "A",
+            "commentary": "已新增标签：图像保留权利。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1526036030,
+            "author": 7967988,
+            "stamp": 1732941337,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1525997627,
+            "author": 7967988,
+            "stamp": 1732675668,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 艺术作品。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1525997625,
+            "author": 7967988,
+            "stamp": 1732675608,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1457443036,
+    "rating": 2,
+    "forum_thread": 16995571,
+    "tags": [
+        "原创",
+        "图像保留权利",
+        "艺术作品"
+    ],
+    "title": "上电车新方法",
+    "sitemap_update": 1734489838000,
+    "votings": [
+        [
+            9366578,
+            true
+        ],
+        [
+            6818166,
+            true
+        ]
+    ],
+    "is_locked": false
+}
