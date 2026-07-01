@@ -38,54 +38,33 @@ jobs:
           chmod +x wikit
           ./wikit version || true
 
-      - name: 运行 Wikit 并检测是否有更新
-        id: backup
+      - name: 准备备份目录并运行 Wikit CLI
         run: |
           set -euo pipefail
 
           mkdir -p "$BACKUP_ROOT"
 
-          # 获取最新备份目录（可能是 LATEST symlink）
+          TS=$(date +%Y%m%d_%H%M%S)
+          THIS_DIR="$BACKUP_ROOT/$TS"
+
           PREV=$(ls -1d "$BACKUP_ROOT"/*/ 2>/dev/null | sort -r | head -1 || true)
 
           if [ -n "$PREV" ] && [ -d "$PREV" ]; then
-            #解析 symlink 为真实目录路径
-            PREV=$(readlink -f "$PREV" || echo "$PREV")
-            echo "→ Using previous backup as working directory: $PREV"
-            WORK_DIR="$PREV"
+            echo "→ Copying previous backup from $PREV"
+            cp -r "$PREV" "$THIS_DIR"
           else
-            TS=$(date +%Y%m%d_%H%M%S)
-            WORK_DIR="$BACKUP_ROOT/$TS"
             echo "→ No previous backup found, creating fresh directory"
-            mkdir -p "$WORK_DIR"
+            mkdir -p "$THIS_DIR"
           fi
 
-          echo "→ Running wikit backup in $WORK_DIR"
+          echo "→ Running wikit backup into $THIS_DIR"
           "$WIKIT_BIN" backup "$WIKI_NAME" "$WIKI_URL" \
-            --base-dir "$WORK_DIR" \
+            --base-dir "$THIS_DIR" \
             --no-update-check
 
-          # 判断是否真的产生了文件变化
-          cd "$WORK_DIR"
-          if [ -n "$(git status --porcelain 2>/dev/null || true)" ]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: 创建新备份快照（仅在真的发生变化时）
-        if: steps.backup.outputs.changed == 'true'
-        run: |
-          set -euo pipefail
-          TS=$(date +%Y%m%d_%H%M%S)
-          THIS_DIR="$BACKUP_ROOT/$TS"
-          PREV=$(ls -1d "$BACKUP_ROOT"/*/ 2>/dev/null | sort -r | head -1)
-          PREV=$(readlink -f "$PREV" || echo "$PREV")
-          cp -r "$PREV" "$THIS_DIR"
           echo "BACKUP_TS=$TS" >> $GITHUB_ENV
 
       - name: 清理旧备份
-        if: steps.backup.outputs.changed == 'true'
         run: |
           set -euo pipefail
           cd "$BACKUP_ROOT"
@@ -97,18 +76,19 @@ jobs:
           ls -1d */ 2>/dev/null || echo "(none)"
 
       - name: 更新 LATEST 软链接指向最新备份
-        if: steps.backup.outputs.changed == 'true'
         run: |
           set -euo pipefail
           cd "$BACKUP_ROOT"
           NEWEST=$(ls -1d */ 2>/dev/null | sort -r | head -1)
-          NEWEST=$(readlink -f "$NEWEST" || echo "$NEWEST")
+          if [ -z "$NEWEST" ]; then
+            echo "::error::No backup directory found!"
+            exit 1
+          fi
           rm -f LATEST
           ln -s "$NEWEST" LATEST
           echo "→ LATEST -> $NEWEST"
 
       - name: 提交并推送备份结果
-        if: steps.backup.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "自动备份网站 - ${{ env.BACKUP_TS }}"
