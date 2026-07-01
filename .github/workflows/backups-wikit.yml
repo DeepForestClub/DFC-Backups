@@ -1,8 +1,8 @@
-name: 自动备份网站
+name: Backup Wikit - Deep Forest Club
 
 on:
   schedule:
-    - cron: '30 4 */5 * *'
+    - cron: '30 4 */4 * *'
   workflow_dispatch:
 
 permissions:
@@ -29,12 +29,10 @@ jobs:
       - name: Download wikit CLI
         run: |
           set -euo pipefail
-          ARCH="wikit-linux-amd64"
-          URL="https://github.com/kakushi-w/wikit/releases/download/v${WIKIT_VER}/${ARCH}"
-          curl -fSL "$URL" -o wikit.tar.gz
-          tar -xzf wikit.tar.gz
-          chmod +x "$WIKIT_BIN"
-          "$WIKIT_BIN" version || true
+          URL="https://github.com/kakushi-w/wikit/releases/download/v${WIKIT_VER}/wikit-linux-amd64"
+          curl -fSL "$URL" -o wikit
+          chmod +x wikit
+          ./wikit version || true
 
       - name: Prepare backup directory and run wikit
         run: |
