@@ -1,5 +1,9 @@
 name: 自动备份网站
 
+concurrency:
+  group: backup-wikit
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: '30 4 */4 * *'
