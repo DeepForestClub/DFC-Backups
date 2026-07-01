@@ -23,7 +23,7 @@ jobs:
       WIKI_NAME: "deep-forest-club"
       WIKI_URL: "https://deep-forest-club.wikidot.com"
       MAX_BACKUPS: "8"
-      BACKUP_TIME_THRESHOLD: "60"
+      BACKUP_TIME_THRESHOLD: "3"
 
     steps:
       - name: 检出仓库代码
@@ -76,7 +76,7 @@ jobs:
           echo "BACKUP_TS=$TS" >> $GITHUB_ENV
           echo "BACKUP_ELAPSED=$ELAPSED" >> $GITHUB_ENV
 
-      - name: 对比 sitemap.json 判断是否需要提交
+      - name: 判断是否需要提交
         id: check_sitemap
         run: |
           set -euo pipefail
