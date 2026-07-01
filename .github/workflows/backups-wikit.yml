@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  backup:
+  backup-wikit:
     runs-on: ubuntu-latest
 
     env:
