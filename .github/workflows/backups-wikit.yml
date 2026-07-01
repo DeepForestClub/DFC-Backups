@@ -23,7 +23,6 @@ jobs:
       WIKI_NAME: "deep-forest-club"
       WIKI_URL: "https://deep-forest-club.wikidot.com"
       MAX_BACKUPS: "8"
-      # 备份耗时阈值（秒），超过则强制提交
       BACKUP_TIME_THRESHOLD: "60"
 
     steps:
