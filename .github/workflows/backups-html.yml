@@ -1,8 +1,8 @@
-name: 自动镜像网站（增量更新）
+name: 自动镜像网站
 
 on:
   schedule:
-    - cron: '0 4 */3 * *'
+    - cron: '0 4 */3 * *'  
   workflow_dispatch:
 
 jobs:
@@ -20,111 +20,104 @@ jobs:
     - name: 安装 HTTrack
       run: |
         sudo apt-get update
-        sudo apt-get install -y httrack
-
+        sudo apt-get install -y httrack webhttrack
+        
+    - name: 创建镜像目录
+      run: |
+        mkdir -p backups/html
+        
     - name: 设置日期变量
       id: date
       run: |
         echo "date=$(date +'%Y%m%d_%H%M%S')" >> $GITHUB_OUTPUT
-
-    - name: 准备工作目录
+        
+    - name: 创建临时目录
       run: |
-        mkdir -p /tmp/httrack-work
-        mkdir -p backups/html
-
-    - name: 恢复上一次镜像（若存在）
+        mkdir -p /tmp/httrack-backup
+        
+    - name: 执行 HTTrack 镜像
       run: |
-        if [ -f backups/html/latest-backup ]; then
-          echo "检测到历史备份，正在恢复..."
-          tar -xzf backups/html/latest-backup -C /tmp/httrack-work
-          echo "RESTORED=true" >> $GITHUB_ENV
-        else
-          echo "未检测到历史备份，将执行首次全量镜像"
-          echo "RESTORED=false" >> $GITHUB_ENV
-        fi
-
-    - name: 执行 HTTrack 镜像（更新 / 全量）
-      run: |
-        WORKDIR="/tmp/httrack-work/deep-forest-club-${{ steps.date.outputs.date }}"
-
-        USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-
-        if [ "$RESTORED" = "true" ]; then
-          echo "✅ 使用更新模式（--update）"
-          httrack --update \
-            "https://deep-forest-club.wikidot.com" \
-            -O "$WORKDIR" \
-            --user-agent="$USER_AGENT" \
-            --robots=0 \
-            --verbose
-        else
-          echo "🆕 使用首次全量镜像"
-          mkdir -p "$WORKDIR"
-          httrack "https://deep-forest-club.wikidot.com" \
-            -O "$WORKDIR" \
+        BACKUP_DIR="/tmp/httrack-backup/deep-forest-club-${{ steps.date.outputs.date }}"
+        mkdir -p "$BACKUP_DIR"
+        
+        cd /tmp/httrack-backup
+        
+        httrack "https://deep-forest-club.wikidot.com/system:list-all-pages" -O "$BACKUP_DIR" \
             --mirror \
+            --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
             --depth=3 \
             --stay-on-same-domain \
-            --user-agent="$USER_AGENT" \
             --robots=0 \
             --verbose
-        fi
-
-    - name: 检查镜像结果
+            
+        echo "镜像完成，保存在: $BACKUP_DIR"
+        
+    - name: 检查镜像是否成功
       run: |
-        WORKDIR="/tmp/httrack-work/deep-forest-club-${{ steps.date.outputs.date }}"
-        if [ ! -d "$WORKDIR" ] || [ -z "$(ls -A $WORKDIR)" ]; then
-          echo "❌ 镜像失败或目录为空"
+        BACKUP_DIR="/tmp/httrack-backup/deep-forest-club-${{ steps.date.outputs.date }}"
+        
+        if [ -d "$BACKUP_DIR" ] && [ "$(ls -A $BACKUP_DIR)" ]; then
+          echo "镜像成功，目录不为空"
+        else
+          echo "镜像可能失败，目录为空"
           exit 1
         fi
-
-    - name: 打包镜像
+        
+    - name: 压缩镜像文件
       run: |
-        cd /tmp
+        cd /tmp/httrack-backup
         BACKUP_NAME="deep-forest-club-${{ steps.date.outputs.date }}"
-        tar -czf "$GITHUB_WORKSPACE/backups/html/${BACKUP_NAME}.tar.gz" httrack-work/"$BACKUP_NAME"
-
+        tar -czf "$GITHUB_WORKSPACE/backups/html/${BACKUP_NAME}.tar.gz" "$BACKUP_NAME"
+        
     - name: 生成镜像信息
       run: |
-        cd backups/html
+        cd $GITHUB_WORKSPACE/backups/html
         BACKUP_FILE="deep-forest-club-${{ steps.date.outputs.date }}.tar.gz"
+        
         cat > backup_info_${{ steps.date.outputs.date }}.md << EOF
         # 镜像信息
         - **镜像时间**: ${{ steps.date.outputs.date }}
-        - **模式**: ${{ env.RESTORED == 'true' && '增量更新' || '首次全量' }}
-        - **文件**: ${BACKUP_FILE}
-        - **大小**: $(du -h ${BACKUP_FILE} | cut -f1)
-        - **来源**: https://deep-forest-club.wikidot.com/
+        - **镜像文件**: ${BACKUP_FILE}
+        - **镜像大小**: $(du -h ${BACKUP_FILE} | cut -f1)
+        - **网站**: https://deep-forest-club.wikidot.com/
         EOF
-
+        
     - name: 更新软链接
       run: |
-        cd backups/html
+        cd $GITHUB_WORKSPACE/backups/html
         rm -f latest-backup latest-backup-info
-        ln -s "deep-forest-club-${{ steps.date.outputs.date }}.tar.gz" latest-backup
-        ln -s "backup_info_${{ steps.date.outputs.date }}.md" latest-backup-info
+        ln -s "deep-forest-club-${{ steps.date.outputs.date }}.tar.gz" "latest-backup"
+        ln -s "backup_info_${{ steps.date.outputs.date }}.md" "latest-backup-info"
 
-    - name: 清理旧备份（保留最近 10 个）
+    - name: 清理旧镜像（仅保留最近10个）
       run: |
-        cd backups/html
+        cd $GITHUB_WORKSPACE/backups/html
+        
+        # 删除超出的压缩包：按时间排序(ls -t)，保留前10个，从第11个开始删除
         ls -t deep-forest-club-*.tar.gz | tail -n +11 | xargs -r rm --
+        
+        # 删除超出的信息文件：同理保留最近10个
         ls -t backup_info_*.md | tail -n +11 | xargs -r rm --
+        
+        echo "清理完成。当前镜像目录下剩余文件："
         ls -lh
-
-    - name: 提交到仓库
+        
+    - name: 提交镜像到仓库
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        
         git add backups/html
+        
         if git diff --staged --quiet; then
-          echo "无变更，跳过提交"
+          echo "没有新的镜像文件需要提交"
         else
-          git commit -m "自动镜像网站（增量更新）- ${{ steps.date.outputs.date }}"
-          git pull --rebase origin ${GITHUB_REF_NAME}
-          git push origin ${GITHUB_REF_NAME}
+          git commit -m "自动镜像网站 - ${{ steps.date.outputs.date }}"
+          git pull --rebase origin master
+          git push origin master
         fi
-
-    - name: 上传 Artifact
+        
+    - name: 上传镜像文件作为工作流附件
       uses: actions/upload-artifact@v4
       with:
         name: deep-forest-club-backup-${{ steps.date.outputs.date }}
@@ -133,4 +126,4 @@ jobs:
 
     - name: 清理临时文件
       run: |
-        rm -rf /tmp/httrack-work
+        rm -rf /tmp/httrack-backup
