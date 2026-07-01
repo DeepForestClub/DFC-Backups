@@ -21,7 +21,7 @@ jobs:
       MAX_BACKUPS: "8"
 
     steps:
-      - name: 检出仓库
+      - name: 检出仓库代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
@@ -60,7 +60,7 @@ jobs:
 
           echo "BACKUP_TS=$TS" >> $GITHUB_ENV
 
-      - name: Prune old backups (keep latest ${{ env.MAX_BACKUPS }})
+      - name: 清理旧备份
         run: |
           set -euo pipefail
           cd "$BACKUP_ROOT"
@@ -71,7 +71,7 @@ jobs:
           echo "→ Current backups:"
           ls -1d */ 2>/dev/null || echo "(none)"
 
-      - name: Update LATEST symlink to newest backup
+      - name: 更新 LATEST 软链接指向最新备份
         run: |
           set -euo pipefail
           cd "$BACKUP_ROOT"
@@ -84,7 +84,7 @@ jobs:
           ln -s "$NEWEST" LATEST
           echo "→ LATEST -> $NEWEST"
 
-      - name: Commit and push changes
+      - name: 提交并推送备份结果
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: wikit backup deep-forest-club (${{ env.BACKUP_TS }})"
