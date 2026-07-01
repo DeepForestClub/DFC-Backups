@@ -1,4 +1,4 @@
-name: 自动备份网站
+name: 自动镜像网站
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  backup:
+  backup-html:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,7 +22,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y httrack webhttrack
         
-    - name: 创建备份目录
+    - name: 创建镜像目录
       run: |
         mkdir -p backups/html
         
@@ -35,7 +35,7 @@ jobs:
       run: |
         mkdir -p /tmp/httrack-backup
         
-    - name: 执行 HTTrack 备份
+    - name: 执行 HTTrack 镜像
       run: |
         BACKUP_DIR="/tmp/httrack-backup/deep-forest-club-${{ steps.date.outputs.date }}"
         mkdir -p "$BACKUP_DIR"
@@ -50,46 +50,46 @@ jobs:
             --robots=0 \
             --verbose
             
-        echo "备份完成，保存在: $BACKUP_DIR"
+        echo "镜像完成，保存在: $BACKUP_DIR"
         
-    - name: 检查备份是否成功
+    - name: 检查镜像是否成功
       run: |
         BACKUP_DIR="/tmp/httrack-backup/deep-forest-club-${{ steps.date.outputs.date }}"
         
         if [ -d "$BACKUP_DIR" ] && [ "$(ls -A $BACKUP_DIR)" ]; then
-          echo "备份成功，目录不为空"
+          echo "镜像成功，目录不为空"
         else
-          echo "备份可能失败，目录为空"
+          echo "镜像可能失败，目录为空"
           exit 1
         fi
         
-    - name: 压缩备份文件
+    - name: 压缩镜像文件
       run: |
         cd /tmp/httrack-backup
         BACKUP_NAME="deep-forest-club-${{ steps.date.outputs.date }}"
         tar -czf "$GITHUB_WORKSPACE/backups/html/${BACKUP_NAME}.tar.gz" "$BACKUP_NAME"
         
-    - name: 生成备份信息
+    - name: 生成镜像信息
       run: |
         cd $GITHUB_WORKSPACE/backups/html
         BACKUP_FILE="deep-forest-club-${{ steps.date.outputs.date }}.tar.gz"
         
         cat > backup_info_${{ steps.date.outputs.date }}.md << EOF
-        # 备份信息
-        - **备份时间**: ${{ steps.date.outputs.date }}
-        - **备份文件**: ${BACKUP_FILE}
-        - **备份大小**: $(du -h ${BACKUP_FILE} | cut -f1)
+        # 镜像信息
+        - **镜像时间**: ${{ steps.date.outputs.date }}
+        - **镜像文件**: ${BACKUP_FILE}
+        - **镜像大小**: $(du -h ${BACKUP_FILE} | cut -f1)
         - **网站**: https://deep-forest-club.wikidot.com/
         EOF
         
     - name: 更新软链接
       run: |
         cd $GITHUB_WORKSPACE/backups/html
-        rm -f latest-backup.tar.gz latest-backup-info.md
-        ln -s "deep-forest-club-${{ steps.date.outputs.date }}.tar.gz" "latest-backup.tar.gz"
-        ln -s "backup_info_${{ steps.date.outputs.date }}.md" "latest-backup-info.md"
+        rm -f latest-backup latest-backup-info
+        ln -s "deep-forest-club-${{ steps.date.outputs.date }}.tar.gz" "latest-backup"
+        ln -s "backup_info_${{ steps.date.outputs.date }}.md" "latest-backup-info"
 
-    - name: 清理旧备份（仅保留最近10个）
+    - name: 清理旧镜像（仅保留最近10个）
       run: |
         cd $GITHUB_WORKSPACE/backups/html
         
@@ -99,10 +99,10 @@ jobs:
         # 删除超出的信息文件：同理保留最近10个
         ls -t backup_info_*.md | tail -n +11 | xargs -r rm --
         
-        echo "清理完成。当前备份目录下剩余文件："
+        echo "清理完成。当前镜像目录下剩余文件："
         ls -lh
         
-    - name: 提交备份到仓库
+    - name: 提交镜像到仓库
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
@@ -110,14 +110,14 @@ jobs:
         git add backups/html
         
         if git diff --staged --quiet; then
-          echo "没有新的备份文件需要提交"
+          echo "没有新的镜像文件需要提交"
         else
-          git commit -m "自动备份网站 - ${{ steps.date.outputs.date }}"
+          git commit -m "自动镜像网站 - ${{ steps.date.outputs.date }}"
           git pull --rebase origin master
           git push origin master
         fi
         
-    - name: 上传备份文件作为工作流附件
+    - name: 上传镜像文件作为工作流附件
       uses: actions/upload-artifact@v4
       with:
         name: deep-forest-club-backup-${{ steps.date.outputs.date }}
