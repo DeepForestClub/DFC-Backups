@@ -44,7 +44,7 @@ jobs:
 
           mkdir -p "$BACKUP_ROOT"
 
-          TS=$(date +%Y%m%d-%H%M%S)
+          TS=$(date +%Y%m%d_%H%M%S)
           THIS_DIR="$BACKUP_ROOT/$TS"
 
           PREV=$(ls -1d "$BACKUP_ROOT"/*/ 2>/dev/null | sort -r | head -1 || true)
@@ -95,3 +95,4 @@ jobs:
           file_pattern: "backups/wikit/"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          push_options: "--force-with-lease"
