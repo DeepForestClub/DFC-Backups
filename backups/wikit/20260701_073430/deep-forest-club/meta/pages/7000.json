@@ -1,0 +1,73 @@
+{
+    "name": "7000",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1523599968,
+            "author": 7508990,
+            "stamp": 1723267605,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1523599376,
+            "author": 7508990,
+            "stamp": 1723265368,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1523599365,
+            "author": 7508990,
+            "stamp": 1723265268,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1523577163,
+            "author": 7508990,
+            "stamp": 1723248095,
+            "flags": "A",
+            "commentary": "已新增标签：2024新人竞赛, 主题文章, 原创, 文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1523577159,
+            "author": 7508990,
+            "stamp": 1723248054,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1456147989,
+    "rating": 3,
+    "forum_thread": 16904829,
+    "tags": [
+        "2024新人竞赛",
+        "主题文章",
+        "原创",
+        "文章"
+    ],
+    "title": "仪式已完成",
+    "sitemap_update": 1723267605000,
+    "votings": [
+        [
+            9366578,
+            true
+        ],
+        [
+            7504264,
+            true
+        ],
+        [
+            6818166,
+            true
+        ]
+    ],
+    "is_locked": false
+}
