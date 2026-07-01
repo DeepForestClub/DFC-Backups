@@ -1,0 +1,59 @@
+{
+    "name": "revolutionary-maurice-victorious-maurice",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 3,
+            "global_revision": 1514573577,
+            "author": 7850356,
+            "stamp": 1696559107,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1514573448,
+            "author": 7850356,
+            "stamp": 1696558706,
+            "flags": "A",
+            "commentary": "已新增标签：文章, 非主题文章。 移除标签：原创。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1514573396,
+            "author": 8229312,
+            "stamp": 1696558581,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 搬运。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1514573302,
+            "author": 8229312,
+            "stamp": 1696558327,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1450385530,
+    "rating": 0,
+    "tags": [
+        "搬运",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "革命的毛里塞，胜利的毛里塞",
+    "sitemap_update": 1696559107000,
+    "votings": [
+        [
+            8021906,
+            true
+        ],
+        [
+            8205238,
+            false
+        ]
+    ],
+    "is_locked": false
+}
