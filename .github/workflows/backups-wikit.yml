@@ -58,7 +58,7 @@ jobs:
           fi
 
           echo "→ Running wikit backup into $THIS_DIR"
-          "$WIKIT_BIN" backup "$WIKI_NAME" "$WIKI_URL" \
+          "$WIKIT_BIN" backup "$WIKI_NAME" \
             --base-dir "$THIS_DIR" \
             --no-update-check
 
