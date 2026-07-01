@@ -1,0 +1,95 @@
+name: 自动备份网站
+
+on:
+  schedule:
+    - cron: '30 4 */5 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    env:
+      WIKIT_VER: "0.1.4"
+      WIKIT_BIN: "./wikit"
+      BACKUP_ROOT: "backups/wikit"
+      WIKI_NAME: "deep-forest-club"
+      WIKI_URL: "https://deep-forest-club.wikidot.com"
+      MAX_BACKUPS: "8"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Download wikit CLI
+        run: |
+          set -euo pipefail
+          ARCH="wikit-linux-amd64"
+          URL="https://github.com/kakushi-w/wikit/releases/download/v${WIKIT_VER}/${ARCH}"
+          curl -fSL "$URL" -o wikit.tar.gz
+          tar -xzf wikit.tar.gz
+          chmod +x "$WIKIT_BIN"
+          "$WIKIT_BIN" version || true
+
+      - name: Prepare backup directory and run wikit
+        run: |
+          set -euo pipefail
+
+          mkdir -p "$BACKUP_ROOT"
+
+          TS=$(date +%Y%m%d-%H%M%S)
+          THIS_DIR="$BACKUP_ROOT/$TS"
+
+          PREV=$(ls -1d "$BACKUP_ROOT"/*/ 2>/dev/null | sort -r | head -1 || true)
+
+          if [ -n "$PREV" ] && [ -d "$PREV" ]; then
+            echo "→ Copying previous backup from $PREV"
+            cp -r "$PREV" "$THIS_DIR"
+          else
+            echo "→ No previous backup found, creating fresh directory"
+            mkdir -p "$THIS_DIR"
+          fi
+
+          echo "→ Running wikit backup into $THIS_DIR"
+          "$WIKIT_BIN" backup "$WIKI_NAME" "$WIKI_URL" \
+            --base-dir "$THIS_DIR" \
+            --no-update-check
+
+          echo "BACKUP_TS=$TS" >> $GITHUB_ENV
+
+      - name: Prune old backups (keep latest ${{ env.MAX_BACKUPS }})
+        run: |
+          set -euo pipefail
+          cd "$BACKUP_ROOT"
+          ls -1trd */ 2>/dev/null | head -n -"$MAX_BACKUPS" | while IFS= read -r old; do
+            echo "→ Removing old backup: $old"
+            rm -rf "$old"
+          done
+          echo "→ Current backups:"
+          ls -1d */ 2>/dev/null || echo "(none)"
+
+      - name: Update LATEST symlink to newest backup
+        run: |
+          set -euo pipefail
+          cd "$BACKUP_ROOT"
+          NEWEST=$(ls -1d */ 2>/dev/null | sort -r | head -1)
+          if [ -z "$NEWEST" ]; then
+            echo "::error::No backup directory found!"
+            exit 1
+          fi
+          rm -f LATEST
+          ln -s "$NEWEST" LATEST
+          echo "→ LATEST -> $NEWEST"
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: wikit backup deep-forest-club (${{ env.BACKUP_TS }})"
+          file_pattern: "backups/wikit/"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
