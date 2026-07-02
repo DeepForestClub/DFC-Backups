@@ -61,7 +61,6 @@ jobs:
 |----|----|----|
 | 🌐 HTML | `${{ env.HTML_ASSET }}` | HTML 静态站点数据 |
 | 📖 WIKIT | `${{ env.WIKIT_ASSET }}` | Wikit CLI 备份细节数据 |
-
 EOF
 
       - name: 创建 GitHub Release
