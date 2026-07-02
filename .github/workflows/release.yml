@@ -2,6 +2,7 @@ name: 月度备份发行版
 
 on:
   schedule:
+    # 每月 28–31 日 12:00 UTC
     - cron: "0 12 28-31 * *"
   workflow_dispatch:
 
@@ -21,9 +22,9 @@ jobs:
           echo "VERSION=$(date -u +'%%Y.%%m')" >> $GITHUB_ENV
           echo "YYYYMM=$(date -u +'%%Y%%m')" >> $GITHUB_ENV
           echo "DATE_FULL=$(date -u +'%%Y-%%m-%%d %%H:%%M:%%S UTC')" >> $GITHUB_ENV
-          echo "SHOULD_RELEASE=true" >> $GITHUB_ENV
 
-      - name: 判断备份时间是否符合要求
+      # ✅ 仅在定时触发时判断是否为当月最后一天
+      - name: 判断是否为当月最后一天（自动识别闰年）
         if: github.event_name == 'schedule'
         run: |
           TODAY=$(date -u +%%d)
@@ -31,7 +32,15 @@ jobs:
           if [ "$TODAY" = "$TOMORROW" ]; then
             echo "不是当月最后一天，跳过发布"
             echo "SHOULD_RELEASE=false" >> $GITHUB_ENV
+          else
+            echo "SHOULD_RELEASE=true" >> $GITHUB_ENV
           fi
+
+      # ✅ 手动触发时强制发布
+      - name: 手动触发强制发布
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          echo "SHOULD_RELEASE=true" >> $GITHUB_ENV
 
       - name: 查找并准备 HTML 备份文件
         if: env.SHOULD_RELEASE == 'true'
@@ -47,25 +56,40 @@ jobs:
           tar -czf "${{ env.YYYYMM }}_backup_wikit.tar.gz" -C "$LATEST_DIR" .
           echo "WIKIT_ASSET=${{ env.YYYYMM }}_backup_wikit.tar.gz" >> $GITHUB_ENV
 
+      # ✅ 关键修复：使用 Here Document + Shell 变量展开
       - name: 生成发行说明
         if: env.SHOULD_RELEASE == 'true'
         run: |
-          echo "# 月度备份发行版（${{ env.VERSION }}）" > release_body.md
-          echo "" >> release_body.md
-          echo "本发行版由 GitHub Actions 于每月末自动生成，概不保证实时性，仅供历史版本与备份恢复使用。" >> release_body.md
-          echo "" >> release_body.md
-          echo "## 📅 备份信息" >> release_body.md
-          echo "- **发行版本**：\`${{ env.VERSION }}\`" >> release_body.md
-          echo "- **生成时间**：${{ env.DATE_FULL }}" >> release_body.md
-          echo "- **触发方式**：${{ github.event_name }}" >> release_body.md
-          echo "" >> release_body.md
-          echo "## 📦 发行内容" >> release_body.md
-          echo "所有备份文件均为 \`.tar.gz\` 压缩格式：" >> release_body.md
-          echo "" >> release_body.md
-          echo "| 类型 | 文件名 | 说明 |" >> release_body.md
-          echo "|----|----|----|" >> release_body.md
-          echo "| 🌐 HTML | \`${{ env.HTML_ASSET }}\` | HTML 静态站点数据 |" >> release_body.md
-          echo "| 📖 WIKIT | \`${{ env.WIKIT_ASSET }}\` | Wikit CLI 备份细节数据 |" >> release_body.md
+          VERSION="${{ env.VERSION }}"
+          DATE_FULL="${{ env.DATE_FULL }}"
+          HTML_ASSET="${{ env.HTML_ASSET }}"
+          WIKIT_ASSET="${{ env.WIKIT_ASSET }}"
+          TRIGGER="${{ github.event_name }}"
+
+          cat <<EOF > release_body.md
+# 月度备份发行版（${VERSION}）
+
+本发行版由 GitHub Actions 于每月末自动生成，概不保证实时性，仅供历史版本与备份恢复使用。
+
+## 📅 备份信息
+- **发行版本**：\`${VERSION}\`
+- **生成时间**：${DATE_FULL}
+- **触发方式**：${TRIGGER}
+
+## 📦 发行内容
+所有备份文件均为 \`.tar.gz\` 压缩格式：
+
+| 类型 | 文件名 | 说明 |
+|----|----|----|
+| 🌐 HTML | \`${HTML_ASSET}\` | HTML 静态站点数据 |
+| 📖 WIKIT | \`${WIKIT_ASSET}\` | Wikit CLI 备份细节数据 |
+
+## 📑 其他说明
+- 适用于灾难恢复与历史归档
+- 不建议作为实时数据源使用
+
+> 🤖 本发行版由 GitHub Actions 自动生成
+EOF
 
       - name: 创建 GitHub Release
         if: env.SHOULD_RELEASE == 'true'
@@ -85,4 +109,4 @@ jobs:
       - name: 跳过发布提示
         if: env.SHOULD_RELEASE == 'false'
         run: |
-          echo "[√] Workflow 正常结束，但未到达发布时间，已跳过 Release 创建"
+          echo "✅ Workflow 正常结束，但未到达发布时间，已跳过 Release 创建"
