@@ -16,6 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: 设置系统时区为 Asia/Shanghai
+        run: |
+          sudo ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+          echo "Asia/Shanghai" | sudo tee /etc/timezone
+
       - name: 计算版本号与年月前缀
         run: |
           echo "VERSION=$(date -u +'%Y.%m')" >> $GITHUB_ENV
@@ -56,9 +61,7 @@ jobs:
       - name: 生成发行说明
         if: env.SHOULD_RELEASE == 'true'
         run: |
-          echo "# 月度备份发行版（${{ env.VERSION }}）" > release_body.md
-          echo "" >> release_body.md
-          echo "本发行版由 GitHub Actions 于每月末自动生成，概不保证实时性，仅供历史版本与备份恢复使用。" >> release_body.md
+          echo "本发行版为深林文学部网站月度备份（${{ env.VERSION }}），由 GitHub Actions 于每月末自动生成，概不保证实时性，仅供历史版本与备份恢复使用。" >> release_body.md
           echo "" >> release_body.md
           echo "## 📅 备份信息" >> release_body.md
           echo "- **发行版本**：\`${{ env.VERSION }}\`" >> release_body.md
