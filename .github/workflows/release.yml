@@ -2,7 +2,6 @@ name: 月度备份发行版
 
 on:
   schedule:
-    # 每月 28–31 日 12:00 UTC
     - cron: "0 12 28-31 * *"
   workflow_dispatch:
 
@@ -17,15 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ✅ 正确写法：run 里只用单个 %
       - name: 计算版本号与年月前缀
         run: |
           echo "VERSION=$(date -u +'%Y.%m')" >> $GITHUB_ENV
           echo "YYYYMM=$(date -u +'%Y%m')" >> $GITHUB_ENV
           echo "DATE_FULL=$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
-
-      # ✅ 仅在定时触发时判断是否为当月最后一天
-      - name: 判断是否为当月最后一天（自动识别闰年）
+          
+      - name: 判断发布时间及条件
         if: github.event_name == 'schedule'
         run: |
           TODAY=$(date -u +%d)
@@ -36,8 +33,7 @@ jobs:
           else
             echo "SHOULD_RELEASE=true" >> $GITHUB_ENV
           fi
-
-      # ✅ 手动触发时强制发布
+          
       - name: 手动触发强制发布
         if: github.event_name == 'workflow_dispatch'
         run: |
@@ -57,7 +53,6 @@ jobs:
           tar -czf "${{ env.YYYYMM }}_backup_wikit.tar.gz" -C "$LATEST_DIR" .
           echo "WIKIT_ASSET=${{ env.YYYYMM }}_backup_wikit.tar.gz" >> $GITHUB_ENV
 
-      # ✅ 使用 echo 逐行生成 Release 说明（最稳、最不容易出错）
       - name: 生成发行说明
         if: env.SHOULD_RELEASE == 'true'
         run: |
@@ -68,7 +63,6 @@ jobs:
           echo "## 📅 备份信息" >> release_body.md
           echo "- **发行版本**：\`${{ env.VERSION }}\`" >> release_body.md
           echo "- **生成时间**：${{ env.DATE_FULL }}" >> release_body.md
-          echo "- **触发方式**：${{ github.event_name }}" >> release_body.md
           echo "" >> release_body.md
           echo "## 📦 发行内容" >> release_body.md
           echo "所有备份文件均为 \`.tar.gz\` 压缩格式：" >> release_body.md
@@ -77,19 +71,13 @@ jobs:
           echo "|----|----|----|" >> release_body.md
           echo "| 🌐 HTML | \`${{ env.HTML_ASSET }}\` | HTML 静态站点数据 |" >> release_body.md
           echo "| 📖 WIKIT | \`${{ env.WIKIT_ASSET }}\` | Wikit CLI 备份细节数据 |" >> release_body.md
-          echo "" >> release_body.md
-          echo "## 📑 其他说明" >> release_body.md
-          echo "- 适用于灾难恢复与历史归档" >> release_body.md
-          echo "- 不建议作为实时数据源使用" >> release_body.md
-          echo "" >> release_body.md
-          echo "> 🤖 本发行版由 GitHub Actions 自动生成" >> release_body.md
 
       - name: 创建 GitHub Release
         if: env.SHOULD_RELEASE == 'true'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.VERSION }}
-          name: Backup ${{ env.VERSION }}
+          name: ${{ env.VERSION }}
           body_path: release_body.md
           draft: false
           prerelease: false
@@ -102,4 +90,4 @@ jobs:
       - name: 跳过发布提示
         if: env.SHOULD_RELEASE == 'false'
         run: |
-          echo "✅ Workflow 正常结束，但未到达发布时间，已跳过 Release 创建"
+          echo "[√] Workflow 正常结束，但未到达发布时间，已跳过 Release 创建"
