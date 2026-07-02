@@ -47,7 +47,7 @@ jobs:
       - name: 生成发行说明
         run: |
           cat <<'EOF' > release_body.md
-# 月度备份发行版（${{ env.VERSION }}）
+# 月度备份 Release（${{ env.VERSION }}）
 本发行版由 GitHub Actions 于每月末自动生成，概不保证实时性，仅供历史版本与备份恢复使用。
 
 ## 📅 备份信息
