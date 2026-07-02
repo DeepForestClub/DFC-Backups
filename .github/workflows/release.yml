@@ -16,22 +16,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 设置系统时区为 Asia/Shanghai
-        run: |
-          sudo ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-          echo "Asia/Shanghai" | sudo tee /etc/timezone
-
       - name: 计算版本号与年月前缀
         run: |
-          echo "VERSION=$(date -u +'%Y.%m')" >> $GITHUB_ENV
-          echo "YYYYMM=$(date -u +'%Y%m')" >> $GITHUB_ENV
-          echo "DATE_FULL=$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
+          echo "VERSION=$(date -u -d '+8 hours' +'%Y.%m')" >> $GITHUB_ENV
+          echo "YYYYMM=$(date -u -d '+8 hours' +'%Y%m')" >> $GITHUB_ENV
+          echo "DATE_FULL=$(date -u -d '+8 hours' +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
           
       - name: 判断发布时间及条件
         if: github.event_name == 'schedule'
         run: |
-          TODAY=$(date -u +%d)
-          TOMORROW=$(date -u -d "+1 day" +%d)
+          TODAY=$(date -u -d '+8 hours' +%d)
+          TOMORROW=$(date -u -d "+8 hours +1 day" +%d)
           if [ "$TODAY" = "$TOMORROW" ]; then
             echo "不是当月最后一天，跳过发布"
             echo "SHOULD_RELEASE=false" >> $GITHUB_ENV
