@@ -19,14 +19,14 @@ jobs:
 
       - name: 计算版本号与年月前缀
         run: |
-          echo "VERSION=$(date -u +'%Y.%m')" >> $GITHUB_ENV
-          echo "YYYYMM=$(date -u +'%Y%m')" >> $GITHUB_ENV
-          echo "DATE_FULL=$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
+          echo "VERSION=$(date -u +'%%Y.%%m')" >> $GITHUB_ENV
+          echo "YYYYMM=$(date -u +'%%Y%%m')" >> $GITHUB_ENV
+          echo "DATE_FULL=$(date -u +'%%Y-%%m-%%d %%H:%%M:%%S UTC')" >> $GITHUB_ENV
 
-      - name: 确认备份时间有效性
+      - name: 确认是否为当月最后一天（自动识别闰年）
         run: |
-          TODAY=$(date -u +%d)
-          TOMORROW=$(date -u -d "+1 day" +%d)
+          TODAY=$(date -u +%%d)
+          TOMORROW=$(date -u -d "+1 day" +%%d)
           if [ "$TODAY" = "$TOMORROW" ]; then
             echo "不是当月最后一天，退出"
             exit 1
@@ -46,22 +46,22 @@ jobs:
 
       - name: 生成发行说明
         run: |
-          cat <<EOF > release_body.md
-# 月度备份发行版（${VERSION}）
+          cat <<'EOF' > release_body.md
+# 月度备份发行版（${{ env.VERSION }}）
+本发行版由 GitHub Actions 于每月末自动生成，概不保证实时性，仅供历史版本与备份恢复使用。
+
 ## 📅 备份信息
-- **发行版本**：\`${VERSION}\`
-- **生成时间**：${DATE_FULL}
+- **发行版本**：`${{ env.VERSION }}`
+- **生成时间**：${{ env.DATE_FULL }}
 
 ## 📦 发行内容
-所有备份文件均为 `.tar.gz` 压缩格式，其中
+所有备份文件均为 `.tar.gz` 压缩格式：
 
 | 类型 | 文件名 | 说明 |
 |----|----|----|
-| 🌐 HTML | \`${{ env.HTML_ASSET }}\` | HTML 静态站点数据 |
-| 📖 WIKIT | \`${{ env.WIKIT_ASSET }}\` | Wikit CLI备份细节数据 |
+| 🌐 HTML | `${{ env.HTML_ASSET }}` | HTML 静态站点数据 |
+| 📖 WIKIT | `${{ env.WIKIT_ASSET }}` | Wikit CLI 备份细节数据 |
 
-## 📑 其他说明
-不保证实时性，仅供历史版本与灾难恢复使用
 EOF
 
       - name: 创建 GitHub Release
