@@ -1,0 +1,79 @@
+name: 月度备份发行版
+
+on:
+  schedule:
+    # 每月 28–31 日 12:00 UTC，配合脚本判断当月最后一天
+    - cron: "0 12 28-31 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 计算版本号与年月前缀
+        run: |
+          echo "VERSION=$(date -u +'%Y.%m')" >> $GITHUB_ENV
+          echo "YYYYMM=$(date -u +'%Y%m')" >> $GITHUB_ENV
+          echo "DATE_FULL=$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
+
+      - name: 确认备份时间有效性
+        run: |
+          TODAY=$(date -u +%d)
+          TOMORROW=$(date -u -d "+1 day" +%d)
+          if [ "$TODAY" = "$TOMORROW" ]; then
+            echo "不是当月最后一天，退出"
+            exit 1
+          fi
+
+      - name: 查找并准备 HTML 备份文件
+        run: |
+          HTML_SRC=$(ls -1 backups/html/deep-forest-club-*.tar.gz | sort -r | head -n 1)
+          cp "$HTML_SRC" "${{ env.YYYYMM }}_backup_html.tar.gz"
+          echo "HTML_ASSET=${{ env.YYYYMM }}_backup_html.tar.gz" >> $GITHUB_ENV
+
+      - name: 查找并打包 Wikit 备份目录
+        run: |
+          LATEST_DIR=$(ls -1d backups/wikit/*/ | sort -r | head -n 1)
+          tar -czf "${{ env.YYYYMM }}_backup_wikit.tar.gz" -C "$LATEST_DIR" .
+          echo "WIKIT_ASSET=${{ env.YYYYMM }}_backup_wikit.tar.gz" >> $GITHUB_ENV
+
+      - name: 生成发行说明
+        run: |
+          cat <<EOF > release_body.md
+# 月度备份发行版（${VERSION}）
+## 📅 备份信息
+- **发行版本**：\`${VERSION}\`
+- **生成时间**：${DATE_FULL}
+
+## 📦 发行内容
+所有备份文件均为 `.tar.gz` 压缩格式，其中
+
+| 类型 | 文件名 | 说明 |
+|----|----|----|
+| 🌐 HTML | \`${{ env.HTML_ASSET }}\` | HTML 静态站点数据 |
+| 📖 WIKIT | \`${{ env.WIKIT_ASSET }}\` | Wikit CLI备份细节数据 |
+
+## 📑 其他说明
+不保证实时性，仅供历史版本与灾难恢复使用
+EOF
+
+      - name: 创建 GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.VERSION }}
+          name: Backup ${{ env.VERSION }}
+          body_path: release_body.md
+          draft: false
+          prerelease: false
+          files: |
+            ${{ env.HTML_ASSET }}
+            ${{ env.WIKIT_ASSET }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
