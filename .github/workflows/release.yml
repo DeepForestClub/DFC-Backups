@@ -21,29 +21,34 @@ jobs:
           echo "VERSION=$(date -u +'%%Y.%%m')" >> $GITHUB_ENV
           echo "YYYYMM=$(date -u +'%%Y%%m')" >> $GITHUB_ENV
           echo "DATE_FULL=$(date -u +'%%Y-%%m-%%d %%H:%%M:%%S UTC')" >> $GITHUB_ENV
+          echo "SHOULD_RELEASE=true" >> $GITHUB_ENV
 
-      - name: 判定符合备份时间
+      - name: 判断备份时间是否符合要求
+        if: github.event_name == 'schedule'
         run: |
           TODAY=$(date -u +%%d)
           TOMORROW=$(date -u -d "+1 day" +%%d)
           if [ "$TODAY" = "$TOMORROW" ]; then
-            echo "不是当月最后一天，退出"
-            exit 1
+            echo "不是当月最后一天，跳过发布"
+            echo "SHOULD_RELEASE=false" >> $GITHUB_ENV
           fi
 
       - name: 查找并准备 HTML 备份文件
+        if: env.SHOULD_RELEASE == 'true'
         run: |
           HTML_SRC=$(ls -1 backups/html/deep-forest-club-*.tar.gz | sort -r | head -n 1)
           cp "$HTML_SRC" "${{ env.YYYYMM }}_backup_html.tar.gz"
           echo "HTML_ASSET=${{ env.YYYYMM }}_backup_html.tar.gz" >> $GITHUB_ENV
 
       - name: 查找并打包 Wikit 备份目录
+        if: env.SHOULD_RELEASE == 'true'
         run: |
           LATEST_DIR=$(ls -1d backups/wikit/*/ | sort -r | head -n 1)
           tar -czf "${{ env.YYYYMM }}_backup_wikit.tar.gz" -C "$LATEST_DIR" .
           echo "WIKIT_ASSET=${{ env.YYYYMM }}_backup_wikit.tar.gz" >> $GITHUB_ENV
 
       - name: 生成发行说明
+        if: env.SHOULD_RELEASE == 'true'
         run: |
           echo "# 月度备份发行版（${{ env.VERSION }}）" > release_body.md
           echo "" >> release_body.md
@@ -52,6 +57,7 @@ jobs:
           echo "## 📅 备份信息" >> release_body.md
           echo "- **发行版本**：\`${{ env.VERSION }}\`" >> release_body.md
           echo "- **生成时间**：${{ env.DATE_FULL }}" >> release_body.md
+          echo "- **触发方式**：${{ github.event_name }}" >> release_body.md
           echo "" >> release_body.md
           echo "## 📦 发行内容" >> release_body.md
           echo "所有备份文件均为 \`.tar.gz\` 压缩格式：" >> release_body.md
@@ -62,6 +68,7 @@ jobs:
           echo "| 📖 WIKIT | \`${{ env.WIKIT_ASSET }}\` | Wikit CLI 备份细节数据 |" >> release_body.md
 
       - name: 创建 GitHub Release
+        if: env.SHOULD_RELEASE == 'true'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.VERSION }}
@@ -74,3 +81,8 @@ jobs:
             ${{ env.WIKIT_ASSET }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 跳过发布提示
+        if: env.SHOULD_RELEASE == 'false'
+        run: |
+          echo "[√] Workflow 正常结束，但未到达发布时间，已跳过 Release 创建"
