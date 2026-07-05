@@ -1,0 +1,166 @@
+{
+    "title": "跨越叙事层的相逢",
+    "id": 16266282,
+    "description": "",
+    "last": 1697982095,
+    "lastUser": 8648337,
+    "started": 1692237907,
+    "startedUser": null,
+    "postsNum": 14,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6180541,
+            "title": "",
+            "poster": 8021906,
+            "stamp": 1692363727,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6180867,
+                    "title": "",
+                    "poster": 8171686,
+                    "stamp": 1692405935,
+                    "revisions": [],
+                    "children": [
+                        {
+                            "id": 6180933,
+                            "title": "彩蛋不是脚注",
+                            "poster": 8021906,
+                            "stamp": 1692412645,
+                            "revisions": [],
+                            "children": [
+                                {
+                                    "id": 6180948,
+                                    "title": "那nzc就要过度解读找彩蛋了奥",
+                                    "poster": 8171686,
+                                    "stamp": 1692414603,
+                                    "revisions": [],
+                                    "children": [
+                                        {
+                                            "id": 6180990,
+                                            "title": "Re: 那nzc就要过度解读找彩蛋了奥",
+                                            "poster": 7850356,
+                                            "stamp": 1692421201,
+                                            "revisions": [],
+                                            "children": []
+                                        },
+                                        {
+                                            "id": 6181279,
+                                            "title": "Re: 那nzc就要过度解读找彩蛋了奥",
+                                            "poster": 8021906,
+                                            "stamp": 1692452501,
+                                            "revisions": [],
+                                            "children": [
+                                                {
+                                                    "id": 6183702,
+                                                    "title": "Re: 那nzc就要过度解读找彩蛋了奥",
+                                                    "poster": 8171686,
+                                                    "stamp": 1692671465,
+                                                    "revisions": [],
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6181286,
+            "title": "",
+            "poster": 8190124,
+            "stamp": 1692453291,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6181334,
+                    "title": "认错",
+                    "poster": 8021906,
+                    "stamp": 1692457624,
+                    "lastEdit": 1692496422,
+                    "lastEditBy": 8021906,
+                    "revisions": [
+                        {
+                            "title": "认错",
+                            "author": 8021906,
+                            "id": 7511206,
+                            "stamp": 1692496422
+                        },
+                        {
+                            "title": "认错",
+                            "author": 8021906,
+                            "id": 7510924,
+                            "stamp": 1692457624
+                        }
+                    ],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 6197265,
+            "title": "授勋仪式",
+            "poster": 8171686,
+            "stamp": 1694255018,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6197268,
+                    "title": "Re: 授勋仪式",
+                    "poster": 8171686,
+                    "stamp": 1694255101,
+                    "revisions": [],
+                    "children": [
+                        {
+                            "id": 6198029,
+                            "title": "Re: 授勋仪式",
+                            "poster": 8021906,
+                            "stamp": 1694321483,
+                            "revisions": [],
+                            "children": [
+                                {
+                                    "id": 6198201,
+                                    "title": "Re: 授勋仪式",
+                                    "poster": 7850356,
+                                    "stamp": 1694336565,
+                                    "revisions": [],
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6229179,
+            "title": "",
+            "poster": 8648337,
+            "stamp": 1697982095,
+            "lastEdit": 1697982157,
+            "lastEditBy": 8648337,
+            "revisions": [
+                {
+                    "title": "",
+                    "author": 8648337,
+                    "id": 7572366,
+                    "stamp": 1697982157
+                },
+                {
+                    "title": "",
+                    "author": 8648337,
+                    "id": 7572365,
+                    "stamp": 1697982095
+                }
+            ],
+            "children": []
+        }
+    ]
+}
