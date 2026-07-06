@@ -1,0 +1,20 @@
+name: 通过 Wayback Machine 备份
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Submit URL to Archive.org
+        run: |
+          curl -s -L \
+            --max-time 60 \
+            "https://web.archive.org/save/https://deep-forest-club.wikidot.com/"
