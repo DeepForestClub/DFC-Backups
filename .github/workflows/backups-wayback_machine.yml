@@ -1,4 +1,4 @@
-name: Archive to Wayback Machine
+name: 备份至Wayback Machine
 
 on:
   schedule:
