@@ -1,5 +1,8 @@
 name: 自动镜像网站
 
+env:
+  TZ: Asia/Shanghai
+
 on:
   schedule:
     - cron: '0 4 */5 * *'  
