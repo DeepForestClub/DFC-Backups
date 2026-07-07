@@ -4,6 +4,9 @@ concurrency:
   group: backup-wikit
   cancel-in-progress: false
 
+env:
+  TZ: Asia/Shanghai
+
 on:
   schedule:
     - cron: '30 4 */4 * *'
