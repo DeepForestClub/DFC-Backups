@@ -1,5 +1,8 @@
 name: 备份至Wayback Machine
 
+env:
+  TZ: Asia/Shanghai
+
 on:
   schedule:
     - cron: "0 3 * * *"
