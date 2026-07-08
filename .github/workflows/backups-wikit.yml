@@ -9,7 +9,7 @@ env:
 
 on:
   schedule:
-    - cron: '30 4 */4 * *'
+    - cron: '30 4 */2 * *'
   workflow_dispatch:
 
 permissions:
