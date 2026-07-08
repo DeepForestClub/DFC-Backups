@@ -36,87 +36,135 @@ jobs:
       - name: 下载 Wikit CLI
         run: |
           set -euo pipefail
-          curl -fSL https://github.com/kakushi-w/wikit/releases/latest/download/wikit-linux-amd64 -o wikit
+          URL="https://github.com/kakushi-w/wikit/releases/latest/download/wikit-linux-amd64"
+          curl -fSL "$URL" -o wikit
           chmod +x wikit
           ./wikit version || true
 
       - name: 准备备份目录并运行 Wikit CLI
         run: |
           set -euo pipefail
+
           mkdir -p "$BACKUP_ROOT"
 
           TS=$(date +%Y%m%d_%H%M%S)
           THIS_DIR="$BACKUP_ROOT/$TS"
 
-          PREV=$(ls -1d "$BACKUP_ROOT"/*/ 2>/dev/null | sort -r | head -1 || true)
+          PREV=$(ls -1d "$BACKUP_ROOT"/*/ 2>/dev/null | grep -v '/LATEST$' | sort -r | head -1 || true)
 
-          if [ -n "$PREV" ]; then
-            cp -r "$PREV" "$THIS_DIR"
+          if [ -n "$PREV" ] && [ -d "$PREV" ]; then
+            echo "→ Copying previous backup from $PREV"
+            cp -r "$PREV"/. "$THIS_DIR"
           else
+            echo "→ No previous backup found, creating fresh directory"
             mkdir -p "$THIS_DIR"
           fi
 
+          echo "→ Running wikit backup into $THIS_DIR"
           START_SEC=$(date +%s)
+
           "$WIKIT_BIN" backup "$WIKI_NAME" \
             --base-dir "$THIS_DIR" \
             --no-update-check
-          ELAPSED=$(( $(date +%s) - START_SEC ))
 
-          echo "BACKUP_TS=$TS" >> $GITHUB_ENV
-          echo "BACKUP_ELAPSED=$ELAPSED" >> $GITHUB_ENV
+          END_SEC=$(date +%s)
+          ELAPSED=$((END_SEC - START_SEC))
+
+          echo "→ Backup elapsed time: ${ELAPSED}s"
+
+          echo "BACKUP_TS=$TS" >> "$GITHUB_ENV"
+          echo "BACKUP_ELAPSED=$ELAPSED" >> "$GITHUB_ENV"
 
       - name: 判断是否需要提交
         id: check_sitemap
         run: |
           set -euo pipefail
+
           cd "$BACKUP_ROOT"
 
-          CURRENT=$(ls -1d */ 2>/dev/null | sort -r | head -1)
-          PREV=$(ls -1d */ 2>/dev/null | sort -r | head -2 | tail -1 || true)
+          CURRENT=$(ls -1d */ 2>/dev/null | grep -v '/LATEST$' | sort -r | head -1)
+          PREV=$(ls -1d */ 2>/dev/null | grep -v '/LATEST$' | sort -r | head -2 | tail -1 || true)
+
+          echo "CURRENT=$CURRENT"
+          echo "PREV=$PREV"
 
           CURRENT_SITEMAP="$CURRENT/$WIKI_NAME/meta/sitemap.json"
           PREV_SITEMAP="$PREV/$WIKI_NAME/meta/sitemap.json"
 
-          if [ "$BACKUP_ELAPSED" -ge "$BACKUP_TIME_THRESHOLD" ]; then
-            echo "skip=false" >> $GITHUB_OUTPUT
-            echo "reason=timeout" >> $GITHUB_OUTPUT
+          ELAPSED="${{ env.BACKUP_ELAPSED }}"
+          THRESHOLD="${BACKUP_TIME_THRESHOLD}"
+
+          echo "→ Backup elapsed: ${ELAPSED}s (threshold: ${THRESHOLD}s)"
+
+          if [ "$ELAPSED" -ge "$THRESHOLD" ]; then
+            echo "→ Backup took >= ${THRESHOLD}s, force commit"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "reason=timeout" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          if [ ! -f "$PREV_SITEMAP" ]; then
-            echo "skip=false" >> $GITHUB_OUTPUT
-            echo "reason=new" >> $GITHUB_OUTPUT
+          if [ -z "$PREV" ] || [ ! -f "$PREV_SITEMAP" ]; then
+            echo "→ No previous sitemap found, must commit"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "reason=new" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           if diff -q "$CURRENT_SITEMAP" "$PREV_SITEMAP" > /dev/null; then
-            echo "skip=true" >> $GITHUB_OUTPUT
-            echo "reason=unchanged" >> $GITHUB_OUTPUT
+            echo "→ sitemap.json unchanged, skip commit"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "reason=unchanged" >> "$GITHUB_OUTPUT"
           else
-            echo "skip=false" >> $GITHUB_OUTPUT
-            echo "reason=changed" >> $GITHUB_OUTPUT
+            echo "→ sitemap.json changed"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "reason=changed" >> "$GITHUB_OUTPUT"
           fi
 
       - name: 清理旧备份
         run: |
+          set -euo pipefail
           cd "$BACKUP_ROOT"
-          ls -1trd */ 2>/dev/null | head -n -"$MAX_BACKUPS" | xargs -r rm -rf
+          ls -1d */ 2>/dev/null | grep -v '/LATEST$' | sort -r \
+            | tail -n +$((MAX_BACKUPS + 1)) \
+            | while IFS= read -r old; do
+              echo "→ Removing old backup: $old"
+              rm -rf "$old"
+            done
+          echo "→ Current backups:"
+          ls -1d */ 2>/dev/null || echo "(none)"
 
-      - name: 更新 LATEST 软链接
+      - name: 更新 LATEST 软链接指向最新备份
         run: |
+          set -euo pipefail
           cd "$BACKUP_ROOT"
-          NEWEST=$(ls -1d */ 2>/dev/null | sort -r | head -1)
+          NEWEST=$(ls -1d */ 2>/dev/null | grep -v '/LATEST$' | sort -r | head -1)
+          if [ -z "$NEWEST" ]; then
+            echo "::error::No backup directory found!"
+            exit 1
+          fi
           rm -f LATEST
           ln -s "$NEWEST" LATEST
+          echo "→ LATEST -> $NEWEST"
 
       - name: 提交并推送备份结果
         if: steps.check_sitemap.outputs.skip == 'false'
         run: |
           git config user.name "action-user"
           git config user.email "action-user@noreply.github.com"
+
           git add backups/wikit/
-          git diff --staged --quiet || git commit -m "自动备份网站 - ${{ env.BACKUP_TS }}（${{ steps.check_sitemap.outputs.reason }}）"
-          git push
+
+          # 仅在有变更时提交
+          if git diff --cached --quiet; then
+            echo "→ No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "自动备份网站 - ${{ env.BACKUP_TS }}（${{ steps.check_sitemap.outputs.reason }}）"
+
+          # 简单重试一次
+          git pull --rebase --autostash || true
+          git push || git push
 
       - name: 跳过提交提示
         if: steps.check_sitemap.outputs.skip == 'true'
