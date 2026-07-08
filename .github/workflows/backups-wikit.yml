@@ -149,9 +149,8 @@ jobs:
       - name: 提交并推送备份结果
         if: steps.check_sitemap.outputs.skip == 'false'
         run: |
-          git config user.name "action-user"
-          git config user.email "action-user@noreply.github.com"
-
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add backups/wikit/
 
           # 仅在有变更时提交
