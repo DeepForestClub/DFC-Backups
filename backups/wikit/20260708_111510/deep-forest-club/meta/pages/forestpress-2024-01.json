@@ -1,0 +1,132 @@
+{
+    "name": "forestpress-2024-01",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 12,
+            "global_revision": 1530519654,
+            "author": 7504264,
+            "stamp": 1749991396,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1523699822,
+            "author": 7504264,
+            "stamp": 1723612891,
+            "flags": "M",
+            "commentary": "将父页面设置为: \"forestpress\"."
+        },
+        {
+            "revision": 10,
+            "global_revision": 1523695288,
+            "author": 7504264,
+            "stamp": 1723609469,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1523666097,
+            "author": 7504264,
+            "stamp": 1723605385,
+            "flags": "A",
+            "commentary": "已新增标签：图像保留权利。 移除标签：图片保留权利。"
+        },
+        {
+            "revision": 8,
+            "global_revision": 1523666037,
+            "author": 7504264,
+            "stamp": 1723605347,
+            "flags": "A",
+            "commentary": "已新增标签：图片保留权利。"
+        },
+        {
+            "revision": 7,
+            "global_revision": 1523662354,
+            "author": 7504264,
+            "stamp": 1723602663,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1523645874,
+            "author": 7504264,
+            "stamp": 1723531411,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1523069059,
+            "author": 7504264,
+            "stamp": 1721169449,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1523069009,
+            "author": 7504264,
+            "stamp": 1721169046,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1518047474,
+            "author": 7504264,
+            "stamp": 1707199211,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1518047161,
+            "author": 7504264,
+            "stamp": 1707197910,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1518047092,
+            "author": 7504264,
+            "stamp": 1707197626,
+            "flags": "A",
+            "commentary": "已新增标签：新闻, 森林报。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1518047075,
+            "author": 7504264,
+            "stamp": 1707197561,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1452536904,
+    "parent": "forestpress",
+    "rating": 2,
+    "tags": [
+        "图像保留权利",
+        "新闻",
+        "森林报"
+    ],
+    "title": "森林报2024年01月刊",
+    "sitemap_update": 1749991396000,
+    "votings": [
+        [
+            8474521,
+            true
+        ],
+        [
+            6818166,
+            true
+        ]
+    ],
+    "is_locked": false
+}

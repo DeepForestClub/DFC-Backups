@@ -1,0 +1,47 @@
+{
+    "title": "「世界」",
+    "id": 16923927,
+    "description": "",
+    "last": 1725242538,
+    "lastUser": 8456860,
+    "started": 1724637923,
+    "startedUser": null,
+    "postsNum": 4,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6630949,
+            "title": "",
+            "poster": 7504264,
+            "stamp": 1724638835,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 6632723,
+            "title": "",
+            "poster": 6649761,
+            "stamp": 1724678644,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 6635669,
+            "title": "",
+            "poster": 7931329,
+            "stamp": 1724857288,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 6642503,
+            "title": "酷诶",
+            "poster": 8456860,
+            "stamp": 1725242538,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

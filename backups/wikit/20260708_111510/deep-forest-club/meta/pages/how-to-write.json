@@ -1,0 +1,174 @@
+{
+    "name": "how-to-write",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 18,
+            "global_revision": 1532155675,
+            "author": 7504264,
+            "stamp": 1757156040,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 17,
+            "global_revision": 1532154956,
+            "author": 7504264,
+            "stamp": 1757152056,
+            "flags": "A",
+            "commentary": "移除标签：必读。"
+        },
+        {
+            "revision": 16,
+            "global_revision": 1531459120,
+            "author": 7504264,
+            "stamp": 1754730503,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 15,
+            "global_revision": 1531459085,
+            "author": 7504264,
+            "stamp": 1754730224,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1524261146,
+            "author": 7504264,
+            "stamp": 1724928021,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 13,
+            "global_revision": 1524168327,
+            "author": 7504264,
+            "stamp": 1724539093,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1524122585,
+            "author": 7504264,
+            "stamp": 1724462422,
+            "flags": "A",
+            "commentary": "已新增标签：未完成。"
+        },
+        {
+            "revision": 11,
+            "global_revision": 1524122584,
+            "author": 7504264,
+            "stamp": 1724462414,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1524122547,
+            "author": 7504264,
+            "stamp": 1724462338,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1523255044,
+            "author": 7504264,
+            "stamp": 1722122393,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1519601042,
+            "author": 7504264,
+            "stamp": 1713087124,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1519601023,
+            "author": 7504264,
+            "stamp": 1713087078,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1517731314,
+            "author": 7504264,
+            "stamp": 1706313609,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1517597687,
+            "author": 7504264,
+            "stamp": 1705798559,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1516585884,
+            "author": 8261419,
+            "stamp": 1702177598,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 3,
+            "global_revision": 1516423859,
+            "author": 7504264,
+            "stamp": 1701497772,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1516423812,
+            "author": 7504264,
+            "stamp": 1701497614,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516423287,
+            "author": 7504264,
+            "stamp": 1701495961,
+            "flags": "A",
+            "commentary": "已新增标签：必读, 指导。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516423283,
+            "author": 7504264,
+            "stamp": 1701495940,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451644874,
+    "parent": "guide-hub",
+    "tags": [
+        "指导",
+        "未完成"
+    ],
+    "title": "写作指导",
+    "sitemap_update": 1757156040000,
+    "votings": [
+        [
+            9788854,
+            true
+        ]
+    ],
+    "is_locked": true
+}

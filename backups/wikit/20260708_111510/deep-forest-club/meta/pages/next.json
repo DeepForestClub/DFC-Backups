@@ -1,0 +1,117 @@
+{
+    "name": "next",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 6,
+            "global_revision": 1521006588,
+            "author": 7504264,
+            "stamp": 1718809726,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1521006584,
+            "author": 7504264,
+            "stamp": 1718809681,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1513002074,
+            "author": 7850356,
+            "stamp": 1692052827,
+            "flags": "A",
+            "commentary": "已新增标签：文章。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1513002039,
+            "author": 7850356,
+            "stamp": 1692052780,
+            "flags": "A",
+            "commentary": "已新增标签：2023新人竞赛, 主题文章。 移除标签：竞赛。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1512993407,
+            "author": 8049058,
+            "stamp": 1692017868,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 竞赛。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1512993397,
+            "author": 8049058,
+            "stamp": 1692017801,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1512993387,
+            "author": 8049058,
+            "stamp": 1692017749,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1449389678,
+    "rating": 10,
+    "forum_thread": 16262666,
+    "tags": [
+        "2023新人竞赛",
+        "主题文章",
+        "原创",
+        "文章"
+    ],
+    "title": "重生",
+    "sitemap_update": 1718809726000,
+    "votings": [
+        [
+            8017463,
+            true
+        ],
+        [
+            7850356,
+            true
+        ],
+        [
+            7504264,
+            true
+        ],
+        [
+            8385293,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            7952851,
+            true
+        ],
+        [
+            8021906,
+            true
+        ],
+        [
+            8648337,
+            true
+        ],
+        [
+            8122538,
+            true
+        ],
+        [
+            8739698,
+            true
+        ]
+    ],
+    "is_locked": false
+}
