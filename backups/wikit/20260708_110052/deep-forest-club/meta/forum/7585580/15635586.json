@@ -1,0 +1,79 @@
+{
+    "title": "新人报道",
+    "id": 15635586,
+    "description": "语法不好，请多指教",
+    "last": 1676206334,
+    "lastUser": 8021906,
+    "started": 1676086393,
+    "startedUser": 8021906,
+    "postsNum": 4,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 5973587,
+            "title": "新人报道",
+            "poster": 8021906,
+            "stamp": 1676086393,
+            "lastEdit": 1676086622,
+            "lastEditBy": 8021906,
+            "revisions": [
+                {
+                    "title": "新人报道",
+                    "author": 8021906,
+                    "id": 7253914,
+                    "stamp": 1676086622
+                },
+                {
+                    "title": "新人报道",
+                    "author": 8021906,
+                    "id": 7253912,
+                    "stamp": 1676086393
+                }
+            ],
+            "children": [
+                {
+                    "id": 5973588,
+                    "title": "Re: 新人报道",
+                    "poster": 8021906,
+                    "stamp": 1676086495,
+                    "revisions": [],
+                    "children": []
+                },
+                {
+                    "id": 5975432,
+                    "title": "Re: 新人报道",
+                    "poster": 7850356,
+                    "stamp": 1676180102,
+                    "lastEdit": 1676180126,
+                    "lastEditBy": 7850356,
+                    "revisions": [
+                        {
+                            "title": "Re: 新人报道",
+                            "author": 7850356,
+                            "id": 7256163,
+                            "stamp": 1676180126
+                        },
+                        {
+                            "title": "Re: 新人报道",
+                            "author": 7850356,
+                            "id": 7256160,
+                            "stamp": 1676180102
+                        }
+                    ],
+                    "children": [
+                        {
+                            "id": 5976127,
+                            "title": "Re: 新人报道",
+                            "poster": 8021906,
+                            "stamp": 1676206334,
+                            "revisions": [],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

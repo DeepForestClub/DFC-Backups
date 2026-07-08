@@ -1,0 +1,39 @@
+{
+    "name": "staff",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 2,
+            "global_revision": 1532155063,
+            "author": 7504264,
+            "stamp": 1757152732,
+            "flags": "S T",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1532155056,
+            "author": 7504264,
+            "stamp": 1757152699,
+            "flags": "A",
+            "commentary": "已新增标签：重定向。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1532155054,
+            "author": 7504264,
+            "stamp": 1757152692,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1460352787,
+    "tags": [
+        "重定向"
+    ],
+    "title": "职员名册重定向",
+    "sitemap_update": 1757152732000,
+    "votings": [],
+    "is_locked": false
+}
