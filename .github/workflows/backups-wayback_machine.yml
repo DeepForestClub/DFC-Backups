@@ -1,11 +1,11 @@
-name: 备份至Wayback Machine
+name: 备份至 Wayback Machine
 
 env:
   TZ: Asia/Shanghai
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "30 4 * * *"
   workflow_dispatch:
 
 jobs:
@@ -16,15 +16,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Archive multiple pages
+      - name: Archive pages to Wayback Machine
         run: |
-          for url in \
-            "https://deep-forest-club.wikidot.com/" \
-            "https://deep-forest-club.wikidot.com/major" \
-            "https://deep-forest-club.wikidot.com/forum:start" \
-            "https://deep-forest-club.wikidot.com/system:list-all-pages"
-          do
-            echo "Archiving $url"
-            curl -s -L --max-time 60 "https://web.archive.org/save/$url"
-            sleep 10
-          done
+          set -e
+
+          archive_url() {
+            local url="$1"
+            local timeout="$2"
+
+            echo "📦 Archiving $url (timeout ${timeout}s)"
+            
+            if curl -f -s -L \
+              --max-time "$timeout" \
+              --retry 2 \
+              --retry-delay 10 \
+              "https://web.archive.org/save/$url"; then
+              echo "✅ Success: $url"
+            else
+              echo "❌ Failed: $url (exit code $?)"
+            fi
+
+            sleep 15
+          }
+
+          archive_url "https://deep-forest-club.wikidot.com/" 120
+          archive_url "https://deep-forest-club.wikidot.com/forum:start" 120
+          archive_url "https://deep-forest-club.wikidot.com/system:list-all-pages" 240
