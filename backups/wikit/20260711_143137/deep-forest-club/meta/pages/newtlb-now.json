@@ -1,0 +1,69 @@
+{
+    "name": "newtlb-now",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1521051547,
+            "author": 7504264,
+            "stamp": 1719094907,
+            "flags": "A",
+            "commentary": "已新增标签：争议性内容。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1521051496,
+            "author": 7504264,
+            "stamp": 1719094493,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 文章, 非主题文章。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1521039595,
+            "author": 7504264,
+            "stamp": 1719020250,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1520592765,
+            "author": 8516207,
+            "stamp": 1717338986,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1520592754,
+            "author": 8516207,
+            "stamp": 1717338947,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1453840139,
+    "rating": 2,
+    "forum_thread": 17234537,
+    "tags": [
+        "争议性内容",
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "新TLB——今夕",
+    "sitemap_update": 1719094907000,
+    "votings": [
+        [
+            6818166,
+            true
+        ],
+        [
+            7344601,
+            true
+        ]
+    ],
+    "is_locked": false
+}

@@ -1,0 +1,112 @@
+{
+    "name": "image-use-policy",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 11,
+            "global_revision": 1532155685,
+            "author": 7504264,
+            "stamp": 1757156104,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1523150388,
+            "author": 7504264,
+            "stamp": 1721569087,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1516789094,
+            "author": 7504264,
+            "stamp": 1702815774,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1516359317,
+            "author": 8261419,
+            "stamp": 1701263863,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 7,
+            "global_revision": 1509690530,
+            "author": 7850356,
+            "stamp": 1682077446,
+            "flags": "A",
+            "commentary": "移除标签：管理。"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1509690526,
+            "author": 7850356,
+            "stamp": 1682077433,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1508410103,
+            "author": 7850356,
+            "stamp": 1678494182,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 4,
+            "global_revision": 1508410101,
+            "author": 7850356,
+            "stamp": 1678494172,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1508410029,
+            "author": 7850356,
+            "stamp": 1678493657,
+            "flags": "A",
+            "commentary": "移除标签：必读。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1496321908,
+            "author": 7850356,
+            "stamp": 1665708667,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1496264260,
+            "author": 8261419,
+            "stamp": 1665557679,
+            "flags": "A",
+            "commentary": "已新增标签：必读, 指导, 管理。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1496264250,
+            "author": 8261419,
+            "stamp": 1665557641,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1436407112,
+    "parent": "guide-hub",
+    "tags": [
+        "指导"
+    ],
+    "title": "图像使用政策",
+    "sitemap_update": 1757156104000,
+    "votings": [],
+    "is_locked": true
+}

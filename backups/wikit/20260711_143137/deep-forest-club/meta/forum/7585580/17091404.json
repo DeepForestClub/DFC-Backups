@@ -1,0 +1,32 @@
+{
+    "title": "新人报道",
+    "id": 17091404,
+    "description": "后面忘了",
+    "last": 1744639448,
+    "lastUser": 7504264,
+    "started": 1744637765,
+    "startedUser": 9032299,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6923611,
+            "title": "新人报道",
+            "poster": 9032299,
+            "stamp": 1744637765,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6923624,
+                    "title": "Re: 新人报道",
+                    "poster": 7504264,
+                    "stamp": 1744639448,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "name": "system:members",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 5,
+            "global_revision": 1545037834,
+            "author": 7504264,
+            "stamp": 1783297431,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1545037710,
+            "author": 7504264,
+            "stamp": 1783296392,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1518578220,
+            "author": 7504264,
+            "stamp": 1708830081,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1516344066,
+            "author": 8261419,
+            "stamp": 1701210710,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516344063,
+            "author": 8261419,
+            "stamp": 1701210702,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516344029,
+            "author": 8261419,
+            "stamp": 1701210679,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451596963,
+    "votings": [],
+    "tags": [
+        "管理"
+    ],
+    "title": "成员列表",
+    "sitemap_update": 1783297431000,
+    "is_locked": true
+}
