@@ -1,0 +1,127 @@
+{
+    "name": "component:darkstyle-backend",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 13,
+            "global_revision": 1531610351,
+            "author": 7504264,
+            "stamp": 1755422522,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1531610339,
+            "author": 7504264,
+            "stamp": 1755422454,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1531610212,
+            "author": 7504264,
+            "stamp": 1755421796,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1531610204,
+            "author": 7504264,
+            "stamp": 1755421762,
+            "flags": "S",
+            "commentary": "您已成功地回复本页至修订版本编号 7"
+        },
+        {
+            "revision": 9,
+            "global_revision": 1531610151,
+            "author": 7504264,
+            "stamp": 1755421519,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1531610114,
+            "author": 7504264,
+            "stamp": 1755421388,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1531610022,
+            "author": 7504264,
+            "stamp": 1755421012,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1531609991,
+            "author": 7504264,
+            "stamp": 1755420865,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1531609912,
+            "author": 7504264,
+            "stamp": 1755420607,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1531609829,
+            "author": 7504264,
+            "stamp": 1755420341,
+            "flags": "A",
+            "commentary": "已新增标签：组件后端。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1531609826,
+            "author": 7504264,
+            "stamp": 1755420322,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1531609265,
+            "author": 7504264,
+            "stamp": 1755417952,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"component:darkstyle-backend2\" 至 \"component:darkstyle-backend\"."
+        },
+        {
+            "revision": 1,
+            "global_revision": 1531609261,
+            "author": 7504264,
+            "stamp": 1755417941,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1531608833,
+            "author": 7504264,
+            "stamp": 1755416035,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1460070516,
+    "tags": [
+        "组件后端"
+    ],
+    "title": "设置暗色模式样式组件后端",
+    "sitemap_update": 1755422522000,
+    "votings": [],
+    "is_locked": false
+}

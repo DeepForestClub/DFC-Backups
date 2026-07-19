@@ -1,0 +1,67 @@
+{
+    "name": "gongque-0",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1532329827,
+            "author": 7344601,
+            "stamp": 1758080584,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1532329538,
+            "author": 7344601,
+            "stamp": 1758078453,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1532313477,
+            "author": 7344601,
+            "stamp": 1757995080,
+            "flags": "A",
+            "commentary": "已新增标签：文章。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1532313474,
+            "author": 7344601,
+            "stamp": 1757995056,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 非主题文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1532313469,
+            "author": 7344601,
+            "stamp": 1757995031,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1460400897,
+    "rating": 2,
+    "tags": [
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "宫阙-序章",
+    "sitemap_update": 1758080584000,
+    "votings": [
+        [
+            10280217,
+            true
+        ],
+        [
+            8021906,
+            true
+        ]
+    ],
+    "is_locked": false
+}
