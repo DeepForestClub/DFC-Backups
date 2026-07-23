@@ -1,0 +1,55 @@
+{
+    "name": "licensing-guide",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1545116312,
+            "author": 7504264,
+            "stamp": 1783644129,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1545116066,
+            "author": 7504264,
+            "stamp": 1783642556,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1517731355,
+            "author": 7504264,
+            "stamp": 1706314011,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516748592,
+            "author": 8261419,
+            "stamp": 1702695174,
+            "flags": "A",
+            "commentary": "已新增标签：指导。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516748390,
+            "author": 8261419,
+            "stamp": 1702694479,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451831414,
+    "votings": [],
+    "tags": [
+        "指导"
+    ],
+    "title": "授权指导",
+    "sitemap_update": 1783644129000,
+    "is_locked": true
+}
