@@ -1,0 +1,176 @@
+{
+    "name": "component:license-box-backend1",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 19,
+            "global_revision": 1521334217,
+            "author": 7504264,
+            "stamp": 1719625030,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 18,
+            "global_revision": 1520488447,
+            "author": 7504264,
+            "stamp": 1716726729,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 17,
+            "global_revision": 1520488436,
+            "author": 7504264,
+            "stamp": 1716726669,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 16,
+            "global_revision": 1517731553,
+            "author": 7504264,
+            "stamp": 1706314897,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 15,
+            "global_revision": 1517731533,
+            "author": 7504264,
+            "stamp": 1706314746,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1517731408,
+            "author": 7504264,
+            "stamp": 1706314271,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 13,
+            "global_revision": 1517731398,
+            "author": 7504264,
+            "stamp": 1706314176,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1517731266,
+            "author": 7504264,
+            "stamp": 1706313246,
+            "flags": "M",
+            "commentary": "将父页面设置为: \"component:license-box\"."
+        },
+        {
+            "revision": 11,
+            "global_revision": 1517731263,
+            "author": 7504264,
+            "stamp": 1706313225,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1515666957,
+            "author": 7850356,
+            "stamp": 1698935028,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1509704728,
+            "author": 7850356,
+            "stamp": 1682156315,
+            "flags": "S",
+            "commentary": "您已成功地回复本页至修订版本编号 7"
+        },
+        {
+            "revision": 8,
+            "global_revision": 1509704538,
+            "author": 7850356,
+            "stamp": 1682155165,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1509701561,
+            "author": 7850356,
+            "stamp": 1682138331,
+            "flags": "A",
+            "commentary": "已新增标签：组件后端。"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1509699407,
+            "author": 7850356,
+            "stamp": 1682127720,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1509699209,
+            "author": 7850356,
+            "stamp": 1682126416,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1509699062,
+            "author": 7850356,
+            "stamp": 1682125719,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"component:license-box-backend\" 至 \"component:license-box-backend1\"."
+        },
+        {
+            "revision": 3,
+            "global_revision": 1509699060,
+            "author": 7850356,
+            "stamp": 1682125708,
+            "flags": "S T",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1509699010,
+            "author": 7850356,
+            "stamp": 1682125386,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1509698986,
+            "author": 7850356,
+            "stamp": 1682125164,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"component:license-box-start\" 至 \"component:license-box-backend\"."
+        },
+        {
+            "revision": 0,
+            "global_revision": 1509698972,
+            "author": 7850356,
+            "stamp": 1682125074,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1447440189,
+    "parent": "component:license-box",
+    "tags": [
+        "组件后端"
+    ],
+    "title": "授权信息模块组件后端-原创",
+    "sitemap_update": 1719625030000,
+    "votings": [],
+    "is_locked": true
+}

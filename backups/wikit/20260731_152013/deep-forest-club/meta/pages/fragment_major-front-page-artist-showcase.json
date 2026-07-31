@@ -1,0 +1,112 @@
+{
+    "name": "fragment:major-front-page-artist-showcase",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 11,
+            "global_revision": 1514464414,
+            "author": 7850356,
+            "stamp": 1696377060,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1514464361,
+            "author": 7850356,
+            "stamp": 1696376805,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1507583800,
+            "author": 7850356,
+            "stamp": 1676037014,
+            "flags": "M",
+            "commentary": "父页面设置为: \"major\"."
+        },
+        {
+            "revision": 8,
+            "global_revision": 1507583798,
+            "author": 7850356,
+            "stamp": 1676037004,
+            "flags": "A",
+            "commentary": "已新增标签：段落。"
+        },
+        {
+            "revision": 7,
+            "global_revision": 1507225958,
+            "author": 7850356,
+            "stamp": 1675481267,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1507225924,
+            "author": 7850356,
+            "stamp": 1675481174,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1507225918,
+            "author": 7850356,
+            "stamp": 1675481154,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1507225903,
+            "author": 7850356,
+            "stamp": 1675481093,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1507225897,
+            "author": 7850356,
+            "stamp": 1675481073,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1507225879,
+            "author": 7850356,
+            "stamp": 1675480997,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1507225819,
+            "author": 7850356,
+            "stamp": 1675480756,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1507225815,
+            "author": 7850356,
+            "stamp": 1675480735,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1445876072,
+    "parent": "major",
+    "tags": [
+        "段落"
+    ],
+    "title": "精品艺作网格代码",
+    "sitemap_update": 1696377060000,
+    "votings": [],
+    "is_locked": true
+}
