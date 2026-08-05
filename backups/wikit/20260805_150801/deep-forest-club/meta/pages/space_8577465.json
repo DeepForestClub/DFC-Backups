@@ -1,0 +1,32 @@
+{
+    "name": "space:8577465",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 1,
+            "global_revision": 1532379811,
+            "author": 8577465,
+            "stamp": 1758343705,
+            "flags": "A",
+            "commentary": "已新增标签：成员页。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1532379789,
+            "author": 8577465,
+            "stamp": 1758343603,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1460421096,
+    "forum_thread": 17251485,
+    "tags": [
+        "成员页"
+    ],
+    "title": "G2Lighter的空间页",
+    "sitemap_update": 1758343705000,
+    "votings": [],
+    "is_locked": false
+}

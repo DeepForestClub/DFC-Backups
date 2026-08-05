@@ -1,0 +1,69 @@
+{
+    "name": "newtlb-postscript-1",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1521051565,
+            "author": 7504264,
+            "stamp": 1719095007,
+            "flags": "A",
+            "commentary": "已新增标签：争议性内容。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1521051521,
+            "author": 7504264,
+            "stamp": 1719094650,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 文章, 非主题文章。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1521039520,
+            "author": 7504264,
+            "stamp": 1719019889,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1521039517,
+            "author": 7504264,
+            "stamp": 1719019872,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1520592909,
+            "author": 8516207,
+            "stamp": 1717339646,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1453840170,
+    "rating": 2,
+    "forum_thread": 16869116,
+    "tags": [
+        "争议性内容",
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "TLB——后记（1）",
+    "sitemap_update": 1719095007000,
+    "votings": [
+        [
+            7504264,
+            true
+        ],
+        [
+            8103976,
+            true
+        ]
+    ],
+    "is_locked": false
+}

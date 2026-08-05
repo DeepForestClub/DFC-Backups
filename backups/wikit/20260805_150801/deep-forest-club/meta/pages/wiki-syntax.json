@@ -1,0 +1,109 @@
+{
+    "name": "wiki-syntax",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 10,
+            "global_revision": 1532154944,
+            "author": 7504264,
+            "stamp": 1757152027,
+            "flags": "A",
+            "commentary": "移除标签：必读。"
+        },
+        {
+            "revision": 9,
+            "global_revision": 1531608512,
+            "author": 7504264,
+            "stamp": 1755414998,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1531607975,
+            "author": 7504264,
+            "stamp": 1755412132,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1524108313,
+            "author": 7504264,
+            "stamp": 1724413322,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1516421405,
+            "author": 8261419,
+            "stamp": 1701490211,
+            "flags": "A",
+            "commentary": "已新增标签：必读。"
+        },
+        {
+            "revision": 5,
+            "global_revision": 1516359187,
+            "author": 8261419,
+            "stamp": 1701263261,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 4,
+            "global_revision": 1516351394,
+            "author": 8261419,
+            "stamp": 1701236820,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1516350929,
+            "author": 8261419,
+            "stamp": 1701235006,
+            "flags": "A",
+            "commentary": "已新增标签：指导。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1516350926,
+            "author": 8261419,
+            "stamp": 1701234993,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516350914,
+            "author": 8261419,
+            "stamp": 1701234874,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516350849,
+            "author": 8261419,
+            "stamp": 1701234541,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451601646,
+    "parent": "guide-hub",
+    "tags": [
+        "指导"
+    ],
+    "title": "维基语法",
+    "sitemap_update": 1757152027000,
+    "votings": [
+        [
+            8474521,
+            true
+        ]
+    ],
+    "is_locked": true
+}

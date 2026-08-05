@@ -1,0 +1,40 @@
+{
+    "name": "component:portal-detector-settingpages-back-end",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 2,
+            "global_revision": 1513406360,
+            "author": 7850356,
+            "stamp": 1693359347,
+            "flags": "M",
+            "commentary": "父页面设置为: \"setting:_404\"."
+        },
+        {
+            "revision": 1,
+            "global_revision": 1513406357,
+            "author": 7850356,
+            "stamp": 1693359333,
+            "flags": "A",
+            "commentary": "已新增标签：组件。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1513406355,
+            "author": 7850356,
+            "stamp": 1693359323,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1449611203,
+    "parent": "setting:_404",
+    "tags": [
+        "组件"
+    ],
+    "title": "设置页创建按钮后端",
+    "sitemap_update": 1693359347000,
+    "votings": [],
+    "is_locked": true
+}

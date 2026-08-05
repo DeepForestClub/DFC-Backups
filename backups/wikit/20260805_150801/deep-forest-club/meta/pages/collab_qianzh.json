@@ -1,0 +1,55 @@
+{
+    "name": "collab:qianzh",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 2,
+            "global_revision": 1521062472,
+            "author": 7535291,
+            "stamp": 1719174029,
+            "flags": "A",
+            "commentary": "已新增标签：文章, 非主题文章。 移除标签：故事。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1521062459,
+            "author": 7535291,
+            "stamp": 1719173941,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 故事。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1521062453,
+            "author": 7535291,
+            "stamp": 1719173908,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1454110176,
+    "rating": 3,
+    "tags": [
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "回忆中的千纸鹤",
+    "sitemap_update": 1719174029000,
+    "votings": [
+        [
+            7504264,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            8021906,
+            true
+        ]
+    ],
+    "is_locked": false
+}
