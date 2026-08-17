@@ -1,0 +1,49 @@
+{
+    "title": "新人报道！",
+    "id": 16276798,
+    "description": "wwwwwwww",
+    "last": 1693309543,
+    "lastUser": 7850356,
+    "started": 1692793024,
+    "startedUser": 8423418,
+    "postsNum": 4,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6184941,
+            "title": "新人报道！",
+            "poster": 8423418,
+            "stamp": 1692793024,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6184943,
+                    "title": "Re: 新人报道！",
+                    "poster": 7850356,
+                    "stamp": 1692793372,
+                    "revisions": [],
+                    "children": []
+                },
+                {
+                    "id": 6189602,
+                    "title": "Re: 新人报道！",
+                    "poster": 8385293,
+                    "stamp": 1693304841,
+                    "revisions": [],
+                    "children": [
+                        {
+                            "id": 6189686,
+                            "title": "Re: 新人报道！",
+                            "poster": 7850356,
+                            "stamp": 1693309543,
+                            "revisions": [],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

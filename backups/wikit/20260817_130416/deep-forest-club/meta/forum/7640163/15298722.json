@@ -1,0 +1,31 @@
+{
+    "title": "【己归档】站务状态变动",
+    "id": 15298722,
+    "description": "更新最近的职员状态，包括任用与退出站务组。",
+    "last": 1675260803,
+    "lastUser": 8122538,
+    "started": 1665714198,
+    "startedUser": 7850356,
+    "postsNum": 2,
+    "sticky": true,
+    "isLocked": true,
+    "version": 1,
+    "posts": [
+        {
+            "id": 5638798,
+            "title": "Re: 站务状态变动",
+            "poster": 7850356,
+            "stamp": 1665714426,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 5940517,
+            "title": "Re: 站务状态变动",
+            "poster": 8122538,
+            "stamp": 1675260803,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,184 @@
+{
+    "name": "activity-center",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 20,
+            "global_revision": 1542106689,
+            "author": 7504264,
+            "stamp": 1771256695,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 19,
+            "global_revision": 1532965489,
+            "author": 7504264,
+            "stamp": 1760223279,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 18,
+            "global_revision": 1530717315,
+            "author": 7504264,
+            "stamp": 1751149905,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 17,
+            "global_revision": 1526831254,
+            "author": 7504264,
+            "stamp": 1734880389,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 16,
+            "global_revision": 1526831248,
+            "author": 7952851,
+            "stamp": 1734880298,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 15,
+            "global_revision": 1524186901,
+            "author": 7504264,
+            "stamp": 1724590407,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1523234069,
+            "author": 7504264,
+            "stamp": 1721994665,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 13,
+            "global_revision": 1523217397,
+            "author": 7504264,
+            "stamp": 1721902182,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1523129640,
+            "author": 7504264,
+            "stamp": 1721458587,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1523109115,
+            "author": 7504264,
+            "stamp": 1721350883,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1521356125,
+            "author": 7504264,
+            "stamp": 1719754816,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1521011073,
+            "author": 7504264,
+            "stamp": 1718835339,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1517788887,
+            "author": 7504264,
+            "stamp": 1706505600,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1516576608,
+            "author": 8261419,
+            "stamp": 1702123417,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"activity-centre\" 至 \"activity-center\"."
+        },
+        {
+            "revision": 6,
+            "global_revision": 1516547257,
+            "author": 7504264,
+            "stamp": 1701963274,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1516424032,
+            "author": 7504264,
+            "stamp": 1701498369,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1516367706,
+            "author": 8261419,
+            "stamp": 1701296526,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1516367700,
+            "author": 8261419,
+            "stamp": 1701296482,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1516355170,
+            "author": 8261419,
+            "stamp": 1701249900,
+            "flags": "A",
+            "commentary": "已新增标签：中心, 管理。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516354819,
+            "author": 8261419,
+            "stamp": 1701248753,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516354676,
+            "author": 8261419,
+            "stamp": 1701248477,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451604482,
+    "tags": [
+        "中心",
+        "管理"
+    ],
+    "title": "活动中心页",
+    "sitemap_update": 1771256695000,
+    "votings": [],
+    "is_locked": true
+}

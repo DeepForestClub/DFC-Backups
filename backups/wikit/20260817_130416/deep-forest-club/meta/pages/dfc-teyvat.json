@@ -1,0 +1,165 @@
+{
+    "name": "dfc-teyvat",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 15,
+            "global_revision": 1510074629,
+            "author": 7850356,
+            "stamp": 1683382896,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1509660448,
+            "author": 7850356,
+            "stamp": 1681907393,
+            "flags": "A",
+            "commentary": "已新增标签：主题文章。"
+        },
+        {
+            "revision": 13,
+            "global_revision": 1498009465,
+            "author": 8261419,
+            "stamp": 1670159130,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1497615607,
+            "author": 8128287,
+            "stamp": 1668860679,
+            "flags": "A",
+            "commentary": "已新增标签：文章。"
+        },
+        {
+            "revision": 11,
+            "global_revision": 1497495766,
+            "author": 8128287,
+            "stamp": 1668599754,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1497405538,
+            "author": 8128287,
+            "stamp": 1668436800,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1497398555,
+            "author": 8128287,
+            "stamp": 1668423646,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1497368127,
+            "author": 8128287,
+            "stamp": 1668327579,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1497366130,
+            "author": 8128287,
+            "stamp": 1668322257,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1497366052,
+            "author": 8128287,
+            "stamp": 1668322063,
+            "flags": "S T",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1497361692,
+            "author": 8261419,
+            "stamp": 1668308876,
+            "flags": "A",
+            "commentary": "移除标签：scp基金会原神分布。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1497361572,
+            "author": 8128287,
+            "stamp": 1668308582,
+            "flags": "A",
+            "commentary": "已新增标签：scp基金会原神分布。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1497361510,
+            "author": 8128287,
+            "stamp": 1668308380,
+            "flags": "S T",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1497361496,
+            "author": 8128287,
+            "stamp": 1668308343,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1497361484,
+            "author": 8128287,
+            "stamp": 1668308314,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 怪谈。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1497361468,
+            "author": 8128287,
+            "stamp": 1668308245,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1437127697,
+    "rating": 4,
+    "forum_thread": 15382484,
+    "tags": [
+        "主题文章",
+        "原创",
+        "怪谈",
+        "文章"
+    ],
+    "title": "DFC怪谈——提瓦特享乐指南（由SCP基金会原神分部赞助！）",
+    "sitemap_update": 1683382896000,
+    "votings": [
+        [
+            8188564,
+            true
+        ],
+        [
+            8261419,
+            true
+        ],
+        [
+            8021906,
+            true
+        ],
+        [
+            8196010,
+            true
+        ]
+    ],
+    "is_locked": false
+}

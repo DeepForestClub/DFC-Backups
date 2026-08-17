@@ -1,0 +1,50 @@
+{
+    "name": "greencreapa-klphys-1",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 3,
+            "global_revision": 1543873903,
+            "author": 7967988,
+            "stamp": 1778636192,
+            "flags": "S",
+            "commentary": "修正错别字"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1543409143,
+            "author": 10280217,
+            "stamp": 1776504741,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 文章, 非主题文章。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1543409097,
+            "author": 10280217,
+            "stamp": 1776504581,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1543409014,
+            "author": 10280217,
+            "stamp": 1776504357,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1468513476,
+    "rating": 0,
+    "tags": [
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "苦力怕火药商：碎片之一",
+    "sitemap_update": 1778636192000,
+    "votings": [],
+    "is_locked": false
+}

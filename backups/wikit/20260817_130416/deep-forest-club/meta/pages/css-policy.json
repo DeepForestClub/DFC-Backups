@@ -1,0 +1,136 @@
+{
+    "name": "css-policy",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 14,
+            "global_revision": 1523255009,
+            "author": 7504264,
+            "stamp": 1722121920,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 13,
+            "global_revision": 1516368731,
+            "author": 8261419,
+            "stamp": 1701301625,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1516359311,
+            "author": 8261419,
+            "stamp": 1701263830,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 11,
+            "global_revision": 1516359306,
+            "author": 8261419,
+            "stamp": 1701263814,
+            "flags": "A",
+            "commentary": "移除标签：技术。"
+        },
+        {
+            "revision": 10,
+            "global_revision": 1516059365,
+            "author": 7850356,
+            "stamp": 1700311929,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1513748874,
+            "author": 7850356,
+            "stamp": 1694038628,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1511513386,
+            "author": 7850356,
+            "stamp": 1687493948,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1511513278,
+            "author": 7850356,
+            "stamp": 1687493548,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1511512986,
+            "author": 7850356,
+            "stamp": 1687492505,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1508508601,
+            "author": 7850356,
+            "stamp": 1678619118,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1508499482,
+            "author": 7850356,
+            "stamp": 1678583412,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1508410091,
+            "author": 7850356,
+            "stamp": 1678494118,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1508410087,
+            "author": 7850356,
+            "stamp": 1678494054,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 1,
+            "global_revision": 1507104897,
+            "author": 7850356,
+            "stamp": 1675146503,
+            "flags": "A",
+            "commentary": "已新增标签：技术, 指导。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1507104694,
+            "author": 7850356,
+            "stamp": 1675145665,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1445812380,
+    "parent": "guide-hub",
+    "tags": [
+        "指导"
+    ],
+    "title": "CSS版式守则",
+    "sitemap_update": 1722121920000,
+    "votings": [],
+    "is_locked": true
+}

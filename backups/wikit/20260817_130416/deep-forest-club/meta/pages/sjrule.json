@@ -1,0 +1,41 @@
+{
+    "name": "sjrule",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 2,
+            "global_revision": 1544831566,
+            "author": 10322735,
+            "stamp": 1782308975,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1544828528,
+            "author": 10322735,
+            "stamp": 1782294733,
+            "flags": "A",
+            "commentary": "已新增标签：搬运, 非主题文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1544828525,
+            "author": 10322735,
+            "stamp": 1782294712,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1468900078,
+    "rating": 0,
+    "tags": [
+        "搬运",
+        "非主题文章"
+    ],
+    "title": "CS市系列怪谈-常建商务楼规则怪谈",
+    "sitemap_update": 1782308975000,
+    "votings": [],
+    "is_locked": false
+}
