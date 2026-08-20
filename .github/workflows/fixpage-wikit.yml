@@ -1,0 +1,126 @@
+name: 修复备份页面
+
+concurrency:
+  group: fixpage-wikit
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Shanghai
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fixpage-all-versions:
+    runs-on: ubuntu-latest
+
+    env:
+      WIKIT_BIN: "./wikit"
+      BACKUP_ROOT: "backups/wikit"
+      WIKI_NAME: "deep-forest-club"
+
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: 下载 Wikit CLI
+        run: |
+          set -euo pipefail
+          URL="https://github.com/kakushi-w/wikit/releases/latest/download/wikit-linux-amd64"
+          curl -fSL "$URL" -o wikit
+          chmod +x wikit
+          ./wikit version || true
+
+      - name: 遍历所有版本执行 fixpage 并逐版本提交
+        run: |
+          set -euo pipefail
+
+          cd "$BACKUP_ROOT"
+
+          # 收集所有版本目录（排除 LATEST 软链接），按时间正序排列
+          VERSIONS=()
+          while IFS= read -r -d '' dir; do
+            VERSIONS+=("$dir")
+          done < <(find . -maxdepth 1 -type d -name '[0-9]*' -print0 | sort -z)
+
+          if [ ${#VERSIONS[@]} -eq 0 ]; then
+            echo "::error::未找到任何备份版本目录"
+            exit 1
+          fi
+
+          echo "→ 共找到 ${#VERSIONS[@]} 个版本，开始逐个修复..."
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          FIXED_COUNT=0
+
+          for version_dir in "${VERSIONS[@]}"; do
+            version_name=$(basename "$version_dir")
+            echo ""
+            echo "========================================="
+            echo "→ 处理版本: $version_name"
+            echo "========================================="
+
+            # 检查该版本目录中是否存在站点数据
+            if [ ! -d "$version_dir/$WIKI_NAME" ]; then
+              echo "  → 跳过：未找到 $WIKI_NAME 子目录"
+              continue
+            fi
+
+            # 检查是否有 pages 目录需要处理
+            if [ ! -d "$version_dir/$WIKI_NAME/pages" ]; then
+              echo "  → 跳过：pages 目录不存在"
+              continue
+            fi
+
+            echo "  → 运行 wikit fixpage $WIKI_NAME --base-dir $version_dir"
+            "$WIKIT_BIN" fixpage "$WIKI_NAME" \
+              --base-dir "$version_dir" \
+              --no-update-check
+
+            FIXED_COUNT=$((FIXED_COUNT + 1))
+
+            # 逐版本提交
+            git add "$BACKUP_ROOT/$version_name"
+
+            if git diff --cached --quiet; then
+              echo "  → 该版本无变更，跳过提交"
+            else
+              git commit -m "fixpage 修复备份页面 - $version_name ($WIKI_NAME)"
+
+              # 推送，带一次重试
+              if ! git push; then
+                echo "  → push 失败，尝试 rebase 后重试..."
+                git pull --rebase --autostash
+                git push
+              fi
+
+              echo "  → 已提交并推送: $version_name"
+            fi
+          done
+
+          echo ""
+          echo "→ 修复完成！共处理 $FIXED_COUNT 个版本"
+          echo "→ 当前备份状态："
+          ls -1d "$BACKUP_ROOT"/[0-9]* 2>/dev/null || echo "  (无版本目录)"
+
+      - name: 更新 LATEST 软链接
+        run: |
+          set -euo pipefail
+          cd "$BACKUP_ROOT"
+          NEWEST=$(ls -1d [0-9]* 2>/dev/null | sort -r | head -1 || true)
+          if [ -n "$NEWEST" ]; then
+            rm -f LATEST
+            ln -s "$NEWEST" LATEST
+            git add LATEST
+            if ! git diff --cached --quiet; then
+              git commit -m "更新 LATEST 软链接 -> $NEWEST"
+              git push
+            fi
+          fi
