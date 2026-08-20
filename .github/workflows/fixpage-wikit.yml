@@ -40,10 +40,8 @@ jobs:
         run: |
           set -euo pipefail
 
-          # 切到备份根目录，但 wikit 二进制用绝对路径，不受影响
           cd "$BACKUP_ROOT"
 
-          # 收集所有版本目录（排除 LATEST 软链接），按时间正序排列
           VERSIONS=()
           while IFS= read -r -d '' dir; do
             VERSIONS+=("$dir")
@@ -80,12 +78,10 @@ jobs:
 
             echo "  → 运行 wikit fixpage $WIKI_NAME --base-dir $version_dir"
             "$WIKIT_BIN" fixpage "$WIKI_NAME" \
-              --base-dir "${{ github.workspace }}/$BACKUP_ROOT/$version_name" \
-              --no-update-check
+              --base-dir "${{ github.workspace }}/$BACKUP_ROOT/$version_name"
 
             FIXED_COUNT=$((FIXED_COUNT + 1))
 
-            # 逐版本提交
             git add "$BACKUP_ROOT/$version_name"
 
             if git diff --cached --quiet; then
