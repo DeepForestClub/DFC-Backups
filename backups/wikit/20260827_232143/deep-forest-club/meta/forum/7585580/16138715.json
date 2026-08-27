@@ -1,0 +1,36 @@
+{
+    "title": "新人报道",
+    "id": 16138715,
+    "description": "",
+    "started": 1688729206,
+    "startedUser": 8675044,
+    "postsNum": 1,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6142920,
+            "title": "新人报道",
+            "poster": 8675044,
+            "stamp": 1688729206,
+            "lastEdit": 1688781201,
+            "lastEditBy": 7850356,
+            "revisions": [
+                {
+                    "title": "新人报道",
+                    "author": 7850356,
+                    "id": 7461848,
+                    "stamp": 1688781201
+                },
+                {
+                    "title": "新人报道",
+                    "author": 8675044,
+                    "id": 7461236,
+                    "stamp": 1688729206
+                }
+            ],
+            "children": []
+        }
+    ]
+}

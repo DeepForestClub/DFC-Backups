@@ -1,0 +1,31 @@
+{
+    "name": "forum:_template",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 1,
+            "global_revision": 1510220149,
+            "author": 7850356,
+            "stamp": 1683989732,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1510220092,
+            "author": 7850356,
+            "stamp": 1683989591,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1447730333,
+    "tags": [
+        "管理"
+    ],
+    "title": "_template In Forum",
+    "sitemap_update": 1683989732000,
+    "votings": [],
+    "is_locked": true
+}

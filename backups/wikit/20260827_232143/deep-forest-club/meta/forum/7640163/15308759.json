@@ -1,0 +1,64 @@
+{
+    "title": "第二次内容大整改计划-公告区",
+    "id": 15308759,
+    "description": "整改相关信息均发布在此",
+    "last": 1666398020,
+    "lastUser": 7952851,
+    "started": 1666015240,
+    "startedUser": 7850356,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 5650839,
+            "title": "倒计时",
+            "poster": 7850356,
+            "stamp": 1666048523,
+            "lastEdit": 1676082929,
+            "lastEditBy": 7850356,
+            "revisions": [
+                {
+                    "title": "倒计时",
+                    "author": 7850356,
+                    "id": 7253856,
+                    "stamp": 1676082929
+                },
+                {
+                    "title": "倒计时",
+                    "author": 7850356,
+                    "id": 6877532,
+                    "stamp": 1666055982
+                },
+                {
+                    "title": "倒计时",
+                    "author": 7850356,
+                    "id": 6877517,
+                    "stamp": 1666055791
+                },
+                {
+                    "title": "倒计时",
+                    "author": 7850356,
+                    "id": 6876951,
+                    "stamp": 1666048544
+                },
+                {
+                    "title": "倒计时",
+                    "author": 7850356,
+                    "id": 6876949,
+                    "stamp": 1666048523
+                }
+            ],
+            "children": []
+        },
+        {
+            "id": 5667845,
+            "title": "Re: 第二次内容大整改计划-公告区",
+            "poster": 7952851,
+            "stamp": 1666398020,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

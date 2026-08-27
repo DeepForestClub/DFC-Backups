@@ -1,0 +1,71 @@
+{
+    "name": "dr-kime",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1518144553,
+            "author": 8419098,
+            "stamp": 1707540598,
+            "flags": "A",
+            "commentary": "已新增标签：文章, 非主题文章。 移除标签：短文, 雨。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1518090968,
+            "author": 8419098,
+            "stamp": 1707283953,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1518090957,
+            "author": 8419098,
+            "stamp": 1707283905,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 短文, 雨。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1518090950,
+            "author": 8419098,
+            "stamp": 1707283888,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1518090948,
+            "author": 8419098,
+            "stamp": 1707283869,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1452567078,
+    "rating": 3,
+    "tags": [
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "恋雨无声",
+    "sitemap_update": 1707540598000,
+    "votings": [
+        [
+            9788854,
+            true
+        ],
+        [
+            7967988,
+            true
+        ],
+        [
+            7504264,
+            true
+        ]
+    ],
+    "is_locked": false
+}
