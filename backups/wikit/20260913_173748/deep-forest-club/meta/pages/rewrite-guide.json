@@ -1,0 +1,97 @@
+{
+    "name": "rewrite-guide",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 9,
+            "global_revision": 1523563151,
+            "author": 7504264,
+            "stamp": 1723168230,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1521395877,
+            "author": 7504264,
+            "stamp": 1720008854,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1516359220,
+            "author": 8261419,
+            "stamp": 1701263476,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 6,
+            "global_revision": 1512420030,
+            "author": 8021906,
+            "stamp": 1690002372,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1508410221,
+            "author": 7850356,
+            "stamp": 1678494888,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 4,
+            "global_revision": 1507133762,
+            "author": 7850356,
+            "stamp": 1675255539,
+            "flags": "A",
+            "commentary": "移除标签：必读, 管理。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1496655468,
+            "author": 7850356,
+            "stamp": 1666483788,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1496324157,
+            "author": 8261419,
+            "stamp": 1665718864,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1496260927,
+            "author": 8261419,
+            "stamp": 1665550027,
+            "flags": "A",
+            "commentary": "已新增标签：必读, 指导, 管理。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1496260923,
+            "author": 8261419,
+            "stamp": 1665550015,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1436404609,
+    "parent": "guide-hub",
+    "forum_thread": 15589135,
+    "tags": [
+        "指导"
+    ],
+    "title": "重写指导",
+    "sitemap_update": 1723168230000,
+    "votings": [],
+    "is_locked": true
+}

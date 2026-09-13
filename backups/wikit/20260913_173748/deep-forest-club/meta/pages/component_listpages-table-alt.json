@@ -1,0 +1,39 @@
+{
+    "name": "component:listpages-table-alt",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 2,
+            "global_revision": 1507583528,
+            "author": 7850356,
+            "stamp": 1676036241,
+            "flags": "A",
+            "commentary": "已新增标签：组件。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1507154572,
+            "author": 7850356,
+            "stamp": 1675330050,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1496126249,
+            "author": 7850356,
+            "stamp": 1665121396,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1436321171,
+    "tags": [
+        "组件"
+    ],
+    "title": "列表页表格备选",
+    "sitemap_update": 1676036241000,
+    "votings": [],
+    "is_locked": true
+}

@@ -1,0 +1,85 @@
+{
+    "name": "dr-yun",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 5,
+            "global_revision": 1517715105,
+            "author": 8419098,
+            "stamp": 1706240506,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1517714297,
+            "author": 8419098,
+            "stamp": 1706236244,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1517714288,
+            "author": 8419098,
+            "stamp": 1706236204,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1517714271,
+            "author": 8419098,
+            "stamp": 1706236123,
+            "flags": "A",
+            "commentary": "已新增标签：2023联合征文, 主题文章, 原创, 文章。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1517714250,
+            "author": 8419098,
+            "stamp": 1706235998,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1517714243,
+            "author": 8419098,
+            "stamp": 1706235966,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1452349039,
+    "rating": 4,
+    "forum_thread": 16698014,
+    "tags": [
+        "2023联合征文",
+        "主题文章",
+        "原创",
+        "文章"
+    ],
+    "title": "旅店、莉莉、我和星星",
+    "sitemap_update": 1706240506000,
+    "votings": [
+        [
+            8229312,
+            true
+        ],
+        [
+            7931329,
+            true
+        ],
+        [
+            7967988,
+            true
+        ],
+        [
+            7504264,
+            true
+        ]
+    ],
+    "is_locked": false
+}

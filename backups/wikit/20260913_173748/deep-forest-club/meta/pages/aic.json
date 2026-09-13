@@ -1,0 +1,96 @@
+{
+    "name": "aic",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 7,
+            "global_revision": 1523632814,
+            "author": 7504264,
+            "stamp": 1723461317,
+            "flags": "A",
+            "commentary": "已新增标签：文章。"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1523198727,
+            "author": 8578975,
+            "stamp": 1721831084,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1523198224,
+            "author": 8578975,
+            "stamp": 1721828806,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1523198220,
+            "author": 8578975,
+            "stamp": 1721828785,
+            "flags": "S",
+            "commentary": "您已成功地回复本页至修订版本编号 2"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1523198210,
+            "author": 8578975,
+            "stamp": 1721828726,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1523198201,
+            "author": 8578975,
+            "stamp": 1721828683,
+            "flags": "A",
+            "commentary": "已新增标签：2024夏季征文活动, 原创。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1523198191,
+            "author": 8578975,
+            "stamp": 1721828655,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1523198183,
+            "author": 8578975,
+            "stamp": 1721828641,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1455946313,
+    "rating": 3,
+    "forum_thread": 16892086,
+    "tags": [
+        "2024夏季征文活动",
+        "原创",
+        "文章"
+    ],
+    "title": "AIC-矩阵",
+    "sitemap_update": 1723461317000,
+    "votings": [
+        [
+            7504264,
+            true
+        ],
+        [
+            8419098,
+            true
+        ],
+        [
+            8984427,
+            true
+        ]
+    ],
+    "is_locked": false
+}

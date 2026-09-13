@@ -1,0 +1,126 @@
+{
+    "name": "3nd0f1uv-ii",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 10,
+            "global_revision": 1545116136,
+            "author": 7504264,
+            "stamp": 1783643142,
+            "flags": "A",
+            "commentary": "已新增标签：书店娘提案。 移除标签：书店娘。"
+        },
+        {
+            "revision": 9,
+            "global_revision": 1530026594,
+            "author": 7504264,
+            "stamp": 1746831814,
+            "flags": "A",
+            "commentary": "已新增标签：书店娘, 人物设定, 设定框架。 移除标签：书店娘提案, 设定。"
+        },
+        {
+            "revision": 8,
+            "global_revision": 1528059054,
+            "author": 8021906,
+            "stamp": 1740317558,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1528058926,
+            "author": 8021906,
+            "stamp": 1740316933,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1528058907,
+            "author": 8021906,
+            "stamp": 1740316774,
+            "flags": "A",
+            "commentary": "已新增标签：书店娘提案。 移除标签：书店娘。"
+        },
+        {
+            "revision": 5,
+            "global_revision": 1527868140,
+            "author": 6649761,
+            "stamp": 1739774888,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1527820611,
+            "author": 6649761,
+            "stamp": 1739638998,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1527808949,
+            "author": 6649761,
+            "stamp": 1739602105,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1527802123,
+            "author": 6649761,
+            "stamp": 1739564603,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1527802120,
+            "author": 6649761,
+            "stamp": 1739564577,
+            "flags": "A",
+            "commentary": "已新增标签：2024站娘设定征集竞赛, 书店娘, 原创, 设定。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1527802117,
+            "author": 6649761,
+            "stamp": 1739564548,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1458444487,
+    "votings": [
+        [
+            7594888,
+            true
+        ],
+        [
+            7504264,
+            true
+        ],
+        [
+            8456860,
+            true
+        ],
+        [
+            7952851,
+            true
+        ]
+    ],
+    "rating": 4,
+    "forum_thread": 17037031,
+    "tags": [
+        "2024站娘设定征集竞赛",
+        "书店娘提案",
+        "人物设定",
+        "原创",
+        "设定框架"
+    ],
+    "title": "爱火燃尽之地 第二幕",
+    "sitemap_update": 1783643142000,
+    "is_locked": false
+}

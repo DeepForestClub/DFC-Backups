@@ -1,0 +1,49 @@
+{
+    "name": "csrule",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 3,
+            "global_revision": 1544831610,
+            "author": 10322735,
+            "stamp": 1782309177,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1544828569,
+            "author": 10322735,
+            "stamp": 1782295065,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1544828554,
+            "author": 10322735,
+            "stamp": 1782294974,
+            "flags": "A",
+            "commentary": "已新增标签：搬运, 非主题文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1544828553,
+            "author": 10322735,
+            "stamp": 1782294943,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1468900087,
+    "rating": 0,
+    "tags": [
+        "搬运",
+        "非主题文章"
+    ],
+    "title": "CS市系列怪谈- CS市应急时期居民生存守则",
+    "sitemap_update": 1782309177000,
+    "votings": [],
+    "is_locked": false
+}

@@ -1,0 +1,32 @@
+{
+    "title": "最近修改的页面",
+    "id": 16943623,
+    "description": "",
+    "last": 1726891319,
+    "lastUser": 7504264,
+    "started": 1726890847,
+    "startedUser": null,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6660218,
+            "title": "",
+            "poster": 7967988,
+            "stamp": 1726890881,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6660219,
+                    "title": "",
+                    "poster": 7504264,
+                    "stamp": 1726891319,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

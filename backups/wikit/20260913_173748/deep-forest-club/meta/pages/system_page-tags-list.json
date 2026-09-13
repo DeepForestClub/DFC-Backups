@@ -1,0 +1,31 @@
+{
+    "name": "system:page-tags-list",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 1,
+            "global_revision": 1523464834,
+            "author": 7504264,
+            "stamp": 1722824521,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1517768173,
+            "author": 7504264,
+            "stamp": 1706405929,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1452378529,
+    "tags": [
+        "管理"
+    ],
+    "title": "标签云",
+    "sitemap_update": 1722824521000,
+    "votings": [],
+    "is_locked": false
+}

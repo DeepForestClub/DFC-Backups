@@ -1,0 +1,53 @@
+{
+    "title": "【公告】长期运营计划",
+    "id": 16246244,
+    "description": "解决目前低活跃困境，开拓社区网站。",
+    "last": 1705224359,
+    "lastUser": 7504264,
+    "started": 1691712781,
+    "startedUser": 7850356,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6173811,
+            "title": "【公告】长期运营计划",
+            "poster": 7850356,
+            "stamp": 1691712781,
+            "lastEdit": 1691713246,
+            "lastEditBy": 7850356,
+            "revisions": [
+                {
+                    "title": "【公告】长期运营计划",
+                    "author": 7850356,
+                    "id": 7501183,
+                    "stamp": 1691713246
+                },
+                {
+                    "title": "【公告】长期运营计划",
+                    "author": 7850356,
+                    "id": 7501178,
+                    "stamp": 1691713114
+                },
+                {
+                    "title": "【公告】长期运营计划",
+                    "author": 7850356,
+                    "id": 7501169,
+                    "stamp": 1691712781
+                }
+            ],
+            "children": [
+                {
+                    "id": 6381258,
+                    "title": "关于运营资金周转的新增策略",
+                    "poster": 7504264,
+                    "stamp": 1705224359,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

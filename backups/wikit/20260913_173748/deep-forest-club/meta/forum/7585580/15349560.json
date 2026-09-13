@@ -1,0 +1,48 @@
+{
+    "title": "新人报道，请多关照",
+    "id": 15349560,
+    "description": "",
+    "last": 1667302458,
+    "lastUser": 8261419,
+    "started": 1667269183,
+    "startedUser": 7911814,
+    "postsNum": 4,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 5694632,
+            "title": "新人报道，请多关照",
+            "poster": 7911814,
+            "stamp": 1667269183,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 5694637,
+                    "title": "",
+                    "poster": 7952851,
+                    "stamp": 1667269335,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 5694636,
+            "title": "Re: 新人报道，请多关照",
+            "poster": 7850356,
+            "stamp": 1667269309,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 5695012,
+            "title": "Re: 新人报道，请多关照",
+            "poster": 8261419,
+            "stamp": 1667302458,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

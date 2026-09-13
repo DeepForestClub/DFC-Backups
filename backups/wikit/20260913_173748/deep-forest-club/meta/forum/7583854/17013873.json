@@ -1,0 +1,103 @@
+{
+    "title": "第一届站娘设定征集竞赛",
+    "id": 17013873,
+    "description": "",
+    "last": 1740845119,
+    "lastUser": 8021906,
+    "started": 1735573591,
+    "startedUser": null,
+    "postsNum": 7,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6802060,
+            "title": "创作解释及补充说明",
+            "poster": 7504264,
+            "stamp": 1738283080,
+            "lastEdit": 1738283186,
+            "lastEditBy": 7504264,
+            "revisions": [
+                {
+                    "title": "创作解释及补充说明",
+                    "author": 7504264,
+                    "id": 8245936,
+                    "stamp": 1738283186
+                },
+                {
+                    "title": "创作解释及补充说明",
+                    "author": 7504264,
+                    "id": 8245932,
+                    "stamp": 1738283080
+                }
+            ],
+            "children": []
+        },
+        {
+            "id": 6802164,
+            "title": "你站冷死我有点尬",
+            "poster": 8373329,
+            "stamp": 1738293345,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6803760,
+                    "title": "Re: 你站冷死我有点尬",
+                    "poster": 7504264,
+                    "stamp": 1738475035,
+                    "revisions": [],
+                    "children": []
+                },
+                {
+                    "id": 6810674,
+                    "title": "Re: 你站冷死我有点尬",
+                    "poster": 8171686,
+                    "stamp": 1739260480,
+                    "lastEdit": 1739260510,
+                    "lastEditBy": 8171686,
+                    "revisions": [
+                        {
+                            "title": "Re: 你站冷死我有点尬",
+                            "author": 8171686,
+                            "id": 8257163,
+                            "stamp": 1739260510
+                        },
+                        {
+                            "title": "Re: 你站冷死我有点尬",
+                            "author": 8171686,
+                            "id": 8257162,
+                            "stamp": 1739260480
+                        }
+                    ],
+                    "children": [
+                        {
+                            "id": 6811366,
+                            "title": "Re: 你站冷死我有点尬",
+                            "poster": 7504264,
+                            "stamp": 1739325383,
+                            "revisions": [],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6837438,
+            "title": "露个脸",
+            "poster": 8456860,
+            "stamp": 1740712562,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 6840295,
+            "title": "结束了发表下感言",
+            "poster": 8021906,
+            "stamp": 1740845119,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

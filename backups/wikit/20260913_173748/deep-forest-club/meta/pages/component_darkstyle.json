@@ -1,0 +1,71 @@
+{
+    "name": "component:darkstyle",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 6,
+            "global_revision": 1531610328,
+            "author": 7504264,
+            "stamp": 1755422410,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1531610322,
+            "author": 7504264,
+            "stamp": 1755422368,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1531610202,
+            "author": 7504264,
+            "stamp": 1755421746,
+            "flags": "S",
+            "commentary": "您已成功地回复本页至修订版本编号 2"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1531610159,
+            "author": 7504264,
+            "stamp": 1755421557,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1531609960,
+            "author": 7504264,
+            "stamp": 1755420789,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1531609776,
+            "author": 7504264,
+            "stamp": 1755420290,
+            "flags": "A",
+            "commentary": "已新增标签：组件。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1531609769,
+            "author": 7504264,
+            "stamp": 1755420263,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1460070678,
+    "tags": [
+        "组件"
+    ],
+    "title": "设置暗色模式样式组件",
+    "sitemap_update": 1755422410000,
+    "votings": [],
+    "is_locked": false
+}

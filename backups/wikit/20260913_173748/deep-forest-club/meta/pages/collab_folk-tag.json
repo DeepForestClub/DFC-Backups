@@ -1,0 +1,228 @@
+{
+    "name": "collab:folk-tag",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 25,
+            "global_revision": 1532222019,
+            "author": 7504264,
+            "stamp": 1757516498,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 24,
+            "global_revision": 1532155015,
+            "author": 7504264,
+            "stamp": 1757152450,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 23,
+            "global_revision": 1532154978,
+            "author": 7504264,
+            "stamp": 1757152184,
+            "flags": "A",
+            "commentary": "已新增标签：指导。"
+        },
+        {
+            "revision": 22,
+            "global_revision": 1530026670,
+            "author": 7504264,
+            "stamp": 1746832589,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 21,
+            "global_revision": 1524170662,
+            "author": 7504264,
+            "stamp": 1724548320,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 20,
+            "global_revision": 1524121931,
+            "author": 7504264,
+            "stamp": 1724461407,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 19,
+            "global_revision": 1524109361,
+            "author": 7504264,
+            "stamp": 1724418870,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 18,
+            "global_revision": 1524109344,
+            "author": 7504264,
+            "stamp": 1724418800,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 17,
+            "global_revision": 1524109257,
+            "author": 7504264,
+            "stamp": 1724418311,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 16,
+            "global_revision": 1523700046,
+            "author": 7504264,
+            "stamp": 1723613034,
+            "flags": "S",
+            "commentary": "没必要额外提醒"
+        },
+        {
+            "revision": 15,
+            "global_revision": 1518047122,
+            "author": 7504264,
+            "stamp": 1707197752,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1516368793,
+            "author": 8261419,
+            "stamp": 1701301905,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 13,
+            "global_revision": 1516368787,
+            "author": 8261419,
+            "stamp": 1701301870,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1516359331,
+            "author": 8261419,
+            "stamp": 1701263923,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 11,
+            "global_revision": 1515667234,
+            "author": 7850356,
+            "stamp": 1698935821,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1515667227,
+            "author": 7850356,
+            "stamp": 1698935802,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1515510156,
+            "author": 7931329,
+            "stamp": 1698417193,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1509703151,
+            "author": 7850356,
+            "stamp": 1682148452,
+            "flags": "A",
+            "commentary": "已新增标签：_隐藏。"
+        },
+        {
+            "revision": 7,
+            "global_revision": 1509676425,
+            "author": 7850356,
+            "stamp": 1681993255,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1508502656,
+            "author": 7850356,
+            "stamp": 1678595572,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1508499506,
+            "author": 7850356,
+            "stamp": 1678583510,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1507580284,
+            "author": 7850356,
+            "stamp": 1676030246,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1507579993,
+            "author": 7850356,
+            "stamp": 1676029137,
+            "flags": "A",
+            "commentary": "已新增标签：中心, 合作。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1507579982,
+            "author": 7850356,
+            "stamp": 1676029111,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1497361095,
+            "author": 7850356,
+            "stamp": 1668307262,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1496260350,
+            "author": 8261419,
+            "stamp": 1665548595,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1436404249,
+    "parent": "guide-hub",
+    "tags": [
+        "_隐藏",
+        "中心",
+        "合作",
+        "指导",
+        "管理"
+    ],
+    "title": "合作标签",
+    "sitemap_update": 1757516498000,
+    "votings": [],
+    "is_locked": false
+}

@@ -1,0 +1,258 @@
+{
+    "name": "2023-nemcomer-contest",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 27,
+            "global_revision": 1516368831,
+            "author": 8261419,
+            "stamp": 1701302022,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 26,
+            "global_revision": 1515327227,
+            "author": 7850356,
+            "stamp": 1698240591,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 25,
+            "global_revision": 1513862367,
+            "author": 7850356,
+            "stamp": 1694326028,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 24,
+            "global_revision": 1513357231,
+            "author": 7850356,
+            "stamp": 1693176208,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 23,
+            "global_revision": 1513078246,
+            "author": 7850356,
+            "stamp": 1692330780,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 22,
+            "global_revision": 1513056427,
+            "author": 7850356,
+            "stamp": 1692243795,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 21,
+            "global_revision": 1512832295,
+            "author": 7850356,
+            "stamp": 1691490343,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 20,
+            "global_revision": 1512832186,
+            "author": 8021906,
+            "stamp": 1691490021,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 19,
+            "global_revision": 1512832174,
+            "author": 8021906,
+            "stamp": 1691489948,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 18,
+            "global_revision": 1512586729,
+            "author": 7850356,
+            "stamp": 1690592312,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 17,
+            "global_revision": 1512485260,
+            "author": 7850356,
+            "stamp": 1690273401,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 16,
+            "global_revision": 1512443973,
+            "author": 7850356,
+            "stamp": 1690084806,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 15,
+            "global_revision": 1512259341,
+            "author": 7850356,
+            "stamp": 1689374371,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1512259284,
+            "author": 7850356,
+            "stamp": 1689374101,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 13,
+            "global_revision": 1512259271,
+            "author": 7850356,
+            "stamp": 1689374045,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1512063687,
+            "author": 7850356,
+            "stamp": 1688858980,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1512063513,
+            "author": 7850356,
+            "stamp": 1688858733,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1512063093,
+            "author": 7850356,
+            "stamp": 1688858051,
+            "flags": "S",
+            "commentary": "您已成功地回复本页至修订版本编号 8"
+        },
+        {
+            "revision": 9,
+            "global_revision": 1512062193,
+            "author": 7850356,
+            "stamp": 1688856774,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1512061783,
+            "author": 7850356,
+            "stamp": 1688856102,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1512045776,
+            "author": 7850356,
+            "stamp": 1688810994,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1512041352,
+            "author": 7850356,
+            "stamp": 1688797922,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1512038126,
+            "author": 7850356,
+            "stamp": 1688785769,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1512033769,
+            "author": 7850356,
+            "stamp": 1688768531,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1512021265,
+            "author": 7850356,
+            "stamp": 1688727050,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1512021172,
+            "author": 7850356,
+            "stamp": 1688726759,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1512021157,
+            "author": 7850356,
+            "stamp": 1688726679,
+            "flags": "A",
+            "commentary": "已新增标签：2023新人竞赛, 竞赛。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1512021142,
+            "author": 7850356,
+            "stamp": 1688726622,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1448905535,
+    "forum_thread": 16140797,
+    "tags": [
+        "2023新人竞赛",
+        "竞赛"
+    ],
+    "title": "2023「涅槃重生」新人竞赛",
+    "sitemap_update": 1701302022000,
+    "votings": [
+        [
+            8261419,
+            true
+        ],
+        [
+            7850356,
+            true
+        ],
+        [
+            8171686,
+            true
+        ],
+        [
+            8257590,
+            true
+        ]
+    ],
+    "is_locked": false
+}

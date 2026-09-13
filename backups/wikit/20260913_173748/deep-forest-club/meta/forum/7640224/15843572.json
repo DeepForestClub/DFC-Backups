@@ -1,0 +1,74 @@
+{
+    "title": "一个问题",
+    "id": 15843572,
+    "description": "虽然有点蠢",
+    "last": 1683469522,
+    "lastUser": 7850356,
+    "started": 1683465086,
+    "startedUser": 8373329,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6076675,
+            "title": "一个问题",
+            "poster": 8373329,
+            "stamp": 1683465086,
+            "lastEdit": 1683807079,
+            "lastEditBy": 8373329,
+            "revisions": [
+                {
+                    "title": "一个问题",
+                    "author": 8373329,
+                    "id": 7384665,
+                    "stamp": 1683807079
+                },
+                {
+                    "title": "一个问题",
+                    "author": 8373329,
+                    "id": 7380669,
+                    "stamp": 1683465116
+                },
+                {
+                    "title": "一个问题",
+                    "author": 8373329,
+                    "id": 7380667,
+                    "stamp": 1683465086
+                }
+            ],
+            "children": [
+                {
+                    "id": 6076734,
+                    "title": "Re: 一个问题",
+                    "poster": 7850356,
+                    "stamp": 1683469522,
+                    "lastEdit": 1683469970,
+                    "lastEditBy": 7850356,
+                    "revisions": [
+                        {
+                            "title": "Re: 一个问题",
+                            "author": 7850356,
+                            "id": 7380759,
+                            "stamp": 1683469970
+                        },
+                        {
+                            "title": "Re: 一个问题",
+                            "author": 7850356,
+                            "id": 7380757,
+                            "stamp": 1683469820
+                        },
+                        {
+                            "title": "Re: 一个问题",
+                            "author": 7850356,
+                            "id": 7380747,
+                            "stamp": 1683469522
+                        }
+                    ],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

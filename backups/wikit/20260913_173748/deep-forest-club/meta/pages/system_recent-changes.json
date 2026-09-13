@@ -1,0 +1,39 @@
+{
+    "name": "system:recent-changes",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 2,
+            "global_revision": 1516343732,
+            "author": 8261419,
+            "stamp": 1701209826,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516343729,
+            "author": 8261419,
+            "stamp": 1701209814,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516343724,
+            "author": 8261419,
+            "stamp": 1701209785,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451596744,
+    "tags": [
+        "管理"
+    ],
+    "title": "最近编辑的页面",
+    "sitemap_update": 1701209826000,
+    "votings": [],
+    "is_locked": true
+}

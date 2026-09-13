@@ -1,0 +1,113 @@
+{
+    "name": "archived:nav:side-dynamic",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 11,
+            "global_revision": 1523647145,
+            "author": 7504264,
+            "stamp": 1723537196,
+            "flags": "A",
+            "commentary": "已新增标签：被归档。 移除标签：管理。"
+        },
+        {
+            "revision": 10,
+            "global_revision": 1516357342,
+            "author": 8261419,
+            "stamp": 1701256730,
+            "flags": "A",
+            "commentary": "移除标签：动态。"
+        },
+        {
+            "revision": 9,
+            "global_revision": 1516357329,
+            "author": 8261419,
+            "stamp": 1701256672,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"nav:side-dynamic\" 至 \"archived:nav:side-dynamic\"."
+        },
+        {
+            "revision": 8,
+            "global_revision": 1510536286,
+            "author": 7850356,
+            "stamp": 1685161046,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1510072556,
+            "author": 7850356,
+            "stamp": 1683376072,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1510072511,
+            "author": 7850356,
+            "stamp": 1683375882,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1510072429,
+            "author": 7850356,
+            "stamp": 1683375344,
+            "flags": "M",
+            "commentary": "父页面设置为: \"nav:side\"."
+        },
+        {
+            "revision": 4,
+            "global_revision": 1509327611,
+            "author": 7850356,
+            "stamp": 1680946924,
+            "flags": "A",
+            "commentary": "已新增标签：动态。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1508665472,
+            "author": 7850356,
+            "stamp": 1679231136,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1508299849,
+            "author": 7850356,
+            "stamp": 1677991028,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1508299241,
+            "author": 7850356,
+            "stamp": 1677987858,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1508299198,
+            "author": 7850356,
+            "stamp": 1677987832,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1446566447,
+    "parent": "nav:side",
+    "forum_thread": 16481309,
+    "tags": [
+        "被归档"
+    ],
+    "title": "NavSide In Dynamic",
+    "sitemap_update": 1723537196000,
+    "votings": [],
+    "is_locked": true
+}

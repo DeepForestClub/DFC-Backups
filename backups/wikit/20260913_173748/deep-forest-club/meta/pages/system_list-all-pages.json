@@ -1,0 +1,55 @@
+{
+    "name": "system:list-all-pages",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1524764859,
+            "author": 7504264,
+            "stamp": 1726907859,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1524764826,
+            "author": 7504264,
+            "stamp": 1726907834,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1524764818,
+            "author": 7504264,
+            "stamp": 1726907789,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516357807,
+            "author": 8261419,
+            "stamp": 1701258147,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516357805,
+            "author": 8261419,
+            "stamp": 1701258137,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451606279,
+    "tags": [
+        "管理"
+    ],
+    "title": "列出所有页面",
+    "sitemap_update": 1726907859000,
+    "votings": [],
+    "is_locked": true
+}

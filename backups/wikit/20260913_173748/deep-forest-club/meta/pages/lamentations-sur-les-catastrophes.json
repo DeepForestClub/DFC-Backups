@@ -1,0 +1,88 @@
+{
+    "name": "lamentations-sur-les-catastrophes",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 5,
+            "global_revision": 1524448016,
+            "author": 7931329,
+            "stamp": 1725699196,
+            "flags": "A",
+            "commentary": "移除标签：黎明与黑暗的史诗。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1515510175,
+            "author": 7931329,
+            "stamp": 1698417249,
+            "flags": "A",
+            "commentary": "已新增标签：黎明与黑暗的史诗。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1513203263,
+            "author": 7931329,
+            "stamp": 1692777794,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1513203078,
+            "author": 7931329,
+            "stamp": 1692776819,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1513199098,
+            "author": 7931329,
+            "stamp": 1692761726,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 文章, 非主题文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1513199072,
+            "author": 7931329,
+            "stamp": 1692761601,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1449486811,
+    "rating": 5,
+    "forum_thread": 16932459,
+    "tags": [
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "Lamentations sur les catastrophais",
+    "sitemap_update": 1725699196000,
+    "votings": [
+        [
+            7850356,
+            true
+        ],
+        [
+            8385293,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            8719834,
+            true
+        ],
+        [
+            8021906,
+            true
+        ]
+    ],
+    "is_locked": false
+}

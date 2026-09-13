@@ -1,0 +1,200 @@
+{
+    "name": "privacy-policy",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 22,
+            "global_revision": 1531818499,
+            "author": 7504264,
+            "stamp": 1756381290,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 21,
+            "global_revision": 1530923399,
+            "author": 7504264,
+            "stamp": 1752153027,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 20,
+            "global_revision": 1529387383,
+            "author": 7504264,
+            "stamp": 1744928301,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 19,
+            "global_revision": 1519713342,
+            "author": 7504264,
+            "stamp": 1713536955,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 18,
+            "global_revision": 1519591079,
+            "author": 7504264,
+            "stamp": 1713023540,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 17,
+            "global_revision": 1519591071,
+            "author": 7504264,
+            "stamp": 1713023521,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 16,
+            "global_revision": 1517598045,
+            "author": 7504264,
+            "stamp": 1705800501,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 15,
+            "global_revision": 1517597953,
+            "author": 7504264,
+            "stamp": 1705799929,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1517597872,
+            "author": 7504264,
+            "stamp": 1705799378,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 13,
+            "global_revision": 1517597836,
+            "author": 7504264,
+            "stamp": 1705799333,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1516359288,
+            "author": 8261419,
+            "stamp": 1701263733,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 11,
+            "global_revision": 1516246377,
+            "author": 7850356,
+            "stamp": 1700917266,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1516059457,
+            "author": 7850356,
+            "stamp": 1700312303,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1513261845,
+            "author": 7850356,
+            "stamp": 1692851588,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1512489871,
+            "author": 7850356,
+            "stamp": 1690291145,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1512489861,
+            "author": 7850356,
+            "stamp": 1690291100,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1510902370,
+            "author": 7850356,
+            "stamp": 1685772388,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1509957956,
+            "author": 7850356,
+            "stamp": 1682949991,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1509911763,
+            "author": 7850356,
+            "stamp": 1682756453,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1509911724,
+            "author": 7850356,
+            "stamp": 1682756303,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 2,
+            "global_revision": 1509911719,
+            "author": 7850356,
+            "stamp": 1682756286,
+            "flags": "A",
+            "commentary": "已新增标签：指导。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1509911717,
+            "author": 7850356,
+            "stamp": 1682756276,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1509911677,
+            "author": 7850356,
+            "stamp": 1682756052,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1447578001,
+    "parent": "guide-hub",
+    "tags": [
+        "指导"
+    ],
+    "title": "隐私权政策",
+    "sitemap_update": 1756381290000,
+    "votings": [],
+    "is_locked": true
+}

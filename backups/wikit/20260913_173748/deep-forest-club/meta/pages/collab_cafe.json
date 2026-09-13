@@ -1,0 +1,138 @@
+{
+    "name": "collab:cafe",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 10,
+            "global_revision": 1510074872,
+            "author": 7850356,
+            "stamp": 1683383715,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1510074635,
+            "author": 7850356,
+            "stamp": 1683382919,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1509660374,
+            "author": 7850356,
+            "stamp": 1681907142,
+            "flags": "A",
+            "commentary": "已新增标签：合作主题文章。"
+        },
+        {
+            "revision": 7,
+            "global_revision": 1508642646,
+            "author": 7850356,
+            "stamp": 1679193289,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"cafe\" 至 \"collab:cafe\"."
+        },
+        {
+            "revision": 6,
+            "global_revision": 1507832511,
+            "author": 8021906,
+            "stamp": 1676787167,
+            "flags": "S",
+            "commentary": "捉虫，删除线用错了"
+        },
+        {
+            "revision": 5,
+            "global_revision": 1507583772,
+            "author": 8346642,
+            "stamp": 1676036905,
+            "flags": "A",
+            "commentary": "已新增标签：文章。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1498029513,
+            "author": 8122538,
+            "stamp": 1670249739,
+            "flags": "S",
+            "commentary": "抓虫编辑，删除连字符中间的空格"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1498009563,
+            "author": 8261419,
+            "stamp": 1670159479,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1498009493,
+            "author": 8261419,
+            "stamp": 1670159238,
+            "flags": "A",
+            "commentary": "已新增标签：原创。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1498009476,
+            "author": 8261419,
+            "stamp": 1670159185,
+            "flags": "A",
+            "commentary": "已新增标签：合著, 怪谈。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1498009448,
+            "author": 8261419,
+            "stamp": 1670159063,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1437513989,
+    "rating": 7,
+    "forum_thread": 15430155,
+    "tags": [
+        "原创",
+        "合作主题文章",
+        "合著",
+        "怪谈",
+        "文章"
+    ],
+    "title": "DFC怪谈——咖啡店守则",
+    "sitemap_update": 1683383715000,
+    "votings": [
+        [
+            8017463,
+            true
+        ],
+        [
+            7971486,
+            true
+        ],
+        [
+            5314196,
+            true
+        ],
+        [
+            8128287,
+            true
+        ],
+        [
+            8314830,
+            true
+        ],
+        [
+            8049058,
+            true
+        ],
+        [
+            8122538,
+            true
+        ]
+    ],
+    "is_locked": false
+}

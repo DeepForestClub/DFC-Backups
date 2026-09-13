@@ -1,0 +1,102 @@
+{
+    "title": "此心光明",
+    "id": 17592006,
+    "description": "",
+    "last": 1771609999,
+    "lastUser": 6422458,
+    "started": 1771582975,
+    "startedUser": null,
+    "postsNum": 7,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 7560911,
+            "title": "作者贴",
+            "poster": 6422458,
+            "stamp": 1771583045,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 7560913,
+            "title": "AP2/合著者想说的",
+            "poster": 9357828,
+            "stamp": 1771583114,
+            "lastEdit": 1771583183,
+            "lastEditBy": 9357828,
+            "revisions": [
+                {
+                    "title": "AP2/合著者想说的",
+                    "author": 9357828,
+                    "id": 9109589,
+                    "stamp": 1771583183
+                },
+                {
+                    "title": "AP2/合著者想说的",
+                    "author": 9357828,
+                    "id": 9109585,
+                    "stamp": 1771583114
+                }
+            ],
+            "children": []
+        },
+        {
+            "id": 7560928,
+            "title": "AP3",
+            "poster": 8346642,
+            "stamp": 1771583776,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 7560945,
+            "title": "",
+            "poster": 7504264,
+            "stamp": 1771584278,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 7561114,
+            "title": "",
+            "poster": 7535291,
+            "stamp": 1771593158,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 7561343,
+            "title": "Per aspera ad astra",
+            "poster": 9873701,
+            "stamp": 1771603899,
+            "lastEdit": 1771686244,
+            "lastEditBy": 9873701,
+            "revisions": [
+                {
+                    "title": "Per aspera ad astra",
+                    "author": 9873701,
+                    "id": 9111686,
+                    "stamp": 1771686244
+                },
+                {
+                    "title": "Per aspera ad astra",
+                    "author": 9873701,
+                    "id": 9110136,
+                    "stamp": 1771603899
+                }
+            ],
+            "children": [
+                {
+                    "id": 7561423,
+                    "title": "Re: Per aspera ad astra",
+                    "poster": 6422458,
+                    "stamp": 1771609999,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

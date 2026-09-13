@@ -1,0 +1,79 @@
+{
+    "title": "DFC怪谈——员工守则",
+    "id": 15353254,
+    "description": "",
+    "last": 1668465170,
+    "lastUser": 6120541,
+    "started": 1667397803,
+    "startedUser": null,
+    "postsNum": 4,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 5696426,
+            "title": "DFC怪谈第二弹：员工守则，它来辣",
+            "poster": 7952851,
+            "stamp": 1667400069,
+            "lastEdit": 1667516016,
+            "lastEditBy": 7952851,
+            "revisions": [
+                {
+                    "title": "DFC怪谈第二弹：员工守则，它来辣",
+                    "author": 7952851,
+                    "id": 6929518,
+                    "stamp": 1667516016
+                },
+                {
+                    "title": "DFC怪谈第二弹：员工守则，它来辣",
+                    "author": 7952851,
+                    "id": 6927915,
+                    "stamp": 1667400069
+                }
+            ],
+            "children": [
+                {
+                    "id": 5697345,
+                    "title": "Re: DFC怪谈第二弹：员工守则，它来辣",
+                    "poster": 7850356,
+                    "stamp": 1667483352,
+                    "revisions": [],
+                    "children": [
+                        {
+                            "id": 5697391,
+                            "title": "Re: DFC怪谈第二弹：员工守则，它来辣",
+                            "poster": 8261419,
+                            "stamp": 1667484854,
+                            "revisions": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 5714311,
+                    "title": "Re: DFC怪谈第二弹：员工守则，它来辣",
+                    "poster": 6120541,
+                    "stamp": 1668465170,
+                    "lastEdit": 1668465197,
+                    "lastEditBy": 6120541,
+                    "revisions": [
+                        {
+                            "title": "Re: DFC怪谈第二弹：员工守则，它来辣",
+                            "author": 6120541,
+                            "id": 6950356,
+                            "stamp": 1668465197
+                        },
+                        {
+                            "title": "Re: DFC怪谈第二弹：员工守则，它来辣",
+                            "author": 6120541,
+                            "id": 6950355,
+                            "stamp": 1668465170
+                        }
+                    ],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

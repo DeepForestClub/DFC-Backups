@@ -1,0 +1,56 @@
+{
+    "title": "我没有故事可以讲给你听",
+    "id": 16710058,
+    "description": "",
+    "last": 1708086327,
+    "lastUser": 7931329,
+    "started": 1707494610,
+    "startedUser": null,
+    "postsNum": 3,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6424046,
+            "title": "作者帖",
+            "poster": 7931329,
+            "stamp": 1707494640,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6426302,
+                    "title": "Re: 作者帖",
+                    "poster": 7504264,
+                    "stamp": 1707724785,
+                    "lastEdit": 1708158275,
+                    "lastEditBy": 7504264,
+                    "revisions": [
+                        {
+                            "title": "Re: 作者帖",
+                            "author": 7504264,
+                            "id": 7802619,
+                            "stamp": 1708158275
+                        },
+                        {
+                            "title": "Re: 作者帖",
+                            "author": 7504264,
+                            "id": 7795087,
+                            "stamp": 1707724785
+                        }
+                    ],
+                    "children": [
+                        {
+                            "id": 6431200,
+                            "title": "Re: 作者帖",
+                            "poster": 7931329,
+                            "stamp": 1708086327,
+                            "revisions": [],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "name": "space:7508990",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 3,
+            "global_revision": 1523220842,
+            "author": 7508990,
+            "stamp": 1721916181,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1523064161,
+            "author": 7508990,
+            "stamp": 1721138717,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1523064153,
+            "author": 7508990,
+            "stamp": 1721138676,
+            "flags": "A",
+            "commentary": "已新增标签：成员页。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1523064150,
+            "author": 7508990,
+            "stamp": 1721138656,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1455902354,
+    "forum_thread": 16886112,
+    "tags": [
+        "成员页"
+    ],
+    "title": "FC",
+    "sitemap_update": 1721916181000,
+    "votings": [],
+    "is_locked": false
+}
