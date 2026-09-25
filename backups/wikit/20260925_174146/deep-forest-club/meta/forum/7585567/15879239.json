@@ -1,0 +1,36 @@
+{
+    "title": "【公告】启用两个重定向域名",
+    "id": 15879239,
+    "description": "dfcwiki.eu.org、deep-forest-club.eu.org",
+    "started": 1684647332,
+    "startedUser": 7850356,
+    "postsNum": 1,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6092445,
+            "title": "【公告】启用两个重定向域名",
+            "poster": 7850356,
+            "stamp": 1684647332,
+            "lastEdit": 1684965466,
+            "lastEditBy": 7850356,
+            "revisions": [
+                {
+                    "title": "【公告】启用两个重定向域名",
+                    "author": 7850356,
+                    "id": 7406135,
+                    "stamp": 1684965466
+                },
+                {
+                    "title": "【公告】启用两个重定向域名",
+                    "author": 7850356,
+                    "id": 7399909,
+                    "stamp": 1684647332
+                }
+            ],
+            "children": []
+        }
+    ]
+}

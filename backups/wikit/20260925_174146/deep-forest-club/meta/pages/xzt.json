@@ -1,0 +1,68 @@
+{
+    "name": "xzt",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 2,
+            "global_revision": 1530862113,
+            "author": 8419098,
+            "stamp": 1751878655,
+            "flags": "A",
+            "commentary": "已新增标签：2025十站联竞, 主题文章, 原创, 文章。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1530862104,
+            "author": 8419098,
+            "stamp": 1751878604,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1530862091,
+            "author": 8419098,
+            "stamp": 1751878543,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1459886443,
+    "rating": 4,
+    "tags": [
+        "2025十站联竞",
+        "主题文章",
+        "原创",
+        "文章"
+    ],
+    "title": "心之庭：坠樱的刻度",
+    "sitemap_update": 1751878655000,
+    "votings": [
+        [
+            9763394,
+            true
+        ],
+        [
+            7931329,
+            true
+        ],
+        [
+            4726378,
+            true
+        ],
+        [
+            7504264,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            8257590,
+            false
+        ]
+    ],
+    "is_locked": false
+}

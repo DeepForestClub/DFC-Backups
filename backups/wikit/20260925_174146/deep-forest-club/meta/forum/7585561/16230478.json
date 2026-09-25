@@ -1,0 +1,48 @@
+{
+    "title": "关于网站社区意见征集",
+    "id": 16230478,
+    "description": "深林文学部意见征集",
+    "last": 1691587134,
+    "lastUser": 7850356,
+    "started": 1691229119,
+    "startedUser": 7850356,
+    "postsNum": 4,
+    "sticky": true,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6168170,
+            "title": "关于网站社区意见征集",
+            "poster": 7850356,
+            "stamp": 1691229119,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 6168720,
+            "title": "Re: 关于网站社区意见征集",
+            "poster": 8021906,
+            "stamp": 1691283008,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6168784,
+                    "title": "Re: 关于网站社区意见征集",
+                    "poster": 7850356,
+                    "stamp": 1691289089,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "id": 6172768,
+            "title": "Re: 关于网站社区意见征集",
+            "poster": 7850356,
+            "stamp": 1691587134,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

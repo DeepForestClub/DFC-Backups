@@ -1,0 +1,64 @@
+{
+    "name": "anonymous-articles",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 5,
+            "global_revision": 1524229231,
+            "author": 7504264,
+            "stamp": 1724822330,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1516359327,
+            "author": 8261419,
+            "stamp": 1701263893,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 3,
+            "global_revision": 1511218593,
+            "author": 7850356,
+            "stamp": 1686452369,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1508410118,
+            "author": 7850356,
+            "stamp": 1678494268,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 1,
+            "global_revision": 1508409864,
+            "author": 7850356,
+            "stamp": 1678492005,
+            "flags": "A",
+            "commentary": "已新增标签：指导。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1508409862,
+            "author": 7850356,
+            "stamp": 1678491996,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1446617714,
+    "parent": "guide-hub",
+    "tags": [
+        "指导"
+    ],
+    "title": "匿名写作",
+    "sitemap_update": 1724822330000,
+    "votings": [],
+    "is_locked": true
+}

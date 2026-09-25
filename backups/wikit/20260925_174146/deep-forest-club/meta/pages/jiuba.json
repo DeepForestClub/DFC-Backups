@@ -1,0 +1,78 @@
+{
+    "name": "jiuba",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 5,
+            "global_revision": 1523784848,
+            "author": 7504264,
+            "stamp": 1723723660,
+            "flags": "A",
+            "commentary": "已新增标签：合作主题文章。 移除标签：主题文章。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1523061634,
+            "author": 7952851,
+            "stamp": 1721127491,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1523061560,
+            "author": 7952851,
+            "stamp": 1721127112,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1523061444,
+            "author": 7504264,
+            "stamp": 1721126608,
+            "flags": "A",
+            "commentary": "已新增标签：主题文章。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1523061204,
+            "author": 7952851,
+            "stamp": 1721125715,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 合著, 怪谈, 文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1523061198,
+            "author": 7952851,
+            "stamp": 1721125663,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1455901271,
+    "rating": 2,
+    "forum_thread": 16886011,
+    "tags": [
+        "原创",
+        "合作主题文章",
+        "合著",
+        "怪谈",
+        "文章"
+    ],
+    "title": "DFC怪谈——酒吧怪谈",
+    "sitemap_update": 1723723660000,
+    "votings": [
+        [
+            8103976,
+            true
+        ],
+        [
+            8984427,
+            true
+        ]
+    ],
+    "is_locked": false
+}
