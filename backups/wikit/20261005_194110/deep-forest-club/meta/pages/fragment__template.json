@@ -1,0 +1,47 @@
+{
+    "name": "fragment:_template",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 3,
+            "global_revision": 1510657510,
+            "author": 7850356,
+            "stamp": 1685581376,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1510657505,
+            "author": 7850356,
+            "stamp": 1685581343,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1507582873,
+            "author": 7850356,
+            "stamp": 1676034487,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1507582840,
+            "author": 7850356,
+            "stamp": 1676034374,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1446141912,
+    "tags": [
+        "管理"
+    ],
+    "title": "_template In Fragment",
+    "sitemap_update": 1685581376000,
+    "votings": [],
+    "is_locked": true
+}

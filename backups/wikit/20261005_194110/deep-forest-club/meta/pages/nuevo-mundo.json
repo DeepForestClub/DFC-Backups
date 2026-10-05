@@ -1,0 +1,40 @@
+{
+    "name": "nuevo-mundo",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 1,
+            "global_revision": 1518032642,
+            "author": 7931329,
+            "stamp": 1707132644,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 文章, 非主题文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1518032639,
+            "author": 7931329,
+            "stamp": 1707132621,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1452532168,
+    "rating": 1,
+    "forum_thread": 16707343,
+    "tags": [
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "Nuevo mundo",
+    "sitemap_update": 1707132644000,
+    "votings": [
+        [
+            7504264,
+            true
+        ]
+    ],
+    "is_locked": false
+}

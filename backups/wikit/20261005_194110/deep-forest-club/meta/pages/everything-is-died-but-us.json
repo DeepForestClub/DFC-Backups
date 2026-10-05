@@ -1,0 +1,85 @@
+{
+    "name": "everything-is-died-but-us",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1530590210,
+            "author": 8135926,
+            "stamp": 1750436531,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1523354312,
+            "author": 8135926,
+            "stamp": 1722599890,
+            "flags": "A",
+            "commentary": "已新增标签：2024新人竞赛, 主题文章, 原创, 文章。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1523354299,
+            "author": 8135926,
+            "stamp": 1722599738,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"everything-is-dyed-but-me\" 至 \"everything-is-died-but-us\"."
+        },
+        {
+            "revision": 1,
+            "global_revision": 1523354286,
+            "author": 8135926,
+            "stamp": 1722599621,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1523354283,
+            "author": 8135926,
+            "stamp": 1722599584,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1456000469,
+    "rating": 6,
+    "forum_thread": 16926608,
+    "tags": [
+        "2024新人竞赛",
+        "主题文章",
+        "原创",
+        "文章"
+    ],
+    "title": "跌入时间断层时",
+    "sitemap_update": 1750436531000,
+    "votings": [
+        [
+            9331758,
+            true
+        ],
+        [
+            8229312,
+            true
+        ],
+        [
+            7508990,
+            true
+        ],
+        [
+            7931329,
+            true
+        ],
+        [
+            7504264,
+            true
+        ],
+        [
+            6818166,
+            true
+        ]
+    ],
+    "is_locked": false
+}

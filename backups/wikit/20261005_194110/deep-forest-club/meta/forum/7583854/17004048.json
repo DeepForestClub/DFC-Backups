@@ -1,0 +1,32 @@
+{
+    "title": "成员中心页",
+    "id": 17004048,
+    "description": "",
+    "last": 1734217782,
+    "lastUser": 7504264,
+    "started": 1733650013,
+    "startedUser": null,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6751953,
+            "title": "关于等级的疑问",
+            "poster": 7967988,
+            "stamp": 1733650035,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6755307,
+                    "title": "Re: 关于等级的疑问",
+                    "poster": 7504264,
+                    "stamp": 1734217782,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

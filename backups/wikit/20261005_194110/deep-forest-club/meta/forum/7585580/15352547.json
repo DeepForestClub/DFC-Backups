@@ -1,0 +1,158 @@
+{
+    "title": "新人报道",
+    "id": 15352547,
+    "description": "",
+    "last": 1667435099,
+    "lastUser": 6600193,
+    "started": 1667377749,
+    "startedUser": 8257590,
+    "postsNum": 9,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 5696038,
+            "title": "新人报道",
+            "poster": 8257590,
+            "stamp": 1667377749,
+            "lastEdit": 1667377758,
+            "lastEditBy": 8257590,
+            "revisions": [
+                {
+                    "title": "新人报道",
+                    "author": 8257590,
+                    "id": 6927353,
+                    "stamp": 1667377758
+                },
+                {
+                    "title": "新人报道",
+                    "author": 8257590,
+                    "id": 6927352,
+                    "stamp": 1667377749
+                }
+            ],
+            "children": [
+                {
+                    "id": 5696042,
+                    "title": "Re: 新人报道",
+                    "poster": 7850356,
+                    "stamp": 1667378093,
+                    "revisions": [],
+                    "children": [
+                        {
+                            "id": 5696205,
+                            "title": "Re: 新人报道",
+                            "poster": 8257590,
+                            "stamp": 1667389957,
+                            "lastEdit": 1667456643,
+                            "lastEditBy": 8257590,
+                            "revisions": [
+                                {
+                                    "title": "Re: 新人报道",
+                                    "author": 8257590,
+                                    "id": 6928651,
+                                    "stamp": 1667456643
+                                },
+                                {
+                                    "title": "Re: 新人报道",
+                                    "author": 8257590,
+                                    "id": 6927584,
+                                    "stamp": 1667390013
+                                },
+                                {
+                                    "title": "Re: 新人报道",
+                                    "author": 8257590,
+                                    "id": 6927583,
+                                    "stamp": 1667389957
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "id": 5696377,
+                                    "title": "Re: 新人报道",
+                                    "poster": 7850356,
+                                    "stamp": 1667397827,
+                                    "lastEdit": 1667398109,
+                                    "lastEditBy": 7850356,
+                                    "revisions": [
+                                        {
+                                            "title": "Re: 新人报道",
+                                            "author": 7850356,
+                                            "id": 6927831,
+                                            "stamp": 1667398109
+                                        },
+                                        {
+                                            "title": "Re: 新人报道",
+                                            "author": 7850356,
+                                            "id": 6927815,
+                                            "stamp": 1667397827
+                                        }
+                                    ],
+                                    "children": [
+                                        {
+                                            "id": 5696736,
+                                            "title": "Re: 新人报道",
+                                            "poster": 8257590,
+                                            "stamp": 1667433075,
+                                            "revisions": [],
+                                            "children": [
+                                                {
+                                                    "id": 5696747,
+                                                    "title": "Re: 新人报道",
+                                                    "poster": 7850356,
+                                                    "stamp": 1667433895,
+                                                    "revisions": [],
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 5696787,
+                                    "title": "Re: 新人报道",
+                                    "poster": 6600193,
+                                    "stamp": 1667435018,
+                                    "lastEdit": 1667463525,
+                                    "lastEditBy": 6600193,
+                                    "revisions": [
+                                        {
+                                            "title": "Re: 新人报道",
+                                            "author": 6600193,
+                                            "id": 6928740,
+                                            "stamp": 1667463525
+                                        },
+                                        {
+                                            "title": "Re: 新人报道",
+                                            "author": 6600193,
+                                            "id": 6928360,
+                                            "stamp": 1667435018
+                                        }
+                                    ],
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5696773,
+            "title": "Re: 新人报道",
+            "poster": 7952851,
+            "stamp": 1667434443,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 5696788,
+            "title": "Re: 新人报道",
+            "poster": 6600193,
+            "stamp": 1667435099,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

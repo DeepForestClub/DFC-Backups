@@ -1,0 +1,83 @@
+{
+    "name": "owls-i401",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 6,
+            "global_revision": 1544091866,
+            "author": 8103976,
+            "stamp": 1779547449,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1544091830,
+            "author": 8103976,
+            "stamp": 1779547356,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 图像保留权利, 艺术作品。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1544091768,
+            "author": 8103976,
+            "stamp": 1779547167,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1544091761,
+            "author": 8103976,
+            "stamp": 1779547143,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1544091637,
+            "author": 8103976,
+            "stamp": 1779546964,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1544091587,
+            "author": 8103976,
+            "stamp": 1779546893,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1544091471,
+            "author": 8103976,
+            "stamp": 1779546670,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1468701946,
+    "rating": 2,
+    "tags": [
+        "原创",
+        "图像保留权利",
+        "艺术作品"
+    ],
+    "title": "猫头鹰绘之伊-401",
+    "sitemap_update": 1779547449000,
+    "votings": [
+        [
+            7504264,
+            true
+        ],
+        [
+            8021906,
+            true
+        ]
+    ],
+    "is_locked": false
+}

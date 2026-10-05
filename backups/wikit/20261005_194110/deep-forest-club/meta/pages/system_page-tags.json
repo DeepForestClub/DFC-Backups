@@ -1,0 +1,103 @@
+{
+    "name": "system:page-tags",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 10,
+            "global_revision": 1530227291,
+            "author": 7504264,
+            "stamp": 1748067576,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1517768221,
+            "author": 7504264,
+            "stamp": 1706406327,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1516421843,
+            "author": 8261419,
+            "stamp": 1701491519,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 7,
+            "global_revision": 1516399106,
+            "author": 8261419,
+            "stamp": 1701416525,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1516353454,
+            "author": 8261419,
+            "stamp": 1701244746,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1516353452,
+            "author": 8261419,
+            "stamp": 1701244724,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1516353449,
+            "author": 8261419,
+            "stamp": 1701244704,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1516353447,
+            "author": 8261419,
+            "stamp": 1701244688,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1516353433,
+            "author": 8261419,
+            "stamp": 1701244555,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516353430,
+            "author": 8261419,
+            "stamp": 1701244510,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516353383,
+            "author": 8261419,
+            "stamp": 1701244375,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451603539,
+    "tags": [
+        "管理"
+    ],
+    "title": "标签页",
+    "sitemap_update": 1748067576000,
+    "votings": [],
+    "is_locked": true
+}

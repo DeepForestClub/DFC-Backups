@@ -1,0 +1,57 @@
+{
+    "name": "template:banyun",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 4,
+            "global_revision": 1516354302,
+            "author": 8261419,
+            "stamp": 1701247318,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1516060932,
+            "author": 7850356,
+            "stamp": 1700317696,
+            "flags": "A",
+            "commentary": "已新增标签：模板。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1515666896,
+            "author": 7850356,
+            "stamp": 1698934876,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1511228325,
+            "author": 7850356,
+            "stamp": 1686483148,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1509699305,
+            "author": 7850356,
+            "stamp": 1682127018,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1447440302,
+    "rating": 0,
+    "tags": [
+        "模板",
+        "管理"
+    ],
+    "title": "搬运文章模板",
+    "sitemap_update": 1701247318000,
+    "votings": [],
+    "is_locked": true
+}

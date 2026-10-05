@@ -1,0 +1,31 @@
+{
+    "title": "森、恋、特調です",
+    "id": 16702138,
+    "description": "",
+    "last": 1706761817,
+    "lastUser": 8021906,
+    "started": 1706741112,
+    "startedUser": null,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6416465,
+            "title": "",
+            "poster": 7504264,
+            "stamp": 1706741133,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 6416609,
+            "title": "",
+            "poster": 8021906,
+            "stamp": 1706761817,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

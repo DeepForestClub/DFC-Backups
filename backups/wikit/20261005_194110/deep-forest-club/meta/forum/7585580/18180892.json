@@ -1,0 +1,31 @@
+{
+    "title": "新人报道",
+    "id": 18180892,
+    "description": "",
+    "last": 1784687697,
+    "lastUser": 10465489,
+    "started": 1784687461,
+    "startedUser": 10465489,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 8652797,
+            "title": "新人报道",
+            "poster": 10465489,
+            "stamp": 1784687461,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 8652837,
+            "title": "Re: 新人报道",
+            "poster": 10465489,
+            "stamp": 1784687697,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}
