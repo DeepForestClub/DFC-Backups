@@ -1,0 +1,34 @@
+{
+    "name": "some-images",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 1,
+            "global_revision": 1547269786,
+            "author": 7967988,
+            "stamp": 1791097094,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 图像保留权利, 艺术作品。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1547269780,
+            "author": 7967988,
+            "stamp": 1791097073,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1469442032,
+    "rating": 0,
+    "tags": [
+        "原创",
+        "图像保留权利",
+        "艺术作品"
+    ],
+    "title": "只是几张OC图",
+    "sitemap_update": 1791097094000,
+    "votings": [],
+    "is_locked": false
+}
