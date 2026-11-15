@@ -1,0 +1,83 @@
+{
+    "title": "技术问题",
+    "id": 16996007,
+    "description": "_admin页面的各板块直链是什么",
+    "last": 1734217815,
+    "lastUser": 7504264,
+    "started": 1733017401,
+    "startedUser": 7967988,
+    "postsNum": 6,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6743393,
+            "title": "技术问题",
+            "poster": 7967988,
+            "stamp": 1733017401,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6743674,
+                    "title": "Re: 技术问题",
+                    "poster": 7504264,
+                    "stamp": 1733056181,
+                    "revisions": [],
+                    "children": [
+                        {
+                            "id": 6746658,
+                            "title": "Re: 技术问题",
+                            "poster": 7967988,
+                            "stamp": 1733217326,
+                            "revisions": [],
+                            "children": [
+                                {
+                                    "id": 6747058,
+                                    "title": "Re: 技术问题",
+                                    "poster": 7504264,
+                                    "stamp": 1733234874,
+                                    "revisions": [],
+                                    "children": [
+                                        {
+                                            "id": 6751703,
+                                            "title": "Re: 技术问题",
+                                            "poster": 7967988,
+                                            "stamp": 1733615982,
+                                            "lastEdit": 1733623287,
+                                            "lastEditBy": 7967988,
+                                            "revisions": [
+                                                {
+                                                    "title": "Re: 技术问题",
+                                                    "author": 7967988,
+                                                    "id": 8185386,
+                                                    "stamp": 1733623287
+                                                },
+                                                {
+                                                    "title": "Re: 技术问题",
+                                                    "author": 7967988,
+                                                    "id": 8185342,
+                                                    "stamp": 1733615982
+                                                }
+                                            ],
+                                            "children": [
+                                                {
+                                                    "id": 6755308,
+                                                    "title": "Re: 技术问题",
+                                                    "poster": 7504264,
+                                                    "stamp": 1734217815,
+                                                    "revisions": [],
+                                                    "children": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

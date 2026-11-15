@@ -1,0 +1,32 @@
+{
+    "title": "不知道能不能分享一些灵感",
+    "id": 15880069,
+    "description": "如果不能劳烦站务删除此贴。\n来源其实是我做的梦，我也不知道我怎么会记得，但100%保真",
+    "last": 1725339144,
+    "lastUser": 8103976,
+    "started": 1684660229,
+    "startedUser": 8373329,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6092567,
+            "title": "不知道能不能分享一些灵感",
+            "poster": 8373329,
+            "stamp": 1684660229,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6643109,
+                    "title": "Re: 不知道能不能分享一些灵感",
+                    "poster": 8103976,
+                    "stamp": 1725339144,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

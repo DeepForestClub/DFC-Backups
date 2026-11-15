@@ -1,0 +1,31 @@
+{
+    "title": "网站站规",
+    "id": 16506409,
+    "description": "",
+    "last": 1751555573,
+    "lastUser": 7504264,
+    "started": 1702040154,
+    "startedUser": null,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6265675,
+            "title": "【公告帖】2023年12月8日 - 站规变更",
+            "poster": 7504264,
+            "stamp": 1702040313,
+            "revisions": [],
+            "children": []
+        },
+        {
+            "id": 7056232,
+            "title": "【公告帖】2025年7月3日 - 站规变更",
+            "poster": 7504264,
+            "stamp": 1751555573,
+            "revisions": [],
+            "children": []
+        }
+    ]
+}

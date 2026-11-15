@@ -1,0 +1,184 @@
+{
+    "name": "search:other",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 20,
+            "global_revision": 1523994902,
+            "author": 7504264,
+            "stamp": 1724147984,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 19,
+            "global_revision": 1517075308,
+            "author": 8261419,
+            "stamp": 1703990087,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 18,
+            "global_revision": 1514312897,
+            "author": 7850356,
+            "stamp": 1695896163,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 17,
+            "global_revision": 1514312846,
+            "author": 7850356,
+            "stamp": 1695896051,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 16,
+            "global_revision": 1513743847,
+            "author": 7850356,
+            "stamp": 1694005805,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 15,
+            "global_revision": 1512303775,
+            "author": 7850356,
+            "stamp": 1689547953,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1512303764,
+            "author": 7850356,
+            "stamp": 1689547869,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 13,
+            "global_revision": 1512303685,
+            "author": 7850356,
+            "stamp": 1689547388,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1512303678,
+            "author": 7850356,
+            "stamp": 1689547337,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1512303656,
+            "author": 7850356,
+            "stamp": 1689547200,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1512303652,
+            "author": 7850356,
+            "stamp": 1689547161,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1512303630,
+            "author": 7850356,
+            "stamp": 1689546915,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1512303606,
+            "author": 7850356,
+            "stamp": 1689546658,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1512303569,
+            "author": 7850356,
+            "stamp": 1689546395,
+            "flags": "S",
+            "commentary": "您已成功地回复本页至修订版本编号 5"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1512303568,
+            "author": 7850356,
+            "stamp": 1689546385,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1512288277,
+            "author": 7850356,
+            "stamp": 1689493914,
+            "flags": "S",
+            "commentary": "优化提示文本，更加合规化"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1510235317,
+            "author": 7850356,
+            "stamp": 1684068622,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1510235313,
+            "author": 7850356,
+            "stamp": 1684068597,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1510231205,
+            "author": 7850356,
+            "stamp": 1684047130,
+            "flags": "M",
+            "commentary": "父页面设置为: \"search:site\"."
+        },
+        {
+            "revision": 1,
+            "global_revision": 1510231189,
+            "author": 7850356,
+            "stamp": 1684047059,
+            "flags": "A",
+            "commentary": "已新增标签：管理。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1510231186,
+            "author": 7850356,
+            "stamp": 1684047036,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1447733541,
+    "parent": "search:site",
+    "tags": [
+        "管理"
+    ],
+    "title": "站内搜索（其他）",
+    "sitemap_update": 1724147984000,
+    "votings": [],
+    "is_locked": true
+}

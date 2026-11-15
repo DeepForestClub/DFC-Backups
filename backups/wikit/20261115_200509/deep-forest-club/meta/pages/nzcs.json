@@ -1,0 +1,125 @@
+{
+    "name": "nzcs",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 8,
+            "global_revision": 1512415646,
+            "author": 7850356,
+            "stamp": 1689986056,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1512383656,
+            "author": 7850356,
+            "stamp": 1689840054,
+            "flags": "A",
+            "commentary": "已新增标签：主题文章。"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1512270468,
+            "author": 8171686,
+            "stamp": 1689417378,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1512249511,
+            "author": 8171686,
+            "stamp": 1689336952,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1512249327,
+            "author": 8171686,
+            "stamp": 1689336563,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1512249317,
+            "author": 8171686,
+            "stamp": 1689336535,
+            "flags": "A",
+            "commentary": "已新增标签：2023新人竞赛。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1512249307,
+            "author": 8171686,
+            "stamp": 1689336489,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1512249301,
+            "author": 8171686,
+            "stamp": 1689336454,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1512249294,
+            "author": 8171686,
+            "stamp": 1689336434,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1449036583,
+    "rating": 8,
+    "forum_thread": 16161636,
+    "tags": [
+        "2023新人竞赛",
+        "主题文章",
+        "原创",
+        "文章"
+    ],
+    "title": "回归……",
+    "sitemap_update": 1689986056000,
+    "votings": [
+        [
+            8346642,
+            true
+        ],
+        [
+            8017463,
+            true
+        ],
+        [
+            7931329,
+            true
+        ],
+        [
+            7850356,
+            true
+        ],
+        [
+            8103976,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            7952851,
+            true
+        ],
+        [
+            8373329,
+            true
+        ]
+    ],
+    "is_locked": false
+}

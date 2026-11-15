@@ -1,0 +1,84 @@
+{
+    "name": "republic-of-mauritius",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 6,
+            "global_revision": 1514573662,
+            "author": 7850356,
+            "stamp": 1696559376,
+            "flags": "M",
+            "commentary": "父页面设置为: \"revolutionary-maurice-victorious-maurice\"."
+        },
+        {
+            "revision": 5,
+            "global_revision": 1514573613,
+            "author": 7850356,
+            "stamp": 1696559270,
+            "flags": "A",
+            "commentary": "已新增标签：搬运, 文章, 非主题文章。 移除标签：段落。"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1514573607,
+            "author": 7850356,
+            "stamp": 1696559216,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"fragment:republic-of-mauritius\" 至 \"republic-of-mauritius\"."
+        },
+        {
+            "revision": 3,
+            "global_revision": 1514573602,
+            "author": 7850356,
+            "stamp": 1696559197,
+            "flags": "R",
+            "commentary": "您已成功地重新命名本页: \"republic-of-mauritius\" 至 \"fragment:republic-of-mauritius\"."
+        },
+        {
+            "revision": 2,
+            "global_revision": 1514573597,
+            "author": 7850356,
+            "stamp": 1696559183,
+            "flags": "A",
+            "commentary": "已新增标签：段落。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1514573576,
+            "author": 7850356,
+            "stamp": 1696559092,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1514573387,
+            "author": 8229312,
+            "stamp": 1696558549,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1450385576,
+    "parent": "revolutionary-maurice-victorious-maurice",
+    "rating": 0,
+    "tags": [
+        "搬运",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "毛里塞共和国百科",
+    "sitemap_update": 1696559376000,
+    "votings": [
+        [
+            7850356,
+            true
+        ],
+        [
+            8205238,
+            false
+        ]
+    ],
+    "is_locked": false
+}

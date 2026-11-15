@@ -1,0 +1,151 @@
+{
+    "name": "fragment:nav-generic-css",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 16,
+            "global_revision": 1531190792,
+            "author": 7504264,
+            "stamp": 1753504302,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 15,
+            "global_revision": 1531190780,
+            "author": 7504264,
+            "stamp": 1753504200,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 14,
+            "global_revision": 1531190739,
+            "author": 7504264,
+            "stamp": 1753504076,
+            "flags": "S",
+            "commentary": "您已成功地回复本页至修订版本编号 12"
+        },
+        {
+            "revision": 13,
+            "global_revision": 1531190722,
+            "author": 7504264,
+            "stamp": 1753504011,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 12,
+            "global_revision": 1516376434,
+            "author": 7504264,
+            "stamp": 1701333116,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1516376363,
+            "author": 7504264,
+            "stamp": 1701332910,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1516376359,
+            "author": 7504264,
+            "stamp": 1701332854,
+            "flags": "S",
+            "commentary": "您已成功地回复本页至修订版本编号 8"
+        },
+        {
+            "revision": 9,
+            "global_revision": 1516376357,
+            "author": 7504264,
+            "stamp": 1701332835,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1509703105,
+            "author": 7850356,
+            "stamp": 1682148174,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1509702784,
+            "author": 7850356,
+            "stamp": 1682146280,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1509702782,
+            "author": 7850356,
+            "stamp": 1682146269,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1509702536,
+            "author": 7850356,
+            "stamp": 1682144615,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1509702510,
+            "author": 7850356,
+            "stamp": 1682144449,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1509702376,
+            "author": 7850356,
+            "stamp": 1682143448,
+            "flags": "A",
+            "commentary": "已新增标签：段落。"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1509702299,
+            "author": 7850356,
+            "stamp": 1682143054,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1509702292,
+            "author": 7850356,
+            "stamp": 1682143027,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1509701864,
+            "author": 7850356,
+            "stamp": 1682140499,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1447440793,
+    "tags": [
+        "段落"
+    ],
+    "title": "导航栏通用CSS",
+    "sitemap_update": 1753504302000,
+    "votings": [],
+    "is_locked": true
+}

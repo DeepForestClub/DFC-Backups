@@ -1,0 +1,153 @@
+{
+    "name": "lifecredit",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 13,
+            "global_revision": 1539709757,
+            "author": 8577465,
+            "stamp": 1763482542,
+            "flags": "S",
+            "commentary": "错别字修改"
+        },
+        {
+            "revision": 12,
+            "global_revision": 1531374722,
+            "author": 8577465,
+            "stamp": 1754312776,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 11,
+            "global_revision": 1531218590,
+            "author": 8577465,
+            "stamp": 1753626956,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 10,
+            "global_revision": 1531218426,
+            "author": 8577465,
+            "stamp": 1753626414,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1531146014,
+            "author": 8577465,
+            "stamp": 1753273184,
+            "flags": "S",
+            "commentary": "错别字，语法"
+        },
+        {
+            "revision": 8,
+            "global_revision": 1531092935,
+            "author": 8577465,
+            "stamp": 1753002276,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1531089756,
+            "author": 8577465,
+            "stamp": 1752984326,
+            "flags": "S",
+            "commentary": "logo放错了……还放了沙盒站logo"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1531084721,
+            "author": 8577465,
+            "stamp": 1752949695,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1531084690,
+            "author": 8577465,
+            "stamp": 1752949491,
+            "flags": "S",
+            "commentary": "错别字"
+        },
+        {
+            "revision": 4,
+            "global_revision": 1531084660,
+            "author": 8577465,
+            "stamp": 1752949149,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1531084653,
+            "author": 8577465,
+            "stamp": 1752949124,
+            "flags": "S",
+            "commentary": "跨站评分模块兼容"
+        },
+        {
+            "revision": 2,
+            "global_revision": 1531084457,
+            "author": 8577465,
+            "stamp": 1752947780,
+            "flags": "A",
+            "commentary": "已新增标签：主题文章, 原创, 文章。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1531084452,
+            "author": 8577465,
+            "stamp": 1752947765,
+            "flags": "A",
+            "commentary": "已新增标签：2025十站联竞。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1531084451,
+            "author": 8577465,
+            "stamp": 1752947757,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1459938460,
+    "rating": 5,
+    "forum_thread": 17167880,
+    "tags": [
+        "2025十站联竞",
+        "主题文章",
+        "原创",
+        "文章"
+    ],
+    "title": "清算",
+    "sitemap_update": 1763482542000,
+    "votings": [
+        [
+            8457826,
+            true
+        ],
+        [
+            8579940,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            9011406,
+            true
+        ],
+        [
+            8049058,
+            true
+        ]
+    ],
+    "is_locked": false
+}

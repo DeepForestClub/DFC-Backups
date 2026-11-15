@@ -1,0 +1,71 @@
+{
+    "name": "excluded",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 3,
+            "global_revision": 1541224747,
+            "author": 7504264,
+            "stamp": 1767341379,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1533104594,
+            "author": 9566134,
+            "stamp": 1760862853,
+            "flags": "A",
+            "commentary": "移除标签：未经证实内容。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1533104592,
+            "author": 9566134,
+            "stamp": 1760862825,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 文章, 未经证实内容, 非主题文章。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1533104585,
+            "author": 9566134,
+            "stamp": 1760862789,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1460715232,
+    "rating": 5,
+    "tags": [
+        "原创",
+        "文章",
+        "非主题文章"
+    ],
+    "title": "排外",
+    "sitemap_update": 1767341379000,
+    "votings": [
+        [
+            9788854,
+            true
+        ],
+        [
+            10280217,
+            true
+        ],
+        [
+            7344601,
+            true
+        ],
+        [
+            8021906,
+            true
+        ],
+        [
+            9873701,
+            true
+        ]
+    ],
+    "is_locked": false
+}

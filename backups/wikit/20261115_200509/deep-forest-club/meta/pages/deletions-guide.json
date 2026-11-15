@@ -1,0 +1,104 @@
+{
+    "name": "deletions-guide",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 10,
+            "global_revision": 1544735582,
+            "author": 7504264,
+            "stamp": 1781875961,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 9,
+            "global_revision": 1544727589,
+            "author": 7504264,
+            "stamp": 1781847165,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 8,
+            "global_revision": 1543111571,
+            "author": 7504264,
+            "stamp": 1775305430,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 7,
+            "global_revision": 1532155838,
+            "author": 7504264,
+            "stamp": 1757156840,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1523485185,
+            "author": 7504264,
+            "stamp": 1722945833,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1523478308,
+            "author": 7504264,
+            "stamp": 1722900751,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1523255160,
+            "author": 7504264,
+            "stamp": 1722123541,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1516576996,
+            "author": 8261419,
+            "stamp": 1702125460,
+            "flags": "M",
+            "commentary": "父页面设置为: \"guide-hub\"."
+        },
+        {
+            "revision": 2,
+            "global_revision": 1516576990,
+            "author": 8261419,
+            "stamp": 1702125444,
+            "flags": "A",
+            "commentary": "已新增标签：指导。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1516576812,
+            "author": 8261419,
+            "stamp": 1702124567,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 0,
+            "global_revision": 1516576755,
+            "author": 8261419,
+            "stamp": 1702124348,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1451724153,
+    "parent": "guide-hub",
+    "tags": [
+        "指导"
+    ],
+    "title": "删除指导",
+    "sitemap_update": 1781875961000,
+    "votings": [],
+    "is_locked": true
+}

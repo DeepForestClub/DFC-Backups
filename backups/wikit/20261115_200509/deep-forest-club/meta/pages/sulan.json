@@ -1,0 +1,98 @@
+{
+    "name": "sulan",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 7,
+            "global_revision": 1530026575,
+            "author": 7504264,
+            "stamp": 1746831587,
+            "flags": "A",
+            "commentary": "已新增标签：人物设定, 设定框架。 移除标签：设定。"
+        },
+        {
+            "revision": 6,
+            "global_revision": 1528066550,
+            "author": 8021906,
+            "stamp": 1740359839,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1528066166,
+            "author": 8021906,
+            "stamp": 1740357986,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1528058897,
+            "author": 8021906,
+            "stamp": 1740316693,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 3,
+            "global_revision": 1528058805,
+            "author": 8021906,
+            "stamp": 1740316347,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1528058777,
+            "author": 8021906,
+            "stamp": 1740316238,
+            "flags": "T",
+            "commentary": ""
+        },
+        {
+            "revision": 1,
+            "global_revision": 1528057984,
+            "author": 8021906,
+            "stamp": 1740313307,
+            "flags": "A",
+            "commentary": "已新增标签：2024站娘设定征集竞赛, 书店娘提案, 原创, 设定。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1528057973,
+            "author": 8021906,
+            "stamp": 1740313257,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1458589693,
+    "rating": 3,
+    "forum_thread": 17088357,
+    "tags": [
+        "2024站娘设定征集竞赛",
+        "书店娘提案",
+        "人物设定",
+        "原创",
+        "设定框架"
+    ],
+    "title": "【SuLan小姐的人事档案】",
+    "sitemap_update": 1746831587000,
+    "votings": [
+        [
+            8827633,
+            true
+        ],
+        [
+            8456860,
+            true
+        ],
+        [
+            6818166,
+            true
+        ]
+    ],
+    "is_locked": false
+}

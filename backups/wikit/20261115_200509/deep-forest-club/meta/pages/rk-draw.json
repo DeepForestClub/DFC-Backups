@@ -1,0 +1,104 @@
+{
+    "name": "rk-draw",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 8,
+            "global_revision": 1523647061,
+            "author": 7504264,
+            "stamp": 1723536856,
+            "flags": "A",
+            "commentary": "已新增标签：_cc。"
+        },
+        {
+            "revision": 7,
+            "global_revision": 1514420938,
+            "author": 7850356,
+            "stamp": 1696294613,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 6,
+            "global_revision": 1514419478,
+            "author": 7850356,
+            "stamp": 1696288292,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 5,
+            "global_revision": 1511410711,
+            "author": 7850356,
+            "stamp": 1687178873,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 4,
+            "global_revision": 1511162736,
+            "author": 7850356,
+            "stamp": 1686374298,
+            "flags": "S",
+            "commentary": "样式编辑"
+        },
+        {
+            "revision": 3,
+            "global_revision": 1510350005,
+            "author": 8373329,
+            "stamp": 1684586354,
+            "flags": "S",
+            "commentary": ""
+        },
+        {
+            "revision": 2,
+            "global_revision": 1510326101,
+            "author": 8373329,
+            "stamp": 1684501219,
+            "flags": "A",
+            "commentary": "已新增标签：艺术作品。 移除标签：绘画作品。"
+        },
+        {
+            "revision": 1,
+            "global_revision": 1510326086,
+            "author": 8373329,
+            "stamp": 1684501165,
+            "flags": "A",
+            "commentary": "已新增标签：原创, 绘画作品。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1510326081,
+            "author": 8373329,
+            "stamp": 1684501152,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1447774989,
+    "rating": 3,
+    "forum_thread": 15868594,
+    "tags": [
+        "_cc",
+        "原创",
+        "艺术作品"
+    ],
+    "title": "在自己绘画软件里发现的库存",
+    "sitemap_update": 1723536856000,
+    "votings": [
+        [
+            7850356,
+            true
+        ],
+        [
+            6818166,
+            true
+        ],
+        [
+            8373329,
+            true
+        ]
+    ],
+    "is_locked": false
+}

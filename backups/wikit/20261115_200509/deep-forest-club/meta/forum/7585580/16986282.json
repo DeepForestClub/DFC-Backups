@@ -1,0 +1,32 @@
+{
+    "title": "新人报道！",
+    "id": 16986282,
+    "description": "是新人ฅ^•ﻌ•^ฅ",
+    "last": 1731771759,
+    "lastUser": 7504264,
+    "started": 1731689580,
+    "startedUser": 8577465,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6731404,
+            "title": "新人报道！",
+            "poster": 8577465,
+            "stamp": 1731689580,
+            "revisions": [],
+            "children": [
+                {
+                    "id": 6731957,
+                    "title": "Re: 新人报道！",
+                    "poster": 7504264,
+                    "stamp": 1731771759,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

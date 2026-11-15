@@ -1,0 +1,47 @@
+{
+    "title": "Nuevo mundo",
+    "id": 16707343,
+    "description": "",
+    "last": 1707222736,
+    "lastUser": 7931329,
+    "started": 1707196676,
+    "startedUser": null,
+    "postsNum": 2,
+    "sticky": false,
+    "isLocked": false,
+    "version": 1,
+    "posts": [
+        {
+            "id": 6420870,
+            "title": "",
+            "poster": 7504264,
+            "stamp": 1707196707,
+            "lastEdit": 1707222920,
+            "lastEditBy": 7504264,
+            "revisions": [
+                {
+                    "title": "",
+                    "author": 7504264,
+                    "id": 7788137,
+                    "stamp": 1707222920
+                },
+                {
+                    "title": "",
+                    "author": 7504264,
+                    "id": 7787703,
+                    "stamp": 1707196707
+                }
+            ],
+            "children": [
+                {
+                    "id": 6421172,
+                    "title": "",
+                    "poster": 7931329,
+                    "stamp": 1707222736,
+                    "revisions": [],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

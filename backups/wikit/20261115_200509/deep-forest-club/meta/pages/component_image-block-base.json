@@ -1,0 +1,40 @@
+{
+    "name": "component:image-block-base",
+    "version": 18,
+    "revisions": [
+        {
+            "revision": 2,
+            "global_revision": 1509701555,
+            "author": 7850356,
+            "stamp": 1682138294,
+            "flags": "M",
+            "commentary": "父页面设置为: \"component:image-block\"."
+        },
+        {
+            "revision": 1,
+            "global_revision": 1509701550,
+            "author": 7850356,
+            "stamp": 1682138272,
+            "flags": "A",
+            "commentary": "已新增标签：组件后端。"
+        },
+        {
+            "revision": 0,
+            "global_revision": 1509701548,
+            "author": 7850356,
+            "stamp": 1682138257,
+            "flags": "N",
+            "commentary": ""
+        }
+    ],
+    "files": [],
+    "page_id": 1447440741,
+    "parent": "component:image-block",
+    "tags": [
+        "组件后端"
+    ],
+    "title": "标准插图方框后端",
+    "sitemap_update": 1682138294000,
+    "votings": [],
+    "is_locked": true
+}
